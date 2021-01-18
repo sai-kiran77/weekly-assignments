@@ -1,0 +1,45 @@
+.outerBox{
+    width: 500px;
+    height:500px;
+}
+
+.box1{
+    width: 250px;
+    height:150px;
+    background-color: aqua;
+    float: left;
+}
+
+.box2{
+    width: 200px;
+    height:350px;
+    background-color: blueviolet;
+    float: left;
+}
+
+.box3{
+    width: 300px;
+    height:50px;
+    background-color: coral; 
+    float: right;
+}
+
+.box4{
+    width: 250px;
+    height:150px;
+    background-color: darkgray;
+    float: right;
+}
+
+.box5{
+    width: 300px;
+    height:300px;
+    background-color: darksalmon;
+    float: right;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    /* object-fit: cover; */
+}
