@@ -1,0 +1,32 @@
+body{
+    background-image: linear-gradient(to right,blue,violet);
+}
+
+table,td,th{
+    margin: 100px auto;
+    border-collapse: collapse;
+    border-spacing: 0px;
+}
+
+/* table {
+    border-collapse:separate;
+    border:solid black 1px;
+    border-radius:6px;
+} */
+
+td,th{
+    padding:10px 24px;
+}
+
+thead{
+    background-color: black;
+    color: white;
+}
+
+tbody tr{
+    background-color:#f0f6f7;
+}
+
+tbody tr:nth-child(even){
+    background-color: #d7dfe0;
+}
