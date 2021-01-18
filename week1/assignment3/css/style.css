@@ -4,9 +4,6 @@
     margin: auto;
     background-image: url('../images/641-600x600.jpg');
     background-repeat: no-repeat;
-    display: flex;
-    justify-items: center;
-    align-items: center;
 }
 
 .text{
