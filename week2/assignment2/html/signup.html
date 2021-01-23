@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <form>
+        <h2>signup page</h2>
+        <div>
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" minlength="6" required>
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required>
+        </div>
+        <div>
+            <label for="mobile">Phone Number</label>
+            <input type="tel" name="mobile" id="mobile" minlength="10" maxlength="10" required>
+        </div>
+        <div>
+            <label for="DOB">Date Of Birth</label>
+            <input type="date" name="DOB" id="DOB" max="2019-12-31" required>
+        </div>
+        <div>
+            <label for="password">password</label>
+            <input type="password" name="password" id="password" minlength="6" maxlength="12" required>
+        </div>
+        <div>
+            <label for="confirmPassword">confirm password</label>
+            <input type="password" name="confirmPassword" id="confirmPassword" minlength="6" maxlength="12" required>
+        </div>
+        <div id='radio'>
+            <label for='male'>gender</label>
+            <input type="radio" name="gender" id="male" value="male" required>
+            <label for="male">male</label>
+            <input type="radio" name="gender" id="female" value="female" required>
+            <label for="female">female</label>
+        </div>
+        <div>
+            <p class="danger"></p>
+        </div>
+        <div>
+            <button id="submit">signup</button>
+        </div>
+        <div>
+            <button id='login'>login</button>
+        </div>
+    </form>
+
+    <script src="../js/signup.js"></script>
+</body>
+
+</html>

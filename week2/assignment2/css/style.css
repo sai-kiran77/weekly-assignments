@@ -1,0 +1,72 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h2{
+    text-align: center;
+    font-size: 2rem;
+}
+
+form{
+    width: 400px;
+    margin: auto;
+    box-shadow: 2px 2px 1px #ccc;
+    text-align: start;
+}
+
+form div{
+    padding: 2.5px;
+}
+
+form input, form label{
+    display: block;
+    padding: 2px;
+    width: 95%;
+    margin: 0px 10px;
+    font-size: 1.05rem;
+}
+
+#radio input,#radio label{
+    display: inline;
+    width: auto;
+}
+
+form button{
+    width: 100%;
+    margin: auto;
+    padding: 6px;
+    font-weight: 900;
+    font-size: 1.1rem;
+}
+
+/* #output{
+    display: block;
+} */
+
+.wrapper{
+    width: 100%;
+    text-align: center;
+}
+
+#logout{
+    width: 200px;
+    padding: 8px;
+    margin: auto;
+    margin-top: 5px;
+    /* display: block; */
+}
+
+.danger{
+    color: red;
+    text-align: center;
+}
