@@ -10,18 +10,23 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    background-image: url('../images/wizard.jpg');
+    background-size: cover;
 }
 
-h2{
+header{
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.3rem;
+    padding: 20px 0px;
 }
 
 form{
-    width: 400px;
+    width: 500px;
     margin: auto;
-    box-shadow: 2px 2px 1px #ccc;
+    /* box-shadow: 2px 2px 1px #ccc; */
     text-align: start;
+    background-color: white;
+    border-radius: 25px;
 }
 
 form div{
@@ -30,15 +35,25 @@ form div{
 
 form input, form label{
     display: block;
-    padding: 2px;
-    width: 95%;
-    margin: 0px 10px;
+    width: 80%;
+    margin: 0px auto;
     font-size: 1.05rem;
+}
+
+#radio{
+    width: 80%;
+    margin: auto;
 }
 
 #radio input,#radio label{
     display: inline;
     width: auto;
+}
+
+#buttonWrapper{
+    width: 80%;
+    margin: auto;
+    padding: 10px;
 }
 
 form button{
@@ -47,6 +62,21 @@ form button{
     padding: 6px;
     font-weight: 900;
     font-size: 1.1rem;
+    border-radius: 25px;
+    outline: none;
+}
+
+label{
+    font-weight: 400;
+}
+
+input{
+    border-radius: 5px;
+    color: #444;
+    border: 2px solid #e3e3e3;
+    box-shadow: none;
+    outline: #444;
+    padding: 6px 16px;
 }
 
 /* #output{
@@ -56,6 +86,17 @@ form button{
 .wrapper{
     width: 100%;
     text-align: center;
+    /* margin: auto; */
+    /* color: #ccc; */
+    
+}
+
+#output{
+    background-color:whitesmoke;
+    border-radius: 25px;
+    padding: 10px;
+    width: 80%;
+    margin: auto;
 }
 
 #logout{

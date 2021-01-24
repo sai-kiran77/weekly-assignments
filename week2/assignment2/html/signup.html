@@ -10,7 +10,10 @@
 
 <body>
     <form>
-        <h2>signup page</h2>
+        <header>
+            <p><b>BUILD</b> YOUR PROFILE</p>
+            <small>This information will let us know more about you.</small>
+        </header>
         <div>
             <label for="name">Name</label>
             <input type="text" name="name" id="name" minlength="6" required>
@@ -25,14 +28,14 @@
         </div>
         <div>
             <label for="DOB">Date Of Birth</label>
-            <input type="date" name="DOB" id="DOB" max="2019-12-31" required>
+            <input type="date" name="DOB" id="DOB" required>
         </div>
         <div>
-            <label for="password">password</label>
+            <label for="password">Password</label>
             <input type="password" name="password" id="password" minlength="6" maxlength="12" required>
         </div>
         <div>
-            <label for="confirmPassword">confirm password</label>
+            <label for="confirmPassword">Confirm Password</label>
             <input type="password" name="confirmPassword" id="confirmPassword" minlength="6" maxlength="12" required>
         </div>
         <div id='radio'>
@@ -45,10 +48,10 @@
         <div>
             <p class="danger"></p>
         </div>
-        <div>
+        <div id='buttonWrapper'>
             <button id="submit">signup</button>
         </div>
-        <div>
+        <div id='buttonWrapper'>
             <button id='login'>login</button>
         </div>
     </form>
