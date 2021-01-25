@@ -31,20 +31,23 @@ submitButton.addEventListener('click', (e) => {
         }
     }
 
+    let loggedIn = false
+
     if (formValid) {
         const getData = localStorage.getItem('data')
         const parsedData = JSON.parse(getData)
         parsedData.body.forEach(element => {
             if (element.email === data.email && element.password === data.password) {
                 element.loggedIn = true
+                loggedIn = true
                 localStorage.setItem('data', JSON.stringify(parsedData))
                 danger.innerText = ''
                 location.href = '../html/dashboard.html?login=true'
                 return
-            } else {
-                danger.innerText = 'unable to login'
             }
         })
+        if(!loggedIn)
+        danger.innerText = 'unable to login'
     }
 })
 
