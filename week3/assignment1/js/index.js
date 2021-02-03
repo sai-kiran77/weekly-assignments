@@ -93,7 +93,7 @@ leftArrow.addEventListener('click', (e) => {
 })
 
 const div1 = document.createElement('div')
-const h1 = document.createElement('h1')
+const h3 = document.createElement('h3')
 const p = document.createElement('p')
 let count = 1
 
@@ -102,12 +102,12 @@ function storiesRenderFunc(count) {
         count = 1
     }
     customerStoriesWrapper.style = `background-image:url(${storiesJson.stories[count - 1].imgUrl});`
-    h1.innerText = storiesJson.stories[count - 1].head
+    h3.innerText = storiesJson.stories[count - 1].head
     p.innerText = storiesJson.stories[count - 1].body
-    div1.appendChild(h1)
+    div1.appendChild(h3)
     div1.appendChild(p)
     customerStories.insertBefore(div1, customerStories.children[1])
-    setTimeout(() => storiesRenderFunc(++count), 2000)
+    setTimeout(() => storiesRenderFunc(++count), 10000)
 }
 
 storiesRenderFunc(count)

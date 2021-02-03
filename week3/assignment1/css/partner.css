@@ -1,0 +1,38 @@
+.partners{
+    height: 300px;
+    width: 100%;
+    padding: 32px 0;
+    /* clear: both; */
+    background-color: rgba(240,240,240,1);
+}
+
+.partners h1{
+    text-align: center;
+    font-size: 3em;
+    padding: 16px 0;
+}
+
+.partners .logos{
+    width: 80%;
+    display: inline-block;
+    padding: 16px 0;
+}
+
+.partners .logos img{
+    height: 128px;
+    width: 128px;
+    padding: 16px;
+    margin: 0 40px;
+}
+
+.leftArrow{
+    width: 10%;
+    float: left;
+    padding: 16px 0;
+}
+
+.rightArrow{
+    width: 10%;
+    padding: 16px 0;
+    float: right;
+}

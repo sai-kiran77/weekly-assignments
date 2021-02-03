@@ -1,0 +1,140 @@
+.solutions{
+    height: 800px;
+    width: 100%;
+    margin: 0 auto;
+    color: rgba(255,255,255,1);
+    background: url("http://www.nfrnds.com/wp-content/uploads/2017/07/pic-banking.jpg") no-repeat center;
+    background-size: cover;
+    position: relative;
+    z-index: -1;
+    line-height: 1.25;
+}
+
+.solutions .index{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+    background-color: rgba(0,0,0,0.8);
+}
+
+.solutions .wrapper{
+    width: 50%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.solutions h1{
+    text-align: center;
+    font-size: 2em;
+    padding: 25px 0 50px 40px;
+}
+
+.solutions p{
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.solutions button{
+    padding: 10px 40px;
+    /* font-size: 0.7em; */
+    border-radius: 25px;
+    outline: none;
+}
+
+.solutions .mainSolutions{
+    /* width: 70%; */
+    margin: 30px 0;
+}
+
+.solutions .mainSolutions .links{
+    width: 25%;
+    /* float: left; */
+    border-right: 2px solid orange;
+    display: inline-block;
+}
+
+.solutions .mainSolutions .links a{
+    display: block;
+    font-size: 1.2em;
+    padding: 10px 0;
+    color: rgba(255,255,255,1);
+    font-weight: bold;
+}
+
+.solutions .mainSolutions .content{
+    width: 74%;
+    /* float: right; */
+    padding-left: 40px;
+    display: inline-block;
+}
+
+.solutions .content > img {
+    height: 60px;
+    width: 60px;
+}
+
+.solutions .mainSolutions .content h2{
+    padding: 10px 0;
+    color: orange;
+}
+
+.solutions .mainSolutions .content p{
+    margin: 20px 0;
+    text-align: start;
+}
+
+.solutions .mainSolutions .content button,.banking{
+    color: orange ;
+    /* padding:0 10px; */
+    border: 2px solid orange;
+    background-color: inherit;
+}
+
+.solutions .mainSolutions .content button:hover,.banking:hover{
+    color: white ;
+    background-color: orange;
+    border: 2px solid orange;
+}
+
+.solutions .moreInfo{
+    margin: auto;
+    /* clear: both; */
+    padding: 15px 0;
+    /* width: 75%; */
+}
+
+.solutions .moreInfo button{
+    /* width: 25%; */
+    margin: 10px;
+}
+
+.solutions .moreInfo .fmcg{
+    color: rgba(145,150,240,1);
+    background-color: inherit;
+    border: 2px solid rgba(145,150,240,1);
+}
+
+.solutions .moreInfo .fmcg:hover{
+    color: white;
+    background-color: rgba(145,150,240,1);
+}
+
+.solutions .moreInfo .agriculture{
+    color: rgba(145,250,240,1);
+    background-color: inherit;
+    border: 2px solid rgba(145,250,240,1);
+}
+
+.solutions .moreInfo .agriculture:hover{
+    color: white;
+    background-color: rgba(145,250,140,0.5);
+    border: 2px solid rgba(145,250,140,0.5); 
+}
+
+.button-wrapper{
+    width: 75%;
+    margin: 20px auto 0;
+}

@@ -1,0 +1,88 @@
+.customerStoriesWrapper{
+    position: relative;
+    width: 100%;
+    color: rgba(255,255,255,1);
+    height: 550px;
+    font-size: 1.5em;
+    background-color: #edc7b7;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* .customerStoriesWrapper #li{
+    width: 25%;
+    margin: auto;
+}
+
+.customerStoriesWrapper li{
+    display: inline;
+    list-style: none;
+    padding: 0 20px;
+}
+
+.customerStoriesWrapper #li button{
+    text-align: center;
+    color: black;
+    margin: auto;
+    padding: 2.5px;
+    border-radius: 25px;
+    border: 2px solid balck;
+    background-color: black;
+    outline: none;
+} */
+
+.customerStories{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    z-index: 3;
+}
+
+.customerStories div{
+    margin: 25px auto;
+}
+
+.customerStories div h3{
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.customerStories h1{
+    padding: 20px 0 35px;
+    font-size: 3em;
+    font-weight: lighter;
+    /* color: #AC3B61; */
+}
+.customerStories p{
+    padding: 20px 0;
+    line-height: 1.2;
+    /* color: #272727; */
+}
+
+.customerStories button{
+    padding: 10px 45px;
+    border-radius: 25px;
+    color: rgba(255, 255, 255,1);
+    outline: none;
+    /* color: #e85a47; */
+    border: 3px solid rgba(255,255,255,1);
+    background-color: inherit;
+    /* font-weight: bolder; */
+    font-size: 1em;
+    margin: 25px;
+}
+
+.overlay{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    background-color: rgba(0,0,0,0.5);
+    
+}
