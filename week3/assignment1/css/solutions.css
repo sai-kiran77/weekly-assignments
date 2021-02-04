@@ -19,7 +19,7 @@
 }
 
 .solutions .wrapper{
-    width: 50%;
+    width: 60%;
     height: 100%;
     margin: 0 auto;
     position: relative;
@@ -28,13 +28,15 @@
 
 .solutions h1{
     text-align: center;
-    font-size: 2em;
+    font-size: 4em;
+    font-weight: lighter;
     padding: 25px 0 50px 40px;
 }
 
 .solutions p{
-    font-size: 1.2em;
+    font-size: 1.3em;
     text-align: center;
+    padding-bottom: 20px;
 }
 
 .solutions button{
@@ -46,11 +48,11 @@
 
 .solutions .mainSolutions{
     /* width: 70%; */
-    margin: 30px 0;
+    margin: 35px 0;
 }
 
 .solutions .mainSolutions .links{
-    width: 25%;
+    width: 20%;
     /* float: left; */
     border-right: 2px solid orange;
     display: inline-block;
@@ -65,7 +67,7 @@
 }
 
 .solutions .mainSolutions .content{
-    width: 74%;
+    width: 75%;
     /* float: right; */
     padding-left: 40px;
     display: inline-block;
@@ -79,11 +81,14 @@
 .solutions .mainSolutions .content h2{
     padding: 10px 0;
     color: orange;
+    font-size: 1.8em;
+    font-weight: bolder;
 }
 
 .solutions .mainSolutions .content p{
     margin: 20px 0;
     text-align: start;
+    font-size: 1.3em;
 }
 
 .solutions .mainSolutions .content button,.banking{
