@@ -77,6 +77,11 @@ header nav a:hover{
     text-decoration: underline;
 }
 
+header .logo-img{
+    height: 55px;
+    filter: brightness(0) invert(100%);
+}
+
 .opened{
     background-color: rgba(255, 255, 255);
     color: black;
@@ -84,6 +89,6 @@ header nav a:hover{
     z-index: 4;
 }
 
-header .logo-img{
-    height: 55px;
+.opened .logo-img{
+    filter: none;
 }
