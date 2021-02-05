@@ -6,7 +6,7 @@
     background: url("http://www.nfrnds.com/wp-content/uploads/2017/07/pic-banking.jpg") no-repeat center;
     background-size: cover;
     position: relative;
-    z-index: -1;
+    z-index: 0;
     line-height: 1.25;
 }
 
@@ -14,7 +14,7 @@
     position: absolute;
     height: 100%;
     width: 100%;
-    z-index: 0;
+    z-index: 1;
     background-color: rgba(0,0,0,0.8);
 }
 
@@ -23,7 +23,7 @@
     height: 100%;
     margin: 0 auto;
     position: relative;
-    z-index: 1;
+    z-index: 2;
 }
 
 .solutions h1{
@@ -53,9 +53,9 @@
 
 .solutions .mainSolutions .links{
     width: 20%;
-    /* float: left; */
+    float: left;
     border-right: 2px solid orange;
-    display: inline-block;
+    display: block;
 }
 
 .solutions .mainSolutions .links a{
@@ -64,23 +64,21 @@
     padding: 10px 0;
     color: rgba(255,255,255,1);
     font-weight: bold;
-}
-
-.solutions .mainSolutions .links a:hover{
-    color: blue;
-    text-decoration: underline;
+    cursor: pointer;
 }
 
 .solutions .mainSolutions .content{
-    width: 75%;
-    /* float: right; */
+    width: 80%;
+    float: right;
     padding-left: 40px;
-    display: inline-block;
+    display: block;
+    /* display: none; */
 }
 
 .solutions .content > img {
-    height: 60px;
-    width: 60px;
+    /* padding-top: 30px; */
+    max-height: 70px;
+    max-width: 90px;
 }
 
 .solutions .mainSolutions .content h2{
@@ -111,8 +109,8 @@
 
 .solutions .moreInfo{
     margin: auto;
-    /* clear: both; */
-    padding: 15px 0;
+    clear: both;
+    padding: 60px 0 15px;
     /* width: 75%; */
 }
 
@@ -146,5 +144,33 @@
 
 .button-wrapper{
     width: 60%;
-    margin: 20px auto 0;
+    margin: 10px auto 0;
+}
+
+#banking:hover{
+    color: #ffaf00;
+}
+
+#agriculture:hover{
+    color: #9ec000;
+}
+
+#health:hover{
+    color: #21b334;
+}
+
+#fmcg:hover{
+    color: #00b0bd;
+}
+
+#government:hover{
+    color: #10a1df;
+}
+
+#msme:hover{
+    color: #0767b2;
+}
+
+#retail:hover{
+    color: #0f4ef7;
 }

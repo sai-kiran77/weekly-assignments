@@ -3,6 +3,10 @@ const leftArrow = document.querySelector('#leftArrow');
 const rightArrow = document.querySelector('#rightArrow');
 const customerStoriesWrapper = document.querySelector('.customerStoriesWrapper');
 const customerStories = document.querySelector('#customer-stories');
+const contentImg = document.querySelector('#content-img') 
+const contentHead = document.querySelector('#content-head') 
+const contentBody = document.querySelector('#content-body')
+const contentLinks = document.querySelectorAll('.link')
 
 const partnersJson = {
     "partners": [
@@ -56,6 +60,71 @@ const storiesJson = {
         },
     ]
 };
+
+const solutionsJson = {
+    banking:{
+        imgUrl:"http://www.nfrnds.com/wp-content/uploads/2017/07/stratigic_icon.png",
+        head:"Mobile and Branchless banking solutions for driving financial Inclusion.",
+        body:"Providing end-to-end mobile financial services and engagement capabilities through our strategic SaaS solutions.",
+        color:"#ffaf00"
+    },
+    agriculture:{
+        imgUrl:"http://www.nfrnds.com/wp-content/uploads/2017/07/agricuture@2x.png",
+        head:"Automating and streamlining agricultural supply chains, and processes.",
+        body:"Providing analytics, oversight, traceability and ongoing interactive capabilities to enterprises along every stage of the supply chain.",
+        color:"#9ec000"
+    },
+    health:{
+        imgUrl:"http://www.nfrnds.com/wp-content/uploads/2017/07/health@2x.png",
+        head:"Addressing the specific challenges of healthcare systems in emerging markets.",
+        body:"Digitizing healthcare services and increasing access to medical information",
+        color:"#21b334"
+    },
+    fmcg:{
+        imgUrl:"http://www.nfrnds.com/wp-content/uploads/2017/07/fmcg@2x.png",
+        head:"Streamline distribution channels in emerging markets even to the most remote dealer/outlet.",
+        body:"Providing mobile financial services and complete oversight to supply and distribution chains.",
+        color:"#00b0bd"
+    },
+    government:{
+        imgUrl:"http://www.nfrnds.com/wp-content/uploads/2017/07/government@2x.png",
+        head:"Digitizing government services for universal access and improved policymaking",
+        body:"Enabling government to equalize service delivery, collect information and implement digital programs and policies for all its citizens.",
+        color:"#10a1df"
+    },
+    msme:{
+        imgUrl:"http://www.nfrnds.com/wp-content/uploads/2017/07/msme@2x.png",
+        head:"Providing modern business tools and practices to MSMEs",
+        body:"Enabling medium, small and micro enterprises (MSMEs) to benefit from digital accounting tools and business services.",
+        color:"#0767b2"
+    },
+    retail:{
+        imgUrl:"http://www.nfrnds.com/wp-content/uploads/2017/07/retail@2x.png",
+        head:"Expanding the potential of retailers serving the mass market.",
+        body:"Enabling retailers to gain valuable insights and tailor their marketing and sale strategies to their customers’ needs",
+        color:"#0f4ef7"
+    },
+}
+
+function setContent(id,element){
+    contentImg.src = solutionsJson[id].imgUrl
+    contentHead.innerText = solutionsJson[id].head
+    contentHead.style.color = solutionsJson[id].color
+    contentBody.innerText = solutionsJson[id].body
+    element.style.color = solutionsJson[id].color
+    // document.querySelector(`#${id}`).classList.add('active')
+}
+
+contentLinks.forEach(element =>{
+    // element.style.color = "#fff"
+    element.addEventListener('click',(e)=>{
+        contentLinks.forEach(ele=>ele.style.color = "#fff")
+        setContent(e.target.id,element)
+    })
+})
+
+setContent("banking",document.querySelector('#banking'))
+
 
 const div = document.createElement('div');
 const logosArray = [];
