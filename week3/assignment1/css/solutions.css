@@ -28,7 +28,7 @@
 
 .solutions h1{
     text-align: center;
-    font-size: 4em;
+    font-size: 3.8em;
     font-weight: lighter;
     padding: 25px 0 50px 40px;
 }
@@ -64,6 +64,11 @@
     padding: 10px 0;
     color: rgba(255,255,255,1);
     font-weight: bold;
+}
+
+.solutions .mainSolutions .links a:hover{
+    color: blue;
+    text-decoration: underline;
 }
 
 .solutions .mainSolutions .content{
@@ -140,6 +145,6 @@
 }
 
 .button-wrapper{
-    width: 75%;
+    width: 60%;
     margin: 20px auto 0;
 }

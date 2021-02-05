@@ -1,32 +1,38 @@
-const partnerSection = document.querySelector('#partners')
-const leftArrow = document.querySelector('#leftArrow')
-const rightArrow = document.querySelector('#rightArrow')
-const customerStoriesWrapper = document.querySelector('.customerStoriesWrapper')
-const customerStories = document.querySelector('#customer-stories')
-const navBar = document.querySelector('nav')
+const partnerSection = document.querySelector('#partners');
+const leftArrow = document.querySelector('#leftArrow');
+const rightArrow = document.querySelector('#rightArrow');
+const customerStoriesWrapper = document.querySelector('.customerStoriesWrapper');
+const customerStories = document.querySelector('#customer-stories');
 
 const partnersJson = {
     "partners": [
         {
-            "imgUrl": "../images/amazon.png"
+            "imgUrl": "../images/amazon.png",
+            "className":'amazon'
         },
         {
-            "imgUrl": "../images/google.png"
+            "imgUrl": "../images/google.png",
+            "className":'google'
         },
         {
-            "imgUrl": "../images/master-card.png"
+            "imgUrl": "../images/master-card.png",
+            "className":'master-card'
         },
         {
-            "imgUrl": "../images/microsoft.png"
+            "imgUrl": "../images/microsoft.png",
+            "className":'microsoft'
         },
         {
-            "imgUrl": "../images/paypal.png"
+            "imgUrl": "../images/paypal.png",
+            "className":'paypal'
         },
         {
-            "imgUrl": "../images/unilever.png"
+            "imgUrl": "../images/unilever.png",
+            "className":'unilever'
         },
         {
-            "imgUrl": "../images/visa.png"
+            "imgUrl": "../images/visa.png",
+            "className":'visa'
         }
     ]
 }
@@ -49,73 +55,118 @@ const storiesJson = {
             body: "N-Frnds has partnered with RwandaOnline to make over 100 government services accessible to Rwanda’s 12 million citizens and small businesses."
         },
     ]
+};
+
+const div = document.createElement('div');
+const logosArray = [];
+let pagination = 1;
+let j = (pagination - 1) * 5;
+if (pagination === 1) {
+    leftArrow.classList.add('disable')
 }
 
-const div = document.createElement('div')
-const logosArray = []
-let pagination = 1
+// function paginationFunc(pagination) {
+//     while (div.hasChildNodes()) {
+//         div.removeChild(div.firstChild);
+//     }
+//     // for (let i = 0 + ((pagination - 1) * 5); i < pagination * 5; i++) {
+//     //     if (i >= logosArray.length) {
+//     //         break;
+//     //     }
+//     //     div.appendChild(logosArray[i]);
+//     // }
+//     for (let i = (pagination - 1) * 5; i < (pagination * 5); i++) {
+//         if (j >= logosArray.length || j < 0) {
+//             j = 0
+//         }
+//         console.log(j)
+//         div.appendChild(logosArray[j]);
+//         j++;
+//     }
+//     partnerSection.insertBefore(div, partnerSection.children[1]);
+//     console.log('break')
+// }
 
-function paginationFunc(pagination) {
+const paginationForward = (pagination) => {
     while (div.hasChildNodes()) {
-        div.removeChild(div.firstChild)
+        div.removeChild(div.firstChild);
     }
-    for (let i = 0 + ((pagination - 1) * 5); i < pagination * 5; i++) {
-        console.log(pagination * 5, logosArray.length)
 
-        if (i >= logosArray.length) {
-            break;
+    for (let i = (pagination - 1) * 5; i < (pagination * 5); i++) {
+        if (j >= logosArray.length || j < 0) {
+            j = 0
         }
-        div.appendChild(logosArray[i])
+        div.appendChild(logosArray[j]);
+        j++;
     }
-    partnerSection.insertBefore(div, partnerSection.children[1])
+    partnerSection.insertBefore(div, partnerSection.children[1]);
+    console.log('break')
+}
+
+const paginationBackward = (pagination) => {
+    console.log(pagination,"p")
+    while (div.hasChildNodes()) {
+        div.removeChild(div.firstChild);
+    }
+
+    for (let i = (pagination - 1) * 5; i < (pagination * 5); i++) {
+        j--;
+        if (j < 0) {
+            j = 6
+        }
+        div.appendChild(logosArray[j]);
+    }
+    partnerSection.insertBefore(div, partnerSection.children[1]);
 }
 
 function renderLogos() {
-    div.classList.add('logos')
+    div.classList.add('logos');
     partnersJson.partners.map(partner => {
-        const img = document.createElement('img')
-        img.src = partner.imgUrl
-        logosArray.push(img)
+        const img = document.createElement('img');
+        img.src = partner.imgUrl;
+        // console.log(partner.className)
+        img.classList.add(partner.className)
+        logosArray.push(img);
     })
-    paginationFunc(pagination)
+    paginationForward(pagination);
 }
 
-renderLogos()
+renderLogos();
 
 rightArrow.addEventListener('click', (e) => {
-    pagination++
-    paginationFunc(pagination)
+    pagination++;
+    if (pagination > 1) {
+        leftArrow.classList.remove('disable')
+    }
+    paginationForward(pagination);
 })
 
 leftArrow.addEventListener('click', (e) => {
-    pagination--
-    paginationFunc(pagination)
+    if (pagination > 1) {
+        pagination--;
+        paginationBackward(pagination);
+    }
+    if (pagination === 1) {
+        leftArrow.classList.add('disable')
+    }
 })
 
-const div1 = document.createElement('div')
-const h3 = document.createElement('h3')
-const p = document.createElement('p')
-let count = 1
+const div1 = document.createElement('div');
+const h3 = document.createElement('h3');
+const p = document.createElement('p');
+let count = 1;
 
 function storiesRenderFunc(count) {
     if (count === 4) {
-        count = 1
+        count = 1;
     }
-    customerStoriesWrapper.style = `background-image:url(${storiesJson.stories[count - 1].imgUrl});`
-    h3.innerText = storiesJson.stories[count - 1].head
-    p.innerText = storiesJson.stories[count - 1].body
-    div1.appendChild(h3)
-    div1.appendChild(p)
-    customerStories.insertBefore(div1, customerStories.children[1])
-    setTimeout(() => storiesRenderFunc(++count), 10000)
+    customerStoriesWrapper.style = `background-image:url(${storiesJson.stories[count - 1].imgUrl});`;
+    h3.innerText = storiesJson.stories[count - 1].head;
+    p.innerText = storiesJson.stories[count - 1].body;
+    div1.appendChild(h3);
+    div1.appendChild(p);
+    customerStories.insertBefore(div1, customerStories.children[1]);
+    setTimeout(() => storiesRenderFunc(++count), 10000);
 }
 
-storiesRenderFunc(count)
-
-window.addEventListener('scroll', (e) => {
-    if(window.scrollY > 80){
-        navBar.classList.add('opened')
-    }else{
-        navBar.classList.remove('opened')
-    }
-})
+storiesRenderFunc(count);
