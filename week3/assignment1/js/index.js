@@ -3,10 +3,10 @@ const leftArrow = document.querySelector('#leftArrow');
 const rightArrow = document.querySelector('#rightArrow');
 const customerStoriesWrapper = document.querySelector('.customerStoriesWrapper');
 const customerStories = document.querySelector('#customer-stories');
-const contentImg = document.querySelector('#content-img') 
-const contentHead = document.querySelector('#content-head') 
-const contentBody = document.querySelector('#content-body')
-const contentLinks = document.querySelectorAll('.link')
+const contentImg = document.querySelector('#content-img') ;
+const contentHead = document.querySelector('#content-head'); 
+const contentBody = document.querySelector('#content-body');
+const contentLinks = document.querySelectorAll('.link');
 
 const partnersJson = {
     "partners": [
@@ -39,7 +39,7 @@ const partnersJson = {
             "className":'visa'
         }
     ]
-}
+};
 
 const storiesJson = {
     "stories": [
@@ -61,7 +61,7 @@ const storiesJson = {
     ]
 };
 
-const solutionsJson = {
+const solutionsObj = {
     banking:{
         imgUrl:"http://www.nfrnds.com/wp-content/uploads/2017/07/stratigic_icon.png",
         head:"Mobile and Branchless banking solutions for driving financial Inclusion.",
@@ -107,23 +107,23 @@ const solutionsJson = {
 }
 
 function setContent(id,element){
-    contentImg.src = solutionsJson[id].imgUrl
-    contentHead.innerText = solutionsJson[id].head
-    contentHead.style.color = solutionsJson[id].color
-    contentBody.innerText = solutionsJson[id].body
-    element.style.color = solutionsJson[id].color
+    contentImg.src = solutionsObj[id].imgUrl;
+    contentHead.innerText = solutionsObj[id].head;
+    contentHead.style.color = solutionsObj[id].color;
+    contentBody.innerText = solutionsObj[id].body;
+    element.style.color = solutionsObj[id].color;
     // document.querySelector(`#${id}`).classList.add('active')
 }
 
 contentLinks.forEach(element =>{
     // element.style.color = "#fff"
     element.addEventListener('click',(e)=>{
-        contentLinks.forEach(ele=>ele.style.color = "#fff")
-        setContent(e.target.id,element)
+        contentLinks.forEach(ele=>ele.style.color = "#fff");
+        setContent(e.target.id,element);
     })
 })
 
-setContent("banking",document.querySelector('#banking'))
+setContent("banking",document.querySelector('#banking'));
 
 
 const div = document.createElement('div');
@@ -163,7 +163,7 @@ const paginationForward = (pagination) => {
 
     for (let i = (pagination - 1) * 5; i < (pagination * 5); i++) {
         if (j >= logosArray.length || j < 0) {
-            j = 0
+            j = 0;
         }
         div.appendChild(logosArray[j]);
         j++;
@@ -173,7 +173,6 @@ const paginationForward = (pagination) => {
 }
 
 const paginationBackward = (pagination) => {
-    console.log(pagination,"p")
     while (div.hasChildNodes()) {
         div.removeChild(div.firstChild);
     }
@@ -181,7 +180,7 @@ const paginationBackward = (pagination) => {
     for (let i = (pagination - 1) * 5; i < (pagination * 5); i++) {
         j--;
         if (j < 0) {
-            j = 6
+            j = 6;
         }
         div.appendChild(logosArray[j]);
     }
@@ -194,7 +193,7 @@ function renderLogos() {
         const img = document.createElement('img');
         img.src = partner.imgUrl;
         // console.log(partner.className)
-        img.classList.add(partner.className)
+        img.classList.add(partner.className);
         logosArray.push(img);
     })
     paginationForward(pagination);
@@ -205,7 +204,7 @@ renderLogos();
 rightArrow.addEventListener('click', (e) => {
     pagination++;
     if (pagination > 1) {
-        leftArrow.classList.remove('disable')
+        leftArrow.classList.remove('disable');
     }
     paginationForward(pagination);
 })
@@ -216,7 +215,7 @@ leftArrow.addEventListener('click', (e) => {
         paginationBackward(pagination);
     }
     if (pagination === 1) {
-        leftArrow.classList.add('disable')
+        leftArrow.classList.add('disable');
     }
 })
 
