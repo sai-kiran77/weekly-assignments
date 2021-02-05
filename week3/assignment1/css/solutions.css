@@ -114,6 +114,10 @@
     /* width: 75%; */
 }
 
+.solutions .moreInfo a{
+    color: inherit;
+}
+
 .solutions .moreInfo button{
     /* width: 25%; */
     margin: 10px;
