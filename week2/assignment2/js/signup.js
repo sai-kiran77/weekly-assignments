@@ -1,6 +1,7 @@
 const submitButton = document.querySelector('#submit')
 const loginButton = document.querySelector('#login')
 const danger = document.querySelector('.danger')
+console.log(document.styleSheets)
 
 const regexForEmail = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/;
 const regexForPasswordInvalid = /^(.{0,7}|[^0-9]*|[^A-Z]*|[^a-z]*|[a-zA-Z0-9]*)$/
