@@ -6,14 +6,6 @@ html{
     font-family: 'Titillium Web', sans-serif;
 }
 
-/* header{
-    width:100%;
-    height: auto;
-    margin: 0 auto;
-    padding: 18px;
-    background-color:#bab2b5;
-    color: rgba(0,0,0);
-} */
 
 .fa-accusoft{
     font-size: 48px;
@@ -71,25 +63,19 @@ html{
 
 .logo{
     cursor: pointer;
-    /* margin: 0 auto; */
 }
 
 section{
     width: 100%;
+    height: auto;
+    display: flex;
 }
 
 aside{
     padding: 25px;
     width: 30%;
-    height: 500px;
-    /* margin: 15px 0px; */
-    float: left;
-    overflow-y: hidden;
-    background-color:#bab2b5;
-}
-
-aside:hover{
     overflow-y: auto;
+    background-color:#bab2b5;
 }
 
 aside a{
@@ -104,13 +90,8 @@ aside a{
 
 main{
     padding: 15px 25px;
-    /* width: calc(75% - 15px); */
     width: 70%;
-    height: 500px;
-    /* margin: 15px 0px; */
-    /* margin-left: 15px; */
-    float: left;
-    overflow-y: auto;
+    height: 100%;
     background-color:rgba(0,0,0,0.1);
 }
 
