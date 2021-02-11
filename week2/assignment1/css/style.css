@@ -69,13 +69,16 @@ section{
     width: 100%;
     height: auto;
     display: flex;
+    position: relative;
 }
 
 aside{
+    position: absolute;
     padding: 25px;
     width: 30%;
     overflow-y: auto;
     background-color:#bab2b5;
+    height: 100%;
 }
 
 aside a{
@@ -93,6 +96,7 @@ main{
     width: 70%;
     height: 100%;
     background-color:rgba(0,0,0,0.1);
+    margin-left: 30%;
 }
 
 .wrapper{
