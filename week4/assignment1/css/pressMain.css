@@ -1,0 +1,203 @@
+.press-main{
+    height: auto;
+    width: 100%;
+    padding: 25px 0;
+}
+
+.press-main .articles{
+    width: 55%;
+    margin: 0 auto;
+}
+
+.press-main .article{
+    padding: 25px;
+}
+
+img.article-img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.press-main .articles h2{
+    font-size: 1.25em;
+}
+
+.press-main .articles h3{
+    font-size: 1em;
+    font-weight: lighter;
+}
+
+.press-main .articles a{
+    font-size: 0.75em;
+    font-weight: bold;
+}
+
+.press-main .twitter h1{
+    padding: 15px 0 20px;
+    font-size: 3em;
+    color: slateblue;
+    font-weight: lighter;
+}
+
+.press-main .twitter .wrapper{
+    padding: 10px;
+    display: flex;
+    width: 100%;
+    margin: auto;
+}
+
+.press-main .twitter .wrapper .content{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.press-main .twitter .wrapper .content .head{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.press-main .twitter .wrapper .logo{
+    padding: 10px;
+}
+
+.press-main .twitter .wrapper .content .head h3{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.press-main .twitter .wrapper .content .head span{
+    font-size: 0.9em;
+    font-weight: lighter;
+}
+
+.press-main .twitter .wrapper .content .body{
+    padding: 10px 0;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.press-main .twitter .wrapper .content .body .info{
+    padding: 5px;
+}
+
+.press-main .twitter .wrapper .content .body .info p{
+    padding: 10px 0;
+}
+/* 
+.press-main .twitter .wrapper .content .body .info p.wrap{
+    white-space: nowrap; 
+    overflow: hidden;
+    width: 100%;
+    text-overflow: ellipsis;
+    font-size: 1em;
+} */
+
+.press-main .twitter .wrapper .content .body .info p a{
+    font-size: 16px;
+}
+
+.press-main .twitter .wrapper .content .body .card{
+    border: 1px solid rgba(0,0,0,0.25);
+    border-radius: 15px;
+}
+
+.press-main .twitter .wrapper .content .body .card .card-img{
+    width: 100%;
+    height: auto;
+}
+.press-main .twitter .wrapper .content .body a{
+    font-size: 1.2em;
+    padding: 5px 0;
+}
+.press-main .twitter .wrapper .content .body .card .card-img img{
+    width: 100%;
+    height: auto;
+    border-radius: 15px 15px 0 0;
+}
+
+.press-main .twitter .wrapper .content .body .card .card-img-gallery{
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+}
+
+.press-main .twitter .wrapper .content .body .card .card-img-gallery img{
+    width: 49.999%;
+    height: auto;
+    border: 1px solid white;
+    border-radius: 15px;
+}
+
+.press-main .twitter .wrapper .content .body .card .card-info{
+    padding: 0 7.5px;
+}
+
+.press-main .twitter .wrapper .content .body .card .card-info h2{
+    font-size: 1em;
+}
+
+.press-main .twitter .wrapper .content .body .card .card-info p{
+    font-size: 0.9em;
+}
+
+.press-main .twitter .wrapper .content .footer{
+    display: flex;
+}
+
+.press-main .twitter .wrapper .content .footer .like{
+    flex: 1 0 auto;
+}
+
+.press-main .twitter .wrapper .content .footer .logout{
+    flex: 1 0 auto;
+}
+
+.press-main .twitter .wrapper .content .footer .date{
+    flex: 8 0 auto;
+    text-align: end;
+}
+
+.press-main .end-links{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.press-main .end-links a{
+    font-size: 1em;
+}
+
+@media all and (max-width:900px){
+    .press-main .articles{
+        width: 65%;
+    }   
+}
+@media all and (max-width:800px){
+    .press-main .articles{
+        width: 75%;
+    }   
+}
+@media all and (max-width:700px){
+    .press-main .articles{
+        width: 85%;
+    }   
+}
+@media all and (max-width:600px){
+    .press-main .articles{
+        width: 90%;
+    }   
+}
+@media all and (max-width:450px){
+    .press-main .articles{
+        width: 95%;
+    }   
+    .press-main .twitter .wrapper{
+        width: 80%;
+        margin: 0 auto 0 0;
+    }
+    .press-main .twitter .wrapper .content .body a{
+        font-size: 1em;
+    }
+}

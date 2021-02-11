@@ -1,0 +1,90 @@
+.main{
+    height: 420px;
+}
+
+.main .wrapper{
+    width: 75%;
+    margin: 0 auto;
+    padding-top:25px ;
+}
+
+.main .logo{
+    width: 40%;
+    float: left;
+    text-align: center;
+    margin: 150px 0px;
+}
+
+.main .logo .logo-img{
+    width: 180px;
+    height: 65px;
+}
+
+.main .address{
+    width: 60%;
+    float: right;
+    font-size: 16px;
+    text-align: start;
+    margin: 70px 0px;
+}
+
+.main .address h2{
+    font-weight: bolder;
+    font-size: 1.25em;
+    padding-bottom: 2px 0;
+}
+
+.main .address h3{
+    font-weight: lighter;
+    padding-bottom: 3px 0;
+    font-size: 1.1em;
+}
+
+.main .address a{
+    display: block;
+    padding-bottom: 3px 0;
+}
+
+.main .address a{
+    font-size: 1em;
+}
+
+.main .address i{
+    font-size: 2em;
+    padding: 5px;
+    color: #102749;
+}
+
+@media all and (max-width:768px){
+    .main{
+        height: auto;
+    }
+
+    .main .logo{
+        display: none;
+    }
+
+    .main .address{
+        float: none;
+        width: 100%;
+    }
+    
+    .main .address h2,.main .address h3{
+        font-size: 1em;
+    }
+}
+
+@media all and (max-width:600px){
+    .main{
+        height: auto;
+    }
+
+    .main .wrapper{
+        margin: 0 auto;
+        width: 95%;
+    }
+
+    .main .address h2,.main .address h3{
+        font-size: 1em;
+    }
+}

@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Titillium Web', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* #map{
+    margin: auto;
+    padding: 30px 0;
+    background-image: url("../images/google-maps-icon-marker.png");
+    height: 400px;
+    width: 50%;
+    background-repeat: no-repeat;
+} */

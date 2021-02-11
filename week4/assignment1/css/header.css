@@ -1,0 +1,266 @@
+header{
+    color: rgba(255,255,255);
+    background-image: url("http://www.nfrnds.com/wp-content/uploads/2017/07/main_bg.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 550px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.press header{
+    background-image: url("http://www.nfrnds.com/wp-content/uploads/2017/07/main_bg.jpg");
+    height: 350px;
+    background-position: center 75%;
+}
+
+.about header{
+    background-image: url("http://www.nfrnds.com/wp-content/uploads/2017/07/about_bg.jpg");
+    height: 380px;
+}
+
+header li{
+    display: inline-block;
+}
+
+header .info{
+    width: 50%;
+    position: absolute;
+    top: 35%;
+    left: 0;
+    right: 0;
+    font-weight: lighter;
+    text-align: center;
+    margin: 0 auto;
+}
+
+header .contact-info{
+    top: 25%;
+}
+
+header .about-info{
+    top: 22%;
+    font-size: 1.2em;
+    font-weight: lighter;
+    overflow:hidden;
+    width:80%;
+}
+
+header .about-info .bold{
+    font-weight: bold;
+}
+
+header .info h2{
+    font-size: 5em;
+    font-weight: lighter;
+}
+
+header .info p{
+    font-size: 1.5em;
+}
+
+header nav{
+    color: rgba(255,255,255);
+    width: 100%;
+    height: 100px;
+    padding: 25px;
+    position: fixed;
+    z-index: 10;
+}
+
+header nav .logo{
+    display: inline-block;
+    padding: 5px 0;
+    height: 60px;
+    position: absolute;
+    top: 15px;
+    left: 50px;
+}
+
+header nav .links{
+    padding: 10px 0px;
+    text-align: end;
+    display: inline-block;
+    position: absolute;
+    right: 75px;
+    top: 30px;
+}
+
+header nav a{
+    color: rgba(255,255,255);
+    text-decoration: none;
+    padding: 0 20px;
+    font-size: 1.2em;
+    transition: 'text-decoration' 2s;
+}
+
+.opened a{
+    color: rgba(150,30,255,0.8) ;
+}
+
+header nav a:hover{
+    text-decoration: underline;
+}
+
+header .logo-img{
+    height: 55px;
+    filter: brightness(0) invert(100%);
+}
+
+.opened{
+    background-color: rgba(255, 255, 255);
+    color: black;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 4;
+}
+
+.opened .logo-img{
+    filter: none;
+}
+
+.menu{
+    display: none;
+}
+
+header .hide{
+    display: none;
+}
+
+.about-inner-links,.solutions-inner-links{
+    display: none;
+    background-color: rgba(255, 255, 255,0.6);
+}
+
+.about-inner-links li,.solutions-inner-links li{
+    display: block;
+    text-align: start;
+    padding: 10px;
+}
+.about-inner-links li a,.solutions-inner-links li a{
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.about-links:hover .about-inner-links{
+    display: block;
+    position: absolute;
+}
+
+.solutions-links:hover .solutions-inner-links{
+    display: block;
+    position: absolute;
+}
+
+
+@media all and (max-width:1125px){
+
+    header .info h2{
+        font-size: 4em;
+    }
+}
+
+@media all and (max-width:1015px){
+    header .info h2{
+        font-size: 3.5em;
+    }
+
+    header .info p{
+        font-size: 1.35em;
+    }
+}   
+
+@media all and (max-width:890px){
+    header .info{
+        width: 60%;
+    }
+    header .info h2{
+        font-size: 3em;
+    }
+
+    header .info p{
+        font-size: 1.35em;
+    }
+}   
+
+@media all and (max-width:768px){
+
+    header .info{
+        width: 70%;
+    }
+
+    header nav{
+        height: 75px;
+    }
+
+    header nav .logo{
+        top: 0;
+        left: 25px;
+    }
+
+    header nav .links{
+        width: 100%;
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+        text-align: center;
+        display: block;
+        padding: 0;
+        top: 75px;
+        right: 100%;
+    }
+
+    header nav .links li{
+        display: block;
+        background-color: white;
+        padding: 5px 0;
+    }
+
+    header nav .links li a{
+        color: rgba(150,30,255,0.8) ;
+    }
+    
+    .menu{
+        position: relative;
+        font-size: 1.5em;
+        display: inline-block;
+        left: 90%;
+        cursor: pointer;
+    }
+}
+
+@media all and (max-width:550px){
+    header .info{
+        width: 100%;
+    }
+    header .info h2{
+        font-size: 3em;
+    }
+
+    header .info p{
+        font-size: 1.35em;
+    }
+} 
+
+@media all and (max-width:390px){
+    header .info{
+        width: 100%;
+    }
+    header .info h2{
+        font-size: 2.8em;
+    }
+
+    header .info p{
+        font-size: 1.25em;
+    }
+} 
+
+@media all and (max-width:300px){
+    header .info{
+        width: 100%;
+    }
+    header .info h2{
+        font-size: 2.5em;
+    }
+
+    header .info p{
+        font-size: 1em;
+    }
+} 
