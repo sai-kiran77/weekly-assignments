@@ -1,0 +1,80 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper{
+    perspective: 400px;
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.button-wrapper{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5em;
+    width: 80%;
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+}
+
+.button-wrapper div{
+    flex: 1 0 auto;
+    padding: 0 10px;
+}
+
+.cube-wrapper{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transform: translateZ(-100px);
+    transition: transform 1s;
+}
+
+.cube{
+    background-color: rgba(255,0,0,0.6);
+    color: white;
+    font-size: 3em;
+    font-weight: bold;
+    height: 100%;
+    width: 100%;
+    border: 1px solid black;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 1s;
+}
+
+.front{
+    transform: rotateY(0deg) translateZ(100px);
+}
+
+.back{
+    transform: rotateY(180deg) translateZ(100px);
+}
+
+.top{
+    transform: rotateX(90deg) translateZ(100px);
+}
+
+.bottom{
+    transform: rotateX(-90deg) translateZ(100px);
+}
+
+.left{
+    transform: rotateY(-90deg) translateZ(100px);
+}
+
+.right{
+    transform: rotateY(90deg) translateZ(100px);
+}
