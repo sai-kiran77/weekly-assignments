@@ -10,6 +10,7 @@ menu.addEventListener('click', (e) => {
 
 menuOpen.addEventListener('click',()=>{
     navLinks.style.right = "0%"
+    navLinks.style.display = 'block'
 })
 
 menuClose.addEventListener('click',(e)=>{

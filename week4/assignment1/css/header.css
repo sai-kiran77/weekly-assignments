@@ -201,10 +201,11 @@ header .hide{
         border-top: 2px solid black;
         border-bottom: 2px solid black;
         text-align: center;
-        display: block;
+        display: none;
         padding: 0;
         top: 75px;
         right: 100%;
+        transition: right 800ms ease-in-out;
     }
 
     header nav .links li{
