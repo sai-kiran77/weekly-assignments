@@ -12,11 +12,6 @@ a{
     text-decoration: none;
 }
 
-/* #map{
-    margin: auto;
-    padding: 30px 0;
-    background-image: url("../images/google-maps-icon-marker.png");
-    height: 400px;
-    width: 50%;
-    background-repeat: no-repeat;
-} */
+button{
+    transition: color 800ms,background-color 800ms;
+}

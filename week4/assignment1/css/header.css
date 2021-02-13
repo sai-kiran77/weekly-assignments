@@ -19,6 +19,15 @@ header{
     height: 380px;
 }
 
+header nav .links{
+    width: 50%;
+}
+
+header ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+
 header li{
     display: inline-block;
 }
@@ -89,7 +98,7 @@ header nav .links{
 header nav a{
     color: rgba(255,255,255);
     text-decoration: none;
-    padding: 0 20px;
+    /* padding: 0 20px; */
     font-size: 1.2em;
     transition: 'text-decoration' 2s;
 }
@@ -98,9 +107,6 @@ header nav a{
     color: rgba(150,30,255,0.8) ;
 }
 
-header nav a:hover{
-    text-decoration: underline;
-}
 
 header .logo-img{
     height: 55px;
@@ -128,6 +134,7 @@ header .hide{
 
 .about-inner-links,.solutions-inner-links{
     display: none;
+    position: absolute;
     background-color: rgba(255, 255, 255,0.6);
 }
 
@@ -137,17 +144,40 @@ header .hide{
     padding: 10px;
 }
 .about-inner-links li a,.solutions-inner-links li a{
+    /* display: inline-block; */
     color: rgba(0, 0, 0, 0.7);
+}
+
+.about-inner-links li a:hover::after,.solutions-inner-links li a:hover::after{
+    background-color: rgba(255,255,255);
 }
 
 .about-links:hover .about-inner-links{
     display: block;
-    position: absolute;
 }
 
 .solutions-links:hover .solutions-inner-links{
     display: block;
-    position: absolute;
+}
+
+header nav .links a::after{
+    content: "";
+    width: 100%;
+    background-color: rgba(255,255,255);
+    height: 2px;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    transition: all 1s;
+    transform: scale(0,1);
+    display: block;
+}
+header nav .links a:hover::after{
+    transform: scale(1,1);
+}
+
+.opened a:hover::after{
+    background-color: rgba(150,30,255,0.8);
 }
 
 
@@ -183,6 +213,19 @@ header .hide{
 
 @media all and (max-width:768px){
 
+    
+    header ul{
+        flex-direction: column;
+    }
+
+    .about-links:hover .about-inner-links{
+        display: none;
+    }
+    
+    .solutions-links:hover .solutions-inner-links{
+        display: none;
+    }
+
     header .info{
         width: 70%;
     }
@@ -209,9 +252,11 @@ header .hide{
     }
 
     header nav .links li{
-        display: block;
+        /* display: block; */
         background-color: white;
         padding: 5px 0;
+        display: flex;
+        justify-content: center;
     }
 
     header nav .links li a{
