@@ -6,7 +6,9 @@ const customerStories = document.querySelector('#customer-stories');
 const contentImg = document.querySelector('#content-img') ;
 const contentHead = document.querySelector('#content-head'); 
 const contentBody = document.querySelector('#content-body');
+const partnerLogosRenderDiv = document.querySelector('.renderlogos');
 const contentLinks = document.querySelectorAll('.link');
+
 
 const partnersJson = {
     "partners": [
@@ -168,7 +170,7 @@ const paginationForward = (pagination) => {
         div.appendChild(logosArray[j]);
         j++;
     }
-    partnerSection.insertBefore(div, partnerSection.children[1]);
+    partnerLogosRenderDiv.insertBefore(div, partnerLogosRenderDiv.children[1]);
     // console.log('break')
 }
 
@@ -184,7 +186,7 @@ const paginationBackward = (pagination) => {
         }
         div.appendChild(logosArray[j]);
     }
-    partnerSection.insertBefore(div, partnerSection.children[1]);
+    partnerLogosRenderDiv.insertBefore(div, partnerLogosRenderDiv.children[1]);
 }
 
 function renderLogos() {
@@ -238,3 +240,5 @@ function storiesRenderFunc(count) {
 }
 
 storiesRenderFunc(count);
+
+// console.log(getComputedStyle(partnerLogosRenderDiv))
