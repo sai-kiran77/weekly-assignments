@@ -120,6 +120,8 @@ function setContent(id,element){
 contentLinks.forEach(element =>{
     // element.style.color = "#fff"
     element.addEventListener('click',(e)=>{
+        // console.log(element)
+        console.log(this)
         contentLinks.forEach(ele=>ele.style.color = "#fff");
         setContent(e.target.id,element);
     })

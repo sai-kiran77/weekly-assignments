@@ -45,12 +45,14 @@ img.article-img{
     display: flex;
     width: 100%;
     margin: auto;
+    position: relative;
 }
 
 .press-main .twitter .wrapper .content{
     display: flex;
     flex-direction: column;
     width: 100%;
+    z-index: 2;
 }
 
 .press-main .twitter .wrapper .content .head{
@@ -102,6 +104,7 @@ img.article-img{
 .press-main .twitter .wrapper .content .body .card{
     border: 1px solid rgba(0,0,0,0.25);
     border-radius: 15px;
+    transition: border 0.5s;
 }
 
 .press-main .twitter .wrapper .content .body .card .card-img{
@@ -168,6 +171,51 @@ img.article-img{
 .press-main .end-links a{
     font-size: 1em;
 }
+
+#twimg img{
+    width: 50%;
+    height: auto;
+    margin: auto;
+}
+
+.twitter .wrapper .hover-effect{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(76, 179, 217, 0.1);
+    display: none;
+}
+
+.content .head .fa-twitter{
+    align-self: flex-start;
+    color:rgba(76, 179, 217, 0.3);
+}
+
+.fa{
+    transition: color 0.4s;
+}
+
+.twitter .wrapper:hover .content .body .card{
+    border: 1px solid rgba(25,25,25,0.7);
+}
+
+.twitter .wrapper:hover .hover-effect{
+    display: block;
+    z-index: 1;
+}
+
+.twitter .wrapper:hover .content .head .fa-twitter{
+    color:rgba(76, 179, 217, 1);
+}
+
+.twitter .footer .fa-heart-o:hover{
+    color:rgba(214, 47, 47, 1);
+}
+
+.twitter .footer .fa-sign-out:hover{
+    color:rgba(15, 53, 191, 1);
+}
+
 
 @media all and (max-width:900px){
     .press-main .articles{
