@@ -61,11 +61,6 @@
     width: 100%;
     border:none;
     border-bottom: 2px solid orange;
-    /* width: 25%;
-    border-right: 2px solid orange;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between; */
 }
 
 .solutions .mainSolutions .links a{
@@ -85,14 +80,9 @@
     width: 100%;
     padding:0;
     padding-top:40px;
-
-    /* width: 78%;
-    padding-left: 40px;
-    display: block; */
 }
 
 .solutions .content > img {
-    /* padding-top: 30px; */
     max-height: 70px;
     max-width: 90px;
 }

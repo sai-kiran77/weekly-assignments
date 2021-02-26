@@ -114,13 +114,10 @@ function setContent(id,element){
     contentHead.style.color = solutionsObj[id].color;
     contentBody.innerText = solutionsObj[id].body;
     element.style.color = solutionsObj[id].color;
-    // document.querySelector(`#${id}`).classList.add('active')
-}
+ }
 
 contentLinks.forEach(element =>{
-    // element.style.color = "#fff"
     element.addEventListener('click',(e)=>{
-        // console.log(element)
         console.log(this)
         contentLinks.forEach(ele=>ele.style.color = "#fff");
         setContent(e.target.id,element);
@@ -138,28 +135,6 @@ if (pagination === 1) {
     leftArrow.classList.add('disable')
 }
 
-// function paginationFunc(pagination) {
-//     while (div.hasChildNodes()) {
-//         div.removeChild(div.firstChild);
-//     }
-//     // for (let i = 0 + ((pagination - 1) * 5); i < pagination * 5; i++) {
-//     //     if (i >= logosArray.length) {
-//     //         break;
-//     //     }
-//     //     div.appendChild(logosArray[i]);
-//     // }
-//     for (let i = (pagination - 1) * 5; i < (pagination * 5); i++) {
-//         if (j >= logosArray.length || j < 0) {
-//             j = 0
-//         }
-//         console.log(j)
-//         div.appendChild(logosArray[j]);
-//         j++;
-//     }
-//     partnerSection.insertBefore(div, partnerSection.children[1]);
-//     console.log('break')
-// }
-
 const paginationForward = (pagination) => {
     while (div.hasChildNodes()) {
         div.removeChild(div.firstChild);
@@ -173,7 +148,6 @@ const paginationForward = (pagination) => {
         j++;
     }
     partnerLogosRenderDiv.insertBefore(div, partnerLogosRenderDiv.children[1]);
-    // console.log('break')
 }
 
 const paginationBackward = (pagination) => {
@@ -196,7 +170,6 @@ function renderLogos() {
     partnersJson.partners.map(partner => {
         const img = document.createElement('img');
         img.src = partner.imgUrl;
-        // console.log(partner.className)
         img.classList.add(partner.className);
         logosArray.push(img);
     })
@@ -238,7 +211,7 @@ function storiesRenderFunc(count) {
     div1.appendChild(h3);
     div1.appendChild(p);
     customerStories.insertBefore(div1, customerStories.children[1]);
-    // setTimeout(() => storiesRenderFunc(++count), 10000);
+    setTimeout(() => storiesRenderFunc(++count), 10000);
 }
 
 storiesRenderFunc(count);

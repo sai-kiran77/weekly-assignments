@@ -27,11 +27,6 @@
         border-bottom:none;
         border-right: 2px solid orange;
     }
-
-    /* .solutions .mainSolutions .links a{
-        padding: 8px 10px;
-    } */
-
     .solutions .mainSolutions .content{
         display: flex;
         flex-direction: column;
