@@ -1,0 +1,5 @@
+@media all and (min-width:650px){
+    .renderlogos .logos img:nth-last-child(2){
+        display: inline-block;
+    }
+}

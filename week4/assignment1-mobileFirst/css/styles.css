@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Titillium Web', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+button{
+    transition: color 800ms,background-color 800ms;
+}
+
+li{
+    list-style-type: none;
+}

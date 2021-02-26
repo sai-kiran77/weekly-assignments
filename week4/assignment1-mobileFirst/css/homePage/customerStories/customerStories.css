@@ -1,0 +1,69 @@
+.customerStoriesWrapper{
+    position: relative;
+    width: 100%;
+    color: rgba(255,255,255,1);
+    height: 550px;
+    font-size: 1.5em;
+    background-color: #edc7b7;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.customerStories{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    z-index: 3;
+}
+
+.customerStories div{
+    margin: 25px auto;
+}
+
+.customerStories div h3{
+    font-weight: bold;
+    font-size: 1.25em;
+}
+
+.customerStories h1{
+    font-weight: lighter;
+    font-size: 1.45em;
+    padding: 10px 0;
+}
+.customerStories p{
+    padding: 20px 0;
+    line-height: 1.2;
+    font-size: 0.75em;
+    font-weight: lighter;
+}
+
+.customerStories button{
+    padding: 10px 45px;
+    border-radius: 25px;
+    color: rgba(255, 255, 255,1);
+    outline: none;
+    border: 3px solid rgba(255,255,255,1);
+    background-color: inherit;
+    font-size: 1em;
+    margin: 25px;
+}
+
+.customerStories button:hover {
+    background-color: rgba(255,255,255,0.4);
+}
+
+.overlay{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    background-color: rgba(0,0,0,0.5);
+    
+}

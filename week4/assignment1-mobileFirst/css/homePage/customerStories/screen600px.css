@@ -1,0 +1,17 @@
+@media all and (min-width:600px){
+    .customerStories h1{
+        font-size: 2.3em;
+        padding: 10px 0;
+    }
+    
+    .customerStories div h3{
+        font-size: 1.8em;
+    }
+
+    .customerStories div p{
+        font-size: 1.2em;
+    }
+    .customerStories{
+        width: 80%;
+    }
+}

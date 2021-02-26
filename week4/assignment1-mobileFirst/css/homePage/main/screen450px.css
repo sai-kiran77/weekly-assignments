@@ -1,0 +1,11 @@
+@media all and (min-width:450px){
+    .n-frnds-video{
+        width: 350px;
+        height: 250px;
+    }
+    .main-content .wrapper{
+        width: 88%;
+    }
+    
+
+}

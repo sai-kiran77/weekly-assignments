@@ -1,0 +1,14 @@
+@media all and (min-width:768px){
+    .renderlogos .logos img:last-child{
+        display: inline-block;
+    }
+    .leftArrow{
+        width: 10%;
+    }
+    .rightArrow{
+        width: 10%;
+    }
+    .partners .logos{
+        width: 80%;
+    }
+}

@@ -1,0 +1,11 @@
+@media all and (min-width:420px){
+    header .info{
+        width:75% ;
+    }
+    header .info h2{
+        font-size: 2em;    
+    }
+    header .info p{
+        font-size: 1.3em;
+    }
+}

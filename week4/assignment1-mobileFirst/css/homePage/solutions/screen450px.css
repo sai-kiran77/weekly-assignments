@@ -1,0 +1,15 @@
+@media all and (min-width:450px){
+    .solutions .wrapper{
+        width: 80%;
+    }
+    .button-wrapper{
+        flex-direction: row;
+        height: auto;
+    }
+    .solutions .moreInfo button{
+        width: 25%;
+    }
+    .solutions .content >img{
+        max-height: 70px;
+    }
+}
