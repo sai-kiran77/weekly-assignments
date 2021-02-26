@@ -1,0 +1,51 @@
+.press{
+    background-image: linear-gradient(to bottom right ,rgba(20, 38, 124, 1),rgba(128, 155, 249,0.9));
+    clear: both;
+    color: rgba(255,255,255,0.9);
+}
+
+.press h2{
+    text-align: center;
+    font-size: 3em;
+    padding: 50px 0;
+}
+
+.press .articles{
+    width: 80%;
+    padding: 25px 0;
+    margin: auto;
+    height: auto;
+    display: flex;
+    border-bottom:1px solid rgba(255,255,255,0.5) ;
+}
+
+.press .articles .article{
+    width: 33.3333%;
+    margin: 0 auto;
+    display: inline;
+    /* float: left; */
+    padding: 0 15px;
+}
+
+.press .articles .article p{
+    padding: 12px 0 6px;
+}
+
+.article a{
+    color: rgba(255,255,255,0.9);
+}
+
+.press h5{
+    padding: 10px;
+    font-size: 2em;
+    text-align: center;
+    font-weight: lighter;
+}
+
+.press > a{
+    display: block;
+    text-align: center;
+    padding: 15px 0 20px;
+    color: wheat;
+    text-transform: uppercase;
+}

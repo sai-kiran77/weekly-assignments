@@ -1,0 +1,60 @@
+@media all and (max-width:768px){
+
+    
+    header ul{
+        flex-direction: column;
+    }
+
+    .about-links:hover .about-inner-links{
+        display: none;
+    }
+    
+    .solutions-links:hover .solutions-inner-links{
+        display: none;
+    }
+
+    header .info{
+        width: 70%;
+    }
+
+    header nav{
+        height: 75px;
+    }
+
+    header nav .logo{
+        top: 0;
+        left: 25px;
+    }
+
+    header nav .links{
+        width: 100%;
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+        text-align: center;
+        display: none;
+        padding: 0;
+        top: 75px;
+        right: 100%;
+        transition: right 800ms ease-in-out;
+    }
+
+    header nav .links li{
+        /* display: block; */
+        background-color: white;
+        padding: 5px 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    header nav .links li a{
+        color: rgba(150,30,255,0.8) ;
+    }
+    
+    .menu{
+        position: relative;
+        font-size: 1.5em;
+        display: inline-block;
+        left: 90%;
+        cursor: pointer;
+    }
+}

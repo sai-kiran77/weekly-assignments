@@ -1,0 +1,10 @@
+@media all and (max-width:600px){
+    .main-content .wrapper{
+        width: 95%;
+    }
+
+    .n-frnds-video{
+        height: 250px;
+        width: 400px;
+    }
+}

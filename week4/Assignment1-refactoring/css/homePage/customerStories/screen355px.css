@@ -1,0 +1,14 @@
+@media all and (max-width:355px){
+    .customerStories h1{
+        font-size: 1.45em;
+        padding: 10px 0;
+    }
+    
+    .customerStories div h3{
+        font-size: 1.25em;
+    }
+
+    .customerStories div p{
+        font-size: 0.75em;
+    }
+}

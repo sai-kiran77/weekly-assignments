@@ -1,0 +1,12 @@
+@media all and (max-width:890px){
+    header .info{
+        width: 60%;
+    }
+    header .info h2{
+        font-size: 3em;
+    }
+
+    header .info p{
+        font-size: 1.35em;
+    }
+}   

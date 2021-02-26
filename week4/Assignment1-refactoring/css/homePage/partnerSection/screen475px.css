@@ -1,0 +1,17 @@
+@media all and (max-width:475px){
+    .renderlogos .logos img:nth-last-child(3){
+        display: none;
+    }
+    .partners h1{
+        font-size: 3em;
+    }
+    .leftArrow{
+        width: 20%;
+    }
+    .rightArrow{
+        width: 20%;
+    }
+    .partners .logos{
+        width: 60%;
+    }
+}

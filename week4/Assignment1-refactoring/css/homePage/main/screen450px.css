@@ -1,0 +1,13 @@
+@media all and (max-width:450px){
+    .n-frnds-video{
+        width: 280px;
+        height: 200px;
+    }
+    .numbers .number span{
+        font-size: 3em;
+    }
+    .numbers .number h4{
+        font-size: 1em;
+    }
+
+}

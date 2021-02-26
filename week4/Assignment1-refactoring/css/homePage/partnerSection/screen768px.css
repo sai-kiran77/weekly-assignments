@@ -1,0 +1,14 @@
+@media all and (max-width:768px){
+    .renderlogos .logos img:last-child{
+        display: none;
+    }
+    .leftArrow{
+        width: 15%;
+    }
+    .rightArrow{
+        width: 15%;
+    }
+    .partners .logos{
+        width: 70%;
+    }
+}

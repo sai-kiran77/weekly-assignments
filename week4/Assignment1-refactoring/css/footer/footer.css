@@ -1,0 +1,61 @@
+footer{
+    position: relative;
+    width: 100%;
+    height: 165px;
+    color: white;
+    /* clear: both; */
+    background-color: #102749;
+}
+
+footer .logo{
+    position: absolute;
+    left: 60px;
+    top: 45%;
+}
+
+footer .social{
+    position: absolute;
+    right: 60px;
+    top: 42%;
+}
+
+footer .social > *{
+    font-weight: bolder;
+    margin: 0 5px;
+    font-size: 1.1em;
+}
+
+footer .social .icons>*{
+    padding: 10px;
+    font-size: 1.4em;
+}
+
+.social a{
+    font-size: 1em;
+    font-weight: lighter;
+    color: rgba(255, 255, 255, 1);
+}
+
+footer .social h5,footer .social .icons{
+    display: inline-block;
+}
+
+footer > p{
+    display: block;
+    position: absolute;
+    left: 40%;
+    bottom: 16px;
+    font-size: 10px;
+    color: rgba(255,255,255,0.15);
+    line-height: 1.25;
+    letter-spacing: 0.7px;
+}
+
+footer p > span {
+    color: rgba(255, 255, 255, 0.4);
+    font-weight: bolder;
+}
+
+footer p > span:hover{
+    color: rgba(255, 255, 255, 1);
+}
