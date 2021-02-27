@@ -19,8 +19,8 @@ window.addEventListener('scroll', () => {
 window.addEventListener('resize', () => {
     if(window.innerWidth > 768){
         links.classList.remove('show-links','hide-links')
-        menuOpen.classList.remove('hide')
-        menuClose.classList.add('hide')
+        // menuOpen.classList.remove('hide')
+        // menuClose.classList.add('hide')
     }
 })
 

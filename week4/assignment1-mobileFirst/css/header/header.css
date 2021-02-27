@@ -36,7 +36,7 @@ header nav .logo{
     color: blue;
 }
 
-.opened nav .links,header nav .links{
+header nav .links{
     position: absolute;
     top: 80px;
     right: 100%;
@@ -48,7 +48,7 @@ header nav .logo{
     transition: all 0.5s ease-in-out;
 } 
 
-.opened nav .links > ul, header nav .links > ul{
+header nav .links > ul{
     display: flex;
     flex-direction: column;
 }
@@ -108,7 +108,7 @@ header nav .links a:hover::after{
 }
 
 
-.opened nav .menu,header nav .menu{
+header nav .menu{
     display: block;
     position: absolute;
     top: 52px;
