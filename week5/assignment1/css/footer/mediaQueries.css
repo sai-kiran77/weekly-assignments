@@ -1,0 +1,31 @@
+@media all and (min-width:768px) {
+    footer .stars{
+        display: block;
+    }
+    footer .logo{
+        left: 45px;
+        top: 52%;
+        transform: translateY(-50%);
+    }   
+
+    footer > .social{
+        display: flex;
+        top: 50px;
+        right: 100px;
+        justify-content: flex-end;
+        align-items: center;
+     }
+     footer .social .icons{
+         padding: 10px;
+    }
+    footer .social .icons>*{
+        padding: 10px;
+        font-size: 1.8em;
+    }
+    .social a{
+        padding: 10px;
+    }
+    footer h5{
+        padding: 10px;
+    }
+}

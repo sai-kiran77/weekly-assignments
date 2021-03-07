@@ -1,0 +1,16 @@
+1.Create a login option in header.
+When user click on login redirect to login page.
+On login page there will be a header without login option, 
+footer and only mobile number login field with submit button.
+
+Login API:
+POST
+https://netco-indo-test.nfrnds.net:20003/fmcg-dd/login
+Login Request Body:
+{"msisdn":"919530697527","loginType":"KAIZALA","groupId":"","KIS":"","actionPackageId":"","version":"","minorVersion":""}
+
+InitialData API:
+GET
+https://netco-indo-test.nfrnds.net:20003/fmcg-dd/initialData
+in headers you have to send:
+Netco-JWT: value of the token 

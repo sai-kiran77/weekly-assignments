@@ -1,0 +1,6 @@
+3.Create a game called Falling Letters.
+Start Game Button
+After pressing start the game Alphabets will fall from top to bottom with some animation.
+User with the keyboard has to press the same letter to dismiss the falling of a particular letter.
+If the letter touches the bottom then Game is over.
+You can calculate the score also for each letter dismissed. 

@@ -1,0 +1,98 @@
+.form-data{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    color: white;
+}
+.form-data form{
+    height: 350px;
+    width: 350px;
+    background-color: #2D2F36;
+    box-shadow: 4px 4px 10px #2D2F36;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.form-data form > div{
+    position: relative;
+}
+
+.form-data form > div > label{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10px;
+}
+
+.form-data form label{
+    color: black;
+    transition: all 300ms;
+    font-size: 18px;
+}
+
+.form-data form input{
+    padding: 15px 0 0 0;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    border-bottom: 3px solid violet;
+}
+
+.form-data form .valid{
+    border-bottom: 3px solid green;
+}
+
+.form-data form .not-valid{
+    border-bottom: 3px solid red;
+}
+input::placeholder{
+    opacity: 0;
+}
+
+input:focus::placeholder{
+    opacity: 1;
+}
+
+.form-data form input:focus + label,.form-data form input:valid + label{
+    color: blue;
+    font-size: 14px;
+    top: 4px;
+    left: 2px;
+    font-weight: bold;
+}
+
+.form-data form button{
+    color: #707075;
+    transition: color 300ms;
+    background-color: inherit;
+    border: 3px solid violet;
+    outline: none;
+    padding: 15px 50px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.form-data form button:hover{
+    color:violet;
+    border:3px solid #707075
+}
+
+.form-data form .invalid-button{
+    cursor: not-allowed;
+}
+
+#status{
+    font-size:18px;
+    font-weight: bold;
+}
+
+.success{
+    color: green;
+}
+
+.error{
+    color: red;
+}

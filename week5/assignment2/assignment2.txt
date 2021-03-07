@@ -1,0 +1,6 @@
+2. Create a image slider or carousel.
+ Create this with javascript. You have to do multiple images in one section and one image in full section.
+For navigation you have to apply dots and left, right arrows.
+ Limitation you have to create 2 keys for accessing these navigation.
+a. showDots
+b. showNavigation

@@ -1,0 +1,58 @@
+@media all and (min-width:400px){
+    .customerStories h1{
+        font-size: 2em;
+        padding: 10px 0;
+    }
+    
+    .customerStories div h3{
+        font-size: 1.5em;
+    }
+
+    .customerStories div p{
+        font-size: 1em;
+    }
+}
+
+@media all and (min-width:600px){
+    .customerStories h1{
+        font-size: 2.3em;
+        padding: 10px 0;
+    }
+    
+    .customerStories div h3{
+        font-size: 1.8em;
+    }
+
+    .customerStories div p{
+        font-size: 1.2em;
+    }
+    .customerStories{
+        width: 80%;
+    }
+}
+
+@media all and (min-width:768px){
+
+    .customerStories{
+        width: 75%;
+    }
+
+    .customerStories h1{
+        font-size: 3em;
+    }
+
+    .customerStories div{
+        margin: 10px auto;
+    }
+
+    .customerStories div h3{
+        font-size: 2em;
+    }
+
+    .customerStories button{
+        margin: 15px auto;
+        font-size: 0.75em;
+        border: 2px solid rgba(255,255,255,1);
+    }
+
+}
