@@ -30,12 +30,14 @@ function callback(data) {
             },
             success: function (data) {
                 console.log(data)
+                loginStatus.classList.remove('loader')
                 loginStatus.innerText = 'Login success'
                 loginStatus.classList.add('success')
                 loginStatus.classList.remove('error')
                 location.href = '../html/app.html'
             },
             error: function (request, textStatus, errorThrown) {
+                loginStatus.classList.remove('loader')
                 console.log(request, textStatus, errorThrown)
                 loginStatus.innerText = data.responseDesc
                 loginStatus.classList.add('error')
@@ -45,12 +47,16 @@ function callback(data) {
     } else {
         console.log(data)
         loginStatus.innerText = data.responseDesc
+        loginStatus.classList.remove('loader')
         loginStatus.classList.add('error')
         loginStatus.classList.remove('success')
     }
 }
 
 loginButton.addEventListener('click', (e) => {
+    loginStatus.classList.add('loader')
+    loginStatus.classList.remove('error')
+    loginStatus.classList.remove('success')
     //post request using jquery ajax
     jQuery.ajax({
         'type': 'POST',
@@ -72,6 +78,7 @@ loginButton.addEventListener('click', (e) => {
             console.log(textStatus);
             console.log(errorThrown);
             loginStatus.innerText = 'unable to verify data'
+            loginStatus.classList.remove('loader')
             loginStatus.classList.add('error')
             loginStatus.classList.remove('success')
         }
