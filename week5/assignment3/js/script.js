@@ -65,7 +65,9 @@ window.addEventListener('keydown', (e) => {
         if (element.value === e.key.toLowerCase()) {
             actualScore.innerText = ++score
             element.remove()
+            return false
         }
+        return true
     })
 })
 
