@@ -1,24 +1,25 @@
 const mobileInput = document.querySelector('#mobile')
 const loginButton = document.querySelector('#login')
 const loginStatus = document.querySelector('#status')
+const invalidInput = document.querySelector('.input-error')
+const formLoader = document.querySelector('#form-loader')
 
 mobileInput.addEventListener('keyup', (e) => {
     loginStatus.innerText = ""
     if (e.target.value.length === 12) {
-        loginStatus.classList.remove('error')
+        invalidInput.style.display = 'none'
         mobileInput.classList.add('valid')
         mobileInput.classList.remove('not-valid')
         loginButton.classList.remove('invalid-button')
         loginButton.disabled = false
     } else {
+        invalidInput.style.display = 'block'
         loginButton.classList.add('invalid-button')
-        loginStatus.innerText = "mobile number should be 12 digits"
         mobileInput.classList.add('not-valid')
         mobileInput.classList.remove('valid')
         loginButton.disabled = true
     }
 })
-loginStatus.classList.add('error')
 
 function callback(data) {
     if (data.token) {
@@ -30,33 +31,35 @@ function callback(data) {
             },
             success: function (data) {
                 console.log(data)
-                loginStatus.classList.remove('loader')
+                formLoader.style.display = 'none'
                 loginStatus.innerText = 'Login success'
                 loginStatus.classList.add('success')
                 loginStatus.classList.remove('error')
                 location.href = '../html/app.html'
             },
             error: function (request, textStatus, errorThrown) {
-                loginStatus.classList.remove('loader')
-                console.log(request, textStatus, errorThrown)
-                loginStatus.innerText = data.responseDesc
+                console.log(request)
+                console.log(textStatus)
+                console.log(errorThrown)
+                if(request.responseJSON.status === 403){
+                    loginStatus.innerText = 'unAuthorised!'
+                }
+                formLoader.style.display = 'none'
                 loginStatus.classList.add('error')
                 loginStatus.classList.remove('success')
             }
         })
     } else {
         console.log(data)
+        formLoader.style.display = 'none'
         loginStatus.innerText = data.responseDesc
-        loginStatus.classList.remove('loader')
         loginStatus.classList.add('error')
         loginStatus.classList.remove('success')
     }
 }
 
 loginButton.addEventListener('click', (e) => {
-    loginStatus.classList.add('loader')
-    loginStatus.classList.remove('error')
-    loginStatus.classList.remove('success')
+    formLoader.style.display = 'block'
     //post request using jquery ajax
     jQuery.ajax({
         'type': 'POST',
@@ -77,8 +80,8 @@ loginButton.addEventListener('click', (e) => {
             console.log(request)
             console.log(textStatus);
             console.log(errorThrown);
+            formLoader.style.display = 'none'
             loginStatus.innerText = 'unable to verify data'
-            loginStatus.classList.remove('loader')
             loginStatus.classList.add('error')
             loginStatus.classList.remove('success')
         }
