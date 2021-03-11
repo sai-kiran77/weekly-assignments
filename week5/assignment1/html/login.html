@@ -62,9 +62,12 @@
         <form>
         <h1>Login</h1>
             <div>
-                <input type="tel" name="mobile" id="mobile" placeholder="1234567890" autocomplete="off" required>
-                <label for="mobile">mobile</label>
-                <span class="input-error" >mobile number should be 12 digits</span>
+                <i class="fa fa-mobile" aria-hidden="true"></i>
+                <span class="iv-success hide"><i class="fas fa-check-circle"></i></span>
+                <span class="inv-error hide"><i class="fas fa-exclamation-triangle"></i></span>
+                <input type="tel" name="mobile" id="mobile" autocomplete="off" required>
+                <label for="mobile">Mobile</label>
+                <span class="input-error" >Mobile number should be 12 digits</span>
             </div>
             <div id="status"></div>
             <button id="login" class="invalid-button" type="button" disabled>Login</button>

@@ -3,52 +3,34 @@ const loginButton = document.querySelector('#login');
 const loginStatus = document.querySelector('#status');
 const invalidInput = document.querySelector('.input-error');
 const formLoader = document.querySelector('#form-loader');
+const successIcon = document.querySelector('.iv-success')
+const errorIcon = document.querySelector('.inv-error')
 
 mobileInput.addEventListener('keyup', (e) => {
     loginStatus.innerText = "";
     if (e.target.value.length === 12) {
         invalidInput.style.display = 'none';
-        mobileInput.classList.add('valid');
-        mobileInput.classList.remove('not-valid');
+        successIcon.classList.remove('hide')
+        errorIcon.classList.add('hide')
         loginButton.classList.remove('invalid-button');
         loginButton.disabled = false;
     } else {
         invalidInput.style.display = 'block';
         loginButton.classList.add('invalid-button');
-        mobileInput.classList.add('not-valid');
-        mobileInput.classList.remove('valid');
+        successIcon.classList.add('hide')
+        errorIcon.classList.remove('hide')
         loginButton.disabled = true;
     }
 })
 
 function callback(data) {
-    if (data.token) {
-        $.ajax({
-            type: 'GET',
-            url: "https://netco-indo-test.nfrnds.net:20003/fmcg-dd/initialData",
-            headers: {
-                'Netco-JWT': data.token
-            },
-            success: function (data) {
-                console.log(data);
-                formLoader.style.display = 'none';
-                loginStatus.innerText = 'Login success';
-                loginStatus.classList.add('success');
-                loginStatus.classList.remove('error');
-                location.href = '../html/app.html';
-            },
-            error: function (request, textStatus, errorThrown) {
-                console.log(request);
-                console.log(textStatus);
-                console.log(errorThrown);
-                if(request.responseJSON.status === 403){
-                    loginStatus.innerText = 'unAuthorised!';
-                }
-                formLoader.style.display = 'none';
-                loginStatus.classList.add('error');
-                loginStatus.classList.remove('success');
-            }
-        })
+    if (data.responseCode == 200) {
+        formLoader.style.display = 'none';
+        loginStatus.innerText = 'Login success';
+        loginStatus.classList.add('success');
+        loginStatus.classList.remove('error');
+        localStorage.setItem('userData', JSON.stringify(data))
+        location.replace('../html/app.html')
     } else {
         console.log(data);
         formLoader.style.display = 'none';
@@ -79,7 +61,6 @@ loginButton.addEventListener('click', (e) => {
         error: function (request, textStatus, errorThrown) {
             console.log(request);
             console.log(textStatus);
-            console.log(errorThrown);
             formLoader.style.display = 'none';
             loginStatus.innerText = 'unable to verify data';
             loginStatus.classList.add('error');
