@@ -1,0 +1,73 @@
+footer{
+    position: relative;
+    width: 100%;
+    height: 165px;
+    color: white;
+    background-color: #102749;
+}
+
+footer .stars{
+    display: none;
+}
+
+footer .logo{
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+}
+
+footer > .social{
+    position: absolute;
+    top: 70px;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    left: 0;
+    right: 0;
+    grid-gap: 0px 10px; 
+ }
+
+ footer .social .icons{
+     grid-column: 1/3;
+     justify-self: center;
+ }
+
+ footer .social .icons>*{
+    padding: 0 10px;
+    font-size: 1.6em;
+}
+
+.social a{
+    font-size: 1em;
+    font-weight: lighter;
+    color: rgba(255, 255, 255, 1);
+    display: inline-block;
+}
+
+footer h5{
+    font-weight: bold;
+    font-size: 1.1em;
+    display: inline-block;
+}
+
+ footer > p{
+     position: absolute;
+     bottom: 10px;
+     left: 50%;
+     transform: translateX(-50%);
+     font-size: 10px;
+    color: rgba(255,255,255,0.15);
+    line-height: 1.25;
+    letter-spacing: 0.7px;
+ }
+
+footer p > span {
+    color: rgba(255, 255, 255, 0.4);
+    font-weight: bolder;
+}
+
+footer p > span:hover{
+    color: rgba(255, 255, 255, 1);
+} 
