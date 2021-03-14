@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Progress Bars</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <input class="input" value="0" type="range" min="0" max="100" />
+    <div class="wrapper">
+      <div class="linear-progress-bar-container">
+        <div class="linear-progress-bar">
+          <span class="loader"><span class="percent">0%</span></span>
+        </div>
+      </div>
+      <div class="circular__progress-bar">
+        <div class="circle">
+          <div class="circle__fill">0%</div>
+          <div class="circle__progress--fill">
+            <svg width="250" height="250">
+              <circle
+                class="progress"
+                cx="125"
+                cy="125"
+                r="125"
+                fill="none"
+                stroke="#009578"
+                stroke-width="23px"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../js/index.js"></script>
+  </body>
+</html>
