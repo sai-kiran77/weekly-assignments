@@ -1,9 +1,9 @@
 body {
-  /* background-color: #aaa; */
+  /* background-color: rgba(0, 0, 0, 0.1); */
   font-family: "Poppins", "sans-serif";
 }
 
-.bgimg-none{
+.bgimg-none nav{
   background-image: linear-gradient(
     43deg,
     #4158d0 0%,
