@@ -7,8 +7,8 @@ const openMenuBar = () => {
         header.classList.add('opened');
     } else if (window.scrollY <= 80 && window.innerWidth > 768) {
         header.classList.remove('opened');
-        links.classList.remove('hide-links');
-        links.classList.remove('show-links');
+        links?links.classList.remove('hide-links'):null;
+        links?links.classList.remove('show-links'):null;
     }
 }
 
@@ -17,8 +17,9 @@ window.addEventListener('scroll', () => {
 })
 
 window.addEventListener('resize', () => {
+    setScroll()
     if(window.innerWidth > 768){
-        links.classList.remove('show-links','hide-links');
+        links?links.classList.remove('show-links','hide-links'):null;
         menuClose.classList.add('hide');
         menuOpen.classList.remove('hide');
     }

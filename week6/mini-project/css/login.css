@@ -9,7 +9,7 @@
 .form-data form {
   height: 350px;
   width: 350px;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.7);
   border-radius: 20px;
   box-shadow: 4px 4px 10px #2d2f36;
   display: flex;
@@ -53,6 +53,7 @@
   border: none;
   outline: none;
   font-size: 18px;
+  background: rgba(255,255,255,0);
   border-bottom: 1px solid black;
 }
 

@@ -214,7 +214,9 @@ const productsHandler = (whsId) => {
                 btnWrapperDiv.classList.add('btn-wrapper');
 
                 div.id = productDetails.productId;
-                img.src = categoriesPreImgUrl + productDetails.smallImgUrl;
+                productDetails.smallImgUrl ?
+                    img.src = categoriesPreImgUrl + productDetails.smallImgUrl :
+                    img.src = '../images/istockphoto-1128687123-612x612.jpg';
                 infoh2.innerText = productDetails.productName;
                 infoh3.innerText = productPrice + '$';
                 plusBtn.innerText = '+';
@@ -307,6 +309,7 @@ const categoriesHandler = (res, whsId) => {
             categories.push(obj);
         }
     })
+    setScroll()
     productsHandler(whsId);
 }
 

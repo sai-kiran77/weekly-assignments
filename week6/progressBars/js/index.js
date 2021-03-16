@@ -13,7 +13,7 @@ input.addEventListener('change', (e) => {
 
     loader.style.width = `${input.value}%`
     linearPercent.innerText = `${input.value}%`
-    circlePercent.innerText = `${input.value}`
+    circlePercent.innerText = `${input.value}%`
     const onethOfProgress = lengthOfProgress / 100
     circularProgress.style.strokeDashoffset = onethOfProgress * (100 - input.value)
 })

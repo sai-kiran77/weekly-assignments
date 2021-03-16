@@ -13,9 +13,9 @@ header{
     height: 85px;
 }
 
-.bgimg-none .logo-img{
+/* .bgimg-none .logo-img{
     filter: none !important;
-}
+} */
 
 header a{
     font-size: 1.2em;

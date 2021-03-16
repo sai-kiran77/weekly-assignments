@@ -1,0 +1,56 @@
+.press{
+    background-image: linear-gradient(to bottom right ,rgba(20, 38, 124, 1),rgba(128, 155, 249,0.9));
+    clear: both;
+    color: rgba(255,255,255,0.9);
+}
+
+.press h2{
+    text-align: center;
+    font-size: 3em;
+    padding: 15px 0;
+}
+
+.press .articles{
+    padding: 25px 0;
+    margin: auto;
+    display: flex;
+    border-bottom:1px solid rgba(255,255,255,0.5) ;
+    flex-direction: column;
+    width: 95%;
+    height: auto;
+}
+
+.press .articles .article{
+    width: 100%;
+    margin: 0 auto;
+    display: inline;
+    padding: 15px;
+}
+
+.press .articles .article p{
+    font-size: 0.95em;
+    padding: 2px 0px;
+    font-weight:lighter;
+}
+
+.article a{
+    color: rgba(255,255,255,0.9);
+}
+
+.press h3{
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.press .articles .article a{
+    font-size: 0.70em;
+    font-weight: normal;
+}
+
+.press > a{
+    display: block;
+    text-align: center;
+    padding: 15px 0 20px;
+    color: wheat;
+    text-transform: uppercase;
+}

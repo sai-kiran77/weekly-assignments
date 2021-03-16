@@ -1,0 +1,202 @@
+.solutions{
+    height: auto;
+    width: 100%;
+    margin: 0 auto;
+    color: rgba(255,255,255,1);
+    background: url("http://www.nfrnds.com/wp-content/uploads/2017/07/pic-banking.jpg") no-repeat center;
+    background-size: cover;
+    position: relative;
+    z-index: 0;
+    line-height: 1.25;
+}
+
+.solutions .index{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    background-color: rgba(0,0,0,0.8);
+}
+
+.solutions .wrapper{
+    width: 95%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+
+.solutions h1{
+    text-align: center;
+    font-size: 3em;
+    font-weight: lighter;
+    padding: 25px 0 50px;
+}
+
+.solutions p{
+    font-size: 1.1em;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.solutions button{
+    padding: 10px 40px;
+    border-radius: 25px;
+    outline: none;
+}
+
+.solutions .mainSolutions{
+    margin: 35px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.solutions .mainSolutions .links{
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    border:none;
+    border-bottom: 2px solid orange;
+}
+
+.solutions .mainSolutions .links a{
+    display: block;
+    font-size: 1.2em;
+    padding: 8px 10px;
+    color: rgba(255,255,255,1);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.solutions .mainSolutions .content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    padding:0;
+    padding-top:40px;
+}
+
+.solutions .content > img {
+    max-height: 70px;
+    max-width: 90px;
+}
+
+.solutions .mainSolutions .content h2{
+    padding: 10px 0;
+    color: orange;
+    font-size: 1.8em;
+    font-weight: bolder;
+}
+
+.solutions .mainSolutions .content p{
+    margin: 20px 0;
+    text-align: center;
+    font-size: 1.3em;
+}
+
+.solutions .mainSolutions .content button,.banking{
+    color: orange ;
+    border: 2px solid orange;
+    background-color: inherit;
+}
+
+.solutions .mainSolutions .content button:hover,.banking:hover{
+    color: white ;
+    background-color: orange;
+    border: 2px solid orange;
+}
+
+.solutions .moreInfo{
+    margin: auto;
+    padding: 15px 0;;
+}
+
+.solutions .moreInfo a{
+    color: inherit;
+}
+
+.solutions .moreInfo button{
+    width: 25%;
+    padding: 10px 0;
+}
+
+.solutions .moreInfo .fmcg{
+    color: rgba(145,150,240,1);
+    background-color: inherit;
+    border: 2px solid rgba(145,150,240,1);
+}
+
+.solutions .moreInfo .fmcg:hover{
+    color: white;
+    background-color: rgba(145,150,240,1);
+}
+
+.solutions .moreInfo .agriculture{
+    color: rgba(145,250,240,1);
+    background-color: inherit;
+    border: 2px solid rgba(145,250,240,1);
+}
+
+.solutions .moreInfo .agriculture:hover{
+    color: white;
+    background-color: rgba(145,250,140,0.5);
+    border: 2px solid rgba(145,250,140,0.5); 
+}
+
+.button-wrapper{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    margin: 10px auto 0;
+    align-items: center;
+    height: 175px;
+}
+.solutions .moreInfo button{
+    width: 75%;
+}
+.solutions .wrapper p{
+    font-size: 1.07em;
+}
+.solutions .mainSolutions .content h2{
+    font-size: 1.5em;
+}
+.solutions .mainSolutions .content p{
+    font-size: 1.2em;
+}
+.solutions .content >img{
+    max-height: 65px;
+}
+
+#banking:hover{
+    color: #ffaf00;
+}
+
+#agriculture:hover{
+    color: #9ec000;
+}
+
+#health:hover{
+    color: #21b334;
+}
+
+#fmcg:hover{
+    color: #00b0bd;
+}
+
+#government:hover{
+    color: #10a1df;
+}
+
+#msme:hover{
+    color: #0767b2;
+}
+
+#retail:hover{
+    color: #0f4ef7;
+}
