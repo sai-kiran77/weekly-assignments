@@ -92,7 +92,7 @@
 
 .catogeries .active::after {
   content: "";
-  border: 3px solid rgba(100, 20, 240, 1);
+  border-bottom: 3px solid rgba(100, 20, 240, 1);
 }
 
 .catogeries .container img {
