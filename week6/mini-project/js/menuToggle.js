@@ -9,11 +9,11 @@ menu.addEventListener('click', (e) => {
 })
 
 menuOpen.addEventListener('click',()=>{
-    navLinks.classList.add('show-links');
-    navLinks.classList.remove('hide-links');
+    navLinks?navLinks.classList.add('show-links'):null;
+    navLinks?navLinks.classList.remove('hide-links'):null;
 })
 
 menuClose.addEventListener('click',(e)=>{
-    navLinks.classList.add('hide-links');
-    navLinks.classList.remove('show-links');
+    navLinks?navLinks.classList.add('hide-links'):null;
+    navLinks?navLinks.classList.remove('show-links'):null;
 })
