@@ -133,8 +133,9 @@ function handleQuantity(btnType) {
         const data = JSON.parse(localStorage.getItem('requiredData'))
         data.map(obj => {
             if (obj.whsId == wholesalersDropdown.value && obj.productId == productId) {
-                const [string, qty] = this.previousElementSibling.innerText.split(':')
-                this.previousElementSibling.innerText = `Qty:${+qty + 1}`
+                const qty = this.previousElementSibling.innerText
+                // const [string, qty] = this.previousElementSibling.innerText.split(':')
+                this.previousElementSibling.innerText = +qty + 1
                 obj.quantity = +qty + 1
             }
         })
@@ -144,8 +145,9 @@ function handleQuantity(btnType) {
         const data = JSON.parse(localStorage.getItem('requiredData'))
         data.map(obj => {
             if (obj.whsId == wholesalersDropdown.value && obj.productId == productId) {
-                const [string, qty] = this.nextElementSibling.innerText.split(':')
-                this.nextElementSibling.innerText = `Qty:${+qty - 1}`
+                const qty = this.nextElementSibling.innerText
+                // const [string, qty] = this.nextElementSibling.innerText.split(':')
+                this.nextElementSibling.innerText = +qty - 1
                 obj.quantity = +qty - 1
             }
         })
@@ -223,7 +225,7 @@ const productsHandler = (whsId) => {
                 plusBtn.addEventListener('click', function () { handleQuantity.call(this, 'plus') })
                 subBtn.innerText = '-';
                 subBtn.addEventListener('click', function () { handleQuantity.call(this, 'sub') })
-                outputBtn.innerText = 'Qty:' + productQuantity;
+                outputBtn.innerText = productQuantity;
 
                 imgWrapperDiv.appendChild(img)
                 infoDiv.appendChild(infoh2);
