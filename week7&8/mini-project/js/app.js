@@ -53,7 +53,7 @@ $.ajax({
     error: function (request, textStatus, errorThrown) {
         if (request.status == 403) console.log('unAuthorized!');
         else if (request.status == 404) console.log(request.responseJSON.error);
-        else if (request.status == 0) console.log('unavle to connect!');
+        else if (request.status == 0) console.log('unable to connect!');
         else console.log(request);
         console.log(textStatus);
     }
@@ -313,7 +313,7 @@ const fetchCategories = (whsId) => {
 }
 
 wholesalersDropdown.addEventListener('change', (e) => {
-    console.log('a');
+    // console.log('a');
     const products = JSON.parse(localStorage.getItem('requiredData'))
     const productsModified = products.map(obj => {
         obj.quantity = 0
@@ -326,7 +326,7 @@ wholesalersDropdown.addEventListener('change', (e) => {
 })
 
 outletsDropdown.addEventListener('change',(e)=>{
-    console.log('b');
+    // console.log('b');
     const products = JSON.parse(localStorage.getItem('requiredData'))
     const productsModified = products.map(obj => {
         obj.quantity = 0
@@ -334,6 +334,6 @@ outletsDropdown.addEventListener('change',(e)=>{
     })
     localStorage.setItem('requiredData',JSON.stringify(productsModified))
     localStorage.setItem('cart', JSON.stringify([]))
-    fetchCategories(wholesalersDropdown.value)
+    productsHandler(wholesalersDropdown.value)
 })
 

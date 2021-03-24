@@ -137,6 +137,11 @@ header nav {
   /* background: beige; */
 }
 
+.cart{
+  padding: 5px 10px;
+  width: 100px;
+}
+
 .card-container .card {
   background-color: white;
   border-radius: 12px;

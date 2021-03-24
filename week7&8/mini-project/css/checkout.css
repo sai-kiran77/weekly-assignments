@@ -49,7 +49,7 @@ button {
   padding: 0 7px;
   background: #fff;
   transform: translateY(-50%);
-  transition: all 500ms;
+  transition: all 200ms ease-in-out;
 }
 
 .name input:focus + label,

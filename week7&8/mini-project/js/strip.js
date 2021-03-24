@@ -1,6 +1,6 @@
 const cartBtn = document.querySelector('.cart');
 const strip = document.querySelector('.strip')
-const closeStrip = document.querySelector('.close')
+// const closeStrip = document.querySelector('.close')
 const cartItemsDisplay = document.querySelector('.cart-number')
 const cartPrice = document.querySelector('.price-number')
 const wholesalers = document.querySelector('#wholesalers')
@@ -15,9 +15,9 @@ if (location.href.endsWith('app.html')) {
         location.href = `../html/checkout.html?whsId=${wholesalersDropdown.value}&outId=${outletsDropdown.value}&userId=${userId}`
     }) : null;
 
-    closeStrip ? closeStrip.addEventListener('click', () => {
-        strip.style.display = 'none'
-    }) : null
+    // closeStrip ? closeStrip.addEventListener('click', () => {
+    //     strip.style.display = 'none'
+    // }) : null
 }
 const stripeDetails = (value) => {
     const productData = JSON.parse(localStorage.getItem('requiredData'))

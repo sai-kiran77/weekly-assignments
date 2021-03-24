@@ -90,7 +90,7 @@ parsedCartItems.forEach(ele => {
 
 function updatePrice() {
     // console.log('z');
-    let parsedCartItems = JSON.parse(localStorage.getItem('cart')) 
+    let parsedCartItems = JSON.parse(localStorage.getItem('cart'))
     totalPriceElement.innerText = parsedCartItems.reduce((total, item) => total + (item.price * item.quantity), 0)
     // console.log(totalPriceElement.innerText);
 }
@@ -132,18 +132,19 @@ locationBtn.addEventListener('click', () => {
 
 inputs.forEach(element => {
     element.addEventListener('keyup', function (e) {
-        // console.log(this);
         const tag = this
         switch (tag['name']) {
             case 'name':
-                console.log(tag.value);
-                if (tag.value.length < 6) {
+                if (tag.value.length < 5) {
                     nameValid = false
                     nameErrorDiv.innerText = 'name should be atleast 6 characters';
                 }
                 else {
                     nameValid = true;
                     nameErrorDiv.innerText = ''
+                }
+                if(e.keyCode < 65 || e.keyCode > 90){
+                    e.preventDefault()
                 }
                 break;
             case 'email':
@@ -157,8 +158,7 @@ inputs.forEach(element => {
                 }
                 break;
             case 'phone':
-                // console.log(e)
-                // if(!(e.code.search('Digit') >= 0)) e.target.value = ''
+                // console.log(e.keyCode);
                 if (tag.value.length != 10) {
                     phoneValid = false
                     phoneErrorDiv.innerText = 'mobile number length should be exactly 10!'
@@ -167,6 +167,10 @@ inputs.forEach(element => {
                     phoneValid = true;
                     phoneErrorDiv.innerText = '';
                 }
+                if (e.keyCode < 48 || e.keyCode > 57) {
+                    e.preventDefault()
+                    // return true;
+                }
                 break;
         }
     })
@@ -174,7 +178,6 @@ inputs.forEach(element => {
 
 placeOrder.addEventListener('click', (e) => {
     if (nameValid && emailValid && phoneValid && locationValid) {
-        console.log('succesful');
         isFormValid.classList.remove('error')
         isFormValid.style.display = 'none'
 
@@ -189,12 +192,14 @@ placeOrder.addEventListener('click', (e) => {
         const orderDetails = {
             items: JSON.parse(localStorage.getItem('cart'))[paramsObj.whsId],
             userDetails,
-            total_price: totalPriceElement.innerText,
+            total_price: totalPriceElement.innerText + '$',
             whsOrgId: paramsObj.whsId,
             outletOrgId: paramsObj.outId,
             user_id: paramsObj.userId
         }
         console.log(orderDetails);
+        placeOrder.innerText = 'order placed succesfully!'
+        placeOrder.classList.add('location-success')
     } else {
         // console.log('cannot place the order');
         isFormValid.innerText = 'please provide the valid details!'
