@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="shortcut icon" href="https://www.nfrnds.com/wp-content/themes/theme/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/header/header.css">
+    <link rel="stylesheet" href="../css/header/mediaQueries.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/footer/footer.css">
+    <link rel="stylesheet" href="../css/footer/mediaQueries.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/62fd71b6bd.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="login-page">
+    <header class="bgimg-none">
+        <nav>
+            <div class="logo">
+                <a href="./index.html">
+                    <img class="logo-img" src="http://www.nfrnds.com/wp-content/themes/theme/img/logo_fixed.png"></a>
+            </div>
+            <div class="links">
+                <ul>
+                    <li class="about-links">
+                        <a href="./about.html">About</a>
+                        <ul class="about-inner-links">
+                            <li><a href="./about.html#what-we-do">what we do</a></li>
+                            <li><a href="./about.html#company-overview">company overview</a></li>
+                            <li><a href="./about.html#leadership">our leadership</a></li>
+                            <li><a href="./about.html#sustainable-impact">sustainable impact</a></li>
+                        </ul>
+                    </li>
+                    <li class="solutions-links">
+                        <a href="./index.html#solutions">Solutions</a>
+                        <ul class="solutions-inner-links">
+                            <li><a href="./index.html#solutions">Agriculture</a></li>
+                            <li><a href="./index.html#solutions">Health</a></li>
+                            <li><a href="./index.html#solutions">FMCG</a></li>
+                            <li><a href="./index.html#solutions">government</a></li>
+                            <li><a href="./index.html#solutions">MSME</a></li>
+                            <li><a href="./index.html#solutions">Banking</a></li>
+                            <li><a href="./index.html#solutions">Retail</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./press.html">Press</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="menu">
+                <span id="menu-open"><i class="fa fa-bars" aria-hidden="true"></i></span>
+                <span id="menu-close" class="hide"><i class="fa fa-times" aria-hidden="true"></i></span>
+            </div>
+        </nav>
+    </header>
+    <div class="form-data">
+        <form>
+        <h1>Login</h1>
+            <div>
+                <i class="fa fa-mobile" aria-hidden="true"></i>
+                <span class="iv-success hide"><i class="fas fa-check-circle"></i></span>
+                <span class="inv-error hide"><i class="fas fa-exclamation-triangle"></i></span>
+                <input type="tel" name="mobile" id="mobile" autocomplete="off" required>
+                <label for="mobile">Mobile</label>
+                <span class="input-error" >Mobile number should be 12 digits</span>
+            </div>
+            <div id="status"></div>
+            <button id="login" class="invalid-button" type="button" disabled>Login</button>
+        </form>
+        <div id="form-loader" class="loader form"></div>
+    </div>
+    <footer>
+        <img src="http://www.nfrnds.com/wp-content/themes/theme/img/footer_stars.svg" class="stars">
+        <a href="#"><img src="http://www.nfrnds.com/wp-content/themes/theme/img/footer_logo.svg" class="logo"></a>
+        <div class="social">
+            <h5>Be in touch</h5>
+            <a href="#">info@nfrnds.com</a>
+            <div class="icons">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-medium-m"></i></a>
+            </div>
+        </div>
+        <p>Designed by&nbsp;<span> STUDIO PRAKTIK</span></p>
+    </footer>
+
+    <script src="../js/headerOnScroll.js"></script>
+    <script src="../js/menuToggle.js"></script>
+    <script src="../js/login.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</body>
+
+</html>

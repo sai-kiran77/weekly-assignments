@@ -1,0 +1,149 @@
+header{
+    color: rgba(255,255,255);
+    background-image: url("http://www.nfrnds.com/wp-content/uploads/2017/07/main_bg.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 550px;
+    width: 100%;
+    position: relative;
+}
+
+.bgimg-none{
+    background-image: none;
+    height: 85px;
+}
+
+/* .bgimg-none .logo-img{
+    filter: none !important;
+} */
+
+header a{
+    font-size: 1.2em;
+}
+
+.opened nav, header nav{
+    height: 85px;
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+
+header nav .logo{
+    position: absolute;
+    top: 15px;
+    left: 30px;
+
+}
+
+.opened nav .logo .logo-img,header nav .logo .logo-img{
+    height: 55px;
+    width: 140px;
+    filter: none;
+}
+
+.opened nav .links ul li > a{
+    color: blue;
+}
+
+header nav .links{
+    position: absolute;
+    top: 80px;
+    right: 100%;
+    width: 100%;
+    background-color: white;
+    text-align: center;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    transition: all 0.5s ease-in-out;
+} 
+
+header nav .links > ul{
+    display: flex;
+    flex-direction: column;
+}
+
+.about-inner-links,.solutions-inner-links{
+    display: none;
+    position: absolute;
+    background-color: rgba(255, 255, 255,0.6);
+    width: 200px;
+}
+
+.about-inner-links li,.solutions-inner-links li{
+    display: block;
+    text-align: start;
+    padding: 10px;
+    margin-left:10px ;
+    color: rgba(0, 0, 0, 1);
+}
+.about-inner-links li a,.solutions-inner-links li a{
+    color: rgba(0, 0, 0, 1);
+}
+
+.about-inner-links li a:hover::after,.solutions-inner-links li a:hover::after{
+    background-color: rgba(255,255,255,0.7);
+}
+
+.about-links:hover .about-inner-links{
+    display: block;
+}
+
+.solutions-links:hover .solutions-inner-links{
+    display: block;
+}
+
+.show-links .about-links:hover .about-inner-links,.show-links .solutions-links:hover .solutions-inner-links{
+    display: none;
+}
+
+.show-links li,.hide-links li{
+    padding: 3.5px 0;
+}
+
+header nav .links a::after{
+    content: "";
+    width: 100%;
+    background-color: rgba(255,255,255);
+    height: 2px;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    transition: all 1s;
+    transform: scale(0,1);
+    display: block;
+}
+header nav .links a:hover::after{
+    transform: scale(1,1);
+}
+
+
+header nav .menu{
+    display: block;
+    position: absolute;
+    top: 52px;
+    right: 25px;
+    transform: translate(0,-50%);
+    font-size: 1.5em;
+    color: black;
+}
+
+header nav .menu .hide{
+    display: none;
+}
+
+.hide-links{
+    right: 100% !important;
+}
+.show-links{
+    right: 0% !important
+}
+
+header .info{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 90%;
+    text-align: center;
+}

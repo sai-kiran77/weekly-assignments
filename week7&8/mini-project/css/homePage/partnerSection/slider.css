@@ -1,0 +1,86 @@
+.renderlogos{
+    display: flex;
+    width: 100%;
+    /* transform: translateX(-100%); */
+    /* transition: all 300ms; */
+    overflow: hidden;
+}
+
+.partners .wrapper{
+    display: flex;
+    overflow: hidden;
+    /* border: 5px solid black; */
+}
+
+.partners .img-wrapper{
+    display: flex;
+    width: 100%;
+    transition: all 300ms;
+    /* transform: translateX(-100%); */
+}
+
+.partners h1{
+    text-align: center;
+    font-size: 3em;
+    font-weight: lighter;
+    color: rgba(53, 54, 56);
+    padding: 16px 0;
+}
+
+.partners .img-container{
+    width: 50%;
+    flex: 1 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+#leftArrow{
+    display: none;
+}
+
+#rightArrow{
+    display: none;
+}
+
+.partners img{
+    max-height: 128px;
+    max-width: 128px;
+    padding: 18px;
+    filter: grayscale(100%);
+}
+
+.partners img:hover{
+    filter:none;
+}
+
+.leftArrow{
+    width: 18%;
+}
+
+.rightArrow{
+    width: 18%;
+}
+
+.disable{
+    cursor: not-allowed;
+}
+
+.partners .google{
+    padding: 31px;
+}
+
+.partners .microsoft{
+    padding: 0;
+}
+
+.partners .paypal{
+    padding: 30px;
+}
+
+.partners .visa{
+    padding: 10px;
+}
+
+.partners .unilever{
+    padding: 24px;
+}

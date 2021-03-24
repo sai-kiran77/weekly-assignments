@@ -1,0 +1,28 @@
+@media all and (min-width:450px){
+    .n-frnds-video{
+        width: 350px;
+        height: 250px;
+    }
+    .main-content .wrapper{
+        width: 88%;
+    }
+}
+
+@media all and (min-width:768px){
+    .main-content .wrapper{
+        width: 80%;
+    }
+    .main-content .star{
+        object-fit: none;
+    }
+    .n-frnds-video{
+        width: 500px;
+        height: 300px;
+    }
+    .numbers .number span{
+        font-size: 4em;
+    }
+    .numbers .number h4{
+        font-size: 1.3em;
+    }
+}

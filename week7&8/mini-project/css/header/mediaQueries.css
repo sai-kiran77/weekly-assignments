@@ -1,0 +1,64 @@
+@media all and (min-width:420px){
+    header .info{
+        width:75% ;
+    }
+    header .info h2{
+        font-size: 2em;    
+    }
+    header .info p{
+        font-size: 1.3em;
+    }
+}
+
+@media all and (min-width:768px){
+
+    header nav{
+        background-color: transparent;
+    }
+
+    header nav .logo .logo-img{
+        filter: brightness(0) invert(100%);
+    }
+
+    header nav .links > ul{
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    header nav .links{
+        top: 45px;
+        right: 0;
+        width: 60%;
+        background-color: transparent;
+        border-top: 0;
+        border-bottom: 0;
+    }
+
+    header nav .links ul li a{
+        color: white;
+    }
+
+    header nav .links ul .about-links .about-inner-links li a,
+    header nav .links ul .solutions-links .solutions-inner-links li a{
+        color: rgba(0, 0, 0, 1);
+    }
+
+    header nav .menu{
+        display: none;
+    }
+    header .info{
+        width:60% ;
+    }
+    header .info h2{
+        font-size: 3em;    
+    }
+    header .info p{
+        font-size: 1.5em;
+    }
+}
+
+@media all and (min-width:1000px){
+    header nav .links{
+        width: 50%;
+    }
+}

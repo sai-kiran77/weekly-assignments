@@ -1,0 +1,27 @@
+@media all and (min-width:768px){
+    .press .articles{
+        display: flex;
+        flex-direction: row;
+        width: 85%;
+    }
+
+    .press .articles .article{
+        width: 33.3333%;
+        padding: 0 15px;
+    }
+
+    .press .articles .article h3{
+        font-size: 1.15em;
+    }
+    .press .articles .article p{
+        font-size: 1em;
+        padding: 2px 0px;
+    }
+    .press .articles .article a{
+        font-size: 0.8em;
+    }
+
+    .press h2{
+        padding: 15px 0;
+    }
+}
