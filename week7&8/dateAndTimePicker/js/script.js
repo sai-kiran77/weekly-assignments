@@ -1,7 +1,6 @@
 const toggler = document.querySelector('#toggle')
 const input = document.querySelector('#date-picker')
 const dateInput = document.querySelector('.date-picker')
-// const dateAndTimePickerBtn = document.querySelector('.dateAndTime-picker-btn')
 const dateCard = document.querySelector('.date-card')
 const clickable = document.querySelector('.clickable')
 const monthDropdown = document.querySelector('#months')
@@ -142,37 +141,45 @@ submitBtn.addEventListener('click', (e) => {
     let validInput = null;
     let timeArray = [];
     let array = [];
+    let timepicker = false;
+
     if (document.querySelector('.date-picker')) {
         validInput = /^([0]?[1-9]|[1|2][0-9]|[3][0|1])[./-]([0]?[1-9]|[1][0-2])[./-]([0-9]{4}|[0-9]{2})$/.test(input.value);
         array = validInput ? input.value.split('/') : [];
     } else if (document.querySelector('.dateAndTime-picker')) {
+        timepicker = true;
         validInput = /^(3[01]|[12][0-9]|0[1-9])\/(1[0-2]|0[1-9])\/[0-9]{4} (2[0-3]|[01]?[0-9]):([0-5]?[0-9])$/.test(input.value)
-        console.log(validInput);
+        // console.log(validInput);
         [date, time] = validInput ? input.value.split(' ') : [null, null]
-        array = date ? date.split('/') : null;
+        // console.log(date, time);
+        array = date ? date.split('/') : [];
         timeArray = time ? time.split(':') : [];
     }
-    
-    console.log(array);
-    console.log(timeArray);
-    if (validInput) {
-        console.log('b');
-        console.log(array[2]<1970);
+    // console.log(validInput);
+    // console.log(array);
+    // console.log(array.length);
+    // console.log(timeArray);
+    if (validInput && array.length == 3) {
+        // console.log('b');
         error.style.display = 'none'
         if (array[0] > 31 || array[1] > 12 || array[2] > 2030 || array[2] < 1970 ||
             timeArray[0] > 23 || timeArray[0] < 0 || timeArray[1] > 59 || timeArray[1] < 0) {
+            utcDateSelector.innerText = ''
             error.innerText = 'invalid date! out of range!'
             error.style.display = 'block'
         } else {
             error.style.display = 'none'
-            const utcDate = new Date(Date.UTC(array[2], array[1] - 1, array[0],timeArray[0] | 0,timeArray[1] | 0))
-            console.log(utcDate.toUTCString());
+            const utcDate = new Date(Date.UTC(array[2], array[1] - 1, array[0], timeArray[0] | 0, timeArray[1] | 0))
+            // console.log(utcDate.toUTCString());
             utcDateSelector.innerText = utcDate.toUTCString()
             utcDateSelector.style.display = 'block'
         }
     } else {
         console.log('a');
-        error.innerText = 'Please enter valid date!'
+        utcDateSelector.innerText = ''
+        error.innerText = timepicker ?
+            'Please enter valid date!(dd/mm/yyyy hh:mm)' :
+            'Please enter valid date!(dd/mm/yyyy)';
         error.style.display = 'block'
     }
 })
@@ -224,7 +231,3 @@ monthDropdown.addEventListener('change', (e) => {
     console.log('m chnaged');
     calDays(yearDropdown.value, monthDropdown.value)
 })
-
-// dateAndTimePickerBtn.addEventListener('click',()=>{
-//     secondCol.style.display = 'grid'
-// })
