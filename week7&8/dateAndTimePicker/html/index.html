@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Date and Time picker</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/62fd71b6bd.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="clickable"></div>
+
+    <h1 class="title">Date Picker</h1>
+    <div class="wrapper">
+      <span class="utc-date"></span>
+      <div class="input">
+        <input
+          autocomplete="off"
+          type="text"
+          name="date-picker"
+          class="date-picker"
+          id="date-picker"
+          placeholder="Enter Date"
+          minlength="6"
+        />
+        <span class="error">Please enter valid date!</span>
+        <!-- <label class="date-label" for="date-picker">Date</label> -->
+      </div>
+      <div class="card">
+        <div class="date-card">
+          <div class="first-col">
+            <div class="header">
+              <i class="fa fa-caret-left" aria-hidden="true"></i>
+              <i class="fa fa-home" aria-hidden="true"></i>
+              <select name="months" id="months">
+                <option value="01">January</option>
+                <option value="02">February</option>
+                <option value="03">March</option>
+                <option value="04">April</option>
+                <option value="05">May</option>
+                <option value="06">June</option>
+                <option value="07">July</option>
+                <option value="08">August</option>
+                <option value="09">September</option>
+                <option value="10">October</option>
+                <option value="11">November</option>
+                <option value="12">December</option>
+              </select>
+              <select name="year" id="year"></select>
+              <i class="fa fa-caret-right" aria-hidden="true"></i>
+            </div>
+            <div class="body">
+              <div class="days">
+                <abbr>sun</abbr>
+                <abbr>mon</abbr>
+                <abbr>tue</abbr>
+                <abbr>wed</abbr>
+                <abbr>thu</abbr>
+                <abbr>fri</abbr>
+                <abbr>sat</abbr>
+              </div>
+              <div class="dates"></div>
+            </div>
+          </div>
+          <div class="second-col">
+            <i class="fa fa-caret-up" aria-hidden="true"></i>
+            <div class="box">
+              <button>00:00</button>
+              <button>01:00</button>
+              <button>02:00</button>
+              <button>03:00</button>
+              <button>04:00</button>
+              <button>05:00</button>
+              <button>06:00</button>
+              <button>07:00</button>
+              <button>08:00</button>
+              <button>09:00</button>
+              <button>10:00</button>
+              <button>11:00</button>
+              <button>12:00</button>
+              <button>13:00</button>
+              <button>14:00</button>
+              <button>15:00</button>
+              <button>16:00</button>
+              <button>17:00</button>
+              <button>18:00</button>
+              <button>19:00</button>
+              <button>20:00</button>
+              <button>21:00</button>
+              <button>22:00</button>
+              <button>23:00</button>
+            </div>
+            <i class="fa fa-caret-down" aria-hidden="true"></i>
+          </div>
+        </div>
+        <!-- <div class="date-and-time-card"></div> -->
+      </div>
+      <div class="submit">
+        <button class="submit-btn">submit</button>
+      </div>
+      <button id="toggle" class="dateAndTime-picker-btn">
+        date and time picker
+      </button>
+    </div>
+    <script src="../js/script.js"></script>
+  </body>
+</html>
