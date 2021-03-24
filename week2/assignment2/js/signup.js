@@ -92,6 +92,7 @@ submitButton.addEventListener('click', (e) => {
 })
 
 loginButton.addEventListener('click', (e) => {
+    // localStorage.setItem('abc','abc')
     e.preventDefault()
     location.href = '../html/login.html'
 })
