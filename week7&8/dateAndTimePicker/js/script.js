@@ -143,7 +143,7 @@ submitBtn.addEventListener('click', (e) => {
     let timepicker = false;
 
     if (document.querySelector('.date-picker')) {
-        validInput = /^([0]?[1-9]|[1|2][0-9]|[3][0|1])[./-]([0]?[1-9]|[1][0-2])[./-]([0-9]{4}|[0-9]{2})$/.test(input.value);
+        validInput = /^([0]?[1-9]|[1|2][0-9]|[3][0|1])[/]([0]?[1-9]|[1][0-2])[/]([0-9]{4})$/.test(input.value);
         array = validInput ? input.value.split('/') : [];
     } else if (document.querySelector('.dateAndTime-picker')) {
         timepicker = true;
@@ -157,7 +157,7 @@ submitBtn.addEventListener('click', (e) => {
     // console.log(array);
     // console.log(array.length);
     // console.log(timeArray);
-    if (validInput && array.length == 3) {
+    if (validInput) {
         error.style.display = 'none'
         if (array[0] > 31 || array[1] > 12 || array[2] > 2030 || array[2] < 1970 ||
             timeArray[0] > 23 || timeArray[0] < 0 || timeArray[1] > 59 || timeArray[1] < 0) {
@@ -182,7 +182,7 @@ submitBtn.addEventListener('click', (e) => {
 
 dateInput.addEventListener('focus', (e) => {
     dateCard.style.display = 'grid'
-    error.style.display = 'none'
+    // error.style.display = 'none'
     utcDateSelector.innerText = ''
 })
 
@@ -226,4 +226,22 @@ yearDropdown.addEventListener('change', (e) => {
 
 monthDropdown.addEventListener('change', (e) => {
     calDays(yearDropdown.value, monthDropdown.value)
+})
+
+input.addEventListener('keyup', (e) => {
+    if (Array.from(input.classList).find(val => val == 'date-picker') &&
+        /^([0]?[1-9]|[1|2][0-9]|[3][0|1])[/]([0]?[1-9]|[1][0-2])[/]([0-9]{4})$/.test(input.value)) {
+        clickable.dispatchEvent(new Event('click'))
+        error.style.display = 'none'
+        submitBtn.disabled = false;
+    } else if (Array.from(input.classList).find(val => val == 'dateAndTime-picker' &&
+        /^(3[01]|[12][0-9]|0[1-9])\/(1[0-2]|0[1-9])\/[0-9]{4} (2[0-3]|[01]?[0-9]):([0-5]?[0-9])$/.test(input.value))) {
+        clickable.dispatchEvent(new Event('click'))
+        error.style.display = 'none'
+        submitBtn.disabled = false;
+    } else {
+        submitBtn.disabled = true;
+        error.style.display = 'block'
+        error.innerText = 'invalid date format!'
+    }
 })
