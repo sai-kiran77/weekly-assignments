@@ -35,58 +35,62 @@ paramsArray.forEach(string => {
 // console.log(key, value);
 // console.log(paramsObj);
 
+const updateCartItems = () => {
+    let parsedCartItems = JSON.parse(localStorage.getItem('cart'))
+    Array.from(cardContainer.childNodes).forEach(e=>e.remove())
+    parsedCartItems.forEach(ele => {
+        const div = document.createElement('div');
+        const imgWrapperDiv = document.createElement('div');
+        const img = document.createElement('img');
+        const contentDiv = document.createElement('div')
+        const infoDiv = document.createElement('div');
+        const infoh2 = document.createElement('h2');
+        const infoh3 = document.createElement('h3');
+        const btnWrapperDiv = document.createElement('div');
+        const plusBtn = document.createElement('button');
+        const subBtn = document.createElement('button');
+        const outputBtn = document.createElement('button');
+    
+        div.classList.add('card');
+        imgWrapperDiv.classList.add('img-wrapper')
+        contentDiv.classList.add('content')
+        infoDiv.classList.add('info');
+        plusBtn.classList.add('add');
+        subBtn.classList.add('sub');
+        outputBtn.classList.add('output');
+        btnWrapperDiv.classList.add('btn-wrapper');
+    
+        div.id = ele.productId;
+        img.src = ele.smallImgUrl ?
+            categoriesPreImgUrl + ele.smallImgUrl :
+            '../images/istockphoto-1128687123-612x612.jpg';
+        infoh2.innerText = ele.productName;
+        infoh3.innerText = ele.price + '$';
+        plusBtn.innerText = '+';
+        plusBtn.addEventListener('click', function () { handleQuantity.call(this, 'plus', paramsObj.whsId) })
+        subBtn.innerText = '-';
+        subBtn.addEventListener('click', function () { handleQuantity.call(this, 'sub', paramsObj.whsId) })
+        outputBtn.innerText = ele.quantity;
+    
+        imgWrapperDiv.appendChild(img)
+        infoDiv.appendChild(infoh2);
+        infoDiv.appendChild(infoh3);
+        contentDiv.appendChild(infoDiv)
+    
+        btnWrapperDiv.appendChild(subBtn);
+        btnWrapperDiv.appendChild(outputBtn);
+        btnWrapperDiv.appendChild(plusBtn);
+        contentDiv.appendChild(btnWrapperDiv)
+    
+        div.appendChild(imgWrapperDiv);
+        // div.appendChild(infoDiv);
+        // div.appendChild(btnWrapperDiv);
+        div.appendChild(contentDiv)
+        cardContainer.appendChild(div);
+    })
+}
 
-parsedCartItems.forEach(ele => {
-
-    const div = document.createElement('div');
-    const imgWrapperDiv = document.createElement('div');
-    const img = document.createElement('img');
-    const contentDiv = document.createElement('div')
-    const infoDiv = document.createElement('div');
-    const infoh2 = document.createElement('h2');
-    const infoh3 = document.createElement('h3');
-    const btnWrapperDiv = document.createElement('div');
-    const plusBtn = document.createElement('button');
-    const subBtn = document.createElement('button');
-    const outputBtn = document.createElement('button');
-
-    div.classList.add('card');
-    imgWrapperDiv.classList.add('img-wrapper')
-    contentDiv.classList.add('content')
-    infoDiv.classList.add('info');
-    plusBtn.classList.add('add');
-    subBtn.classList.add('sub');
-    outputBtn.classList.add('output');
-    btnWrapperDiv.classList.add('btn-wrapper');
-
-    div.id = ele.productId;
-    img.src = ele.smallImgUrl ?
-        categoriesPreImgUrl + ele.smallImgUrl :
-        '../images/istockphoto-1128687123-612x612.jpg';
-    infoh2.innerText = ele.productName;
-    infoh3.innerText = ele.price + '$';
-    plusBtn.innerText = '+';
-    plusBtn.addEventListener('click', function () { handleQuantity.call(this, 'plus', paramsObj.whsId) })
-    subBtn.innerText = '-';
-    subBtn.addEventListener('click', function () { handleQuantity.call(this, 'sub', paramsObj.whsId) })
-    outputBtn.innerText = ele.quantity;
-
-    imgWrapperDiv.appendChild(img)
-    infoDiv.appendChild(infoh2);
-    infoDiv.appendChild(infoh3);
-    contentDiv.appendChild(infoDiv)
-
-    btnWrapperDiv.appendChild(subBtn);
-    btnWrapperDiv.appendChild(outputBtn);
-    btnWrapperDiv.appendChild(plusBtn);
-    contentDiv.appendChild(btnWrapperDiv)
-
-    div.appendChild(imgWrapperDiv);
-    // div.appendChild(infoDiv);
-    // div.appendChild(btnWrapperDiv);
-    div.appendChild(contentDiv)
-    cardContainer.appendChild(div);
-})
+updateCartItems()
 
 function updatePrice() {
     // console.log('z');
@@ -143,7 +147,7 @@ inputs.forEach(element => {
                     nameValid = true;
                     nameErrorDiv.innerText = ''
                 }
-                if(e.keyCode < 65 || e.keyCode > 90){
+                if (e.keyCode < 65 || e.keyCode > 90) {
                     e.preventDefault()
                 }
                 break;
@@ -200,6 +204,11 @@ placeOrder.addEventListener('click', (e) => {
         console.log(orderDetails);
         placeOrder.innerText = 'order placed succesfully!'
         placeOrder.classList.add('location-success')
+        localStorage.setItem('orderDetails', JSON.stringify(orderDetails))
+        localStorage.setItem('cart',JSON.stringify([]))
+        updateCartItems()
+        updatePrice()
+        placeOrder.disabled = true;
     } else {
         // console.log('cannot place the order');
         isFormValid.innerText = 'please provide the valid details!'
