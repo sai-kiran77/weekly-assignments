@@ -12,7 +12,7 @@ if (parseLoginData === null) location.replace('../html/login.html')
 
 const currentWholesaler = localStorage.getItem('currentWhs')
 const currentOutlet = localStorage.getItem('currentOutlet')
-console.log(currentOutlet);
+let userId = localStorage.getItem('userId')
 
 //URL's
 const initaialDataUrl = 'https://netco-indo-test.nfrnds.net:20003/fmcg-dd/initialData';
@@ -22,7 +22,7 @@ const outletsUrl = 'https://netco-indo-test.nfrnds.net:20003/fmcg-dd/outlets/v2'
 const categoriesUrl = 'https://netco-indo-test.nfrnds.net:20003/fmcg-dd/catalog?whsId=';
 const categoriesPreImgUrl = 'https://res.cloudinary.com/nfrnds/image/upload/fmcgdd';
 
-let userId = null;
+// let userId = null;
 let productsCatalog = [];
 let categories = [];
 
@@ -47,37 +47,39 @@ $.ajax({
 })
 
 //user details API
-$.ajax({
-    type: 'GET',
-    url: userUrl,
-    headers: {
-        'Netco-JWT': parseLoginData.token
-    },
-    success: function (res) {
-        console.log(res);
-        userId = res.userId
-    },
-    error: function (request, textStatus, errorThrown) {
-        if (request.status == 403) console.log('unAuthorized!');
-        else if (request.status == 404) console.log(request.responseJSON.error);
-        else if (request.status == 0) console.log('unable to connect!');
-        else console.log(request);
-        console.log(textStatus);
-    }
-})
+const fetchUser = () => {
+    $.ajax({
+        type: 'GET',
+        url: userUrl,
+        headers: {
+            'Netco-JWT': parseLoginData.token
+        },
+        success: function (res) {
+            console.log(res);
+            userId = res.userId;
+            localStorage.setItem('userId', res.userId)
+        },
+        error: function (request, textStatus, errorThrown) {
+            if (request.status == 403) console.log('unAuthorized!');
+            else if (request.status == 404) console.log(request.responseJSON.error);
+            else if (request.status == 0) console.log('unable to connect!');
+            else console.log(request);
+            console.log(textStatus);
+        }
+    })
+}
+
+userId ? null : fetchUser()
 
 const currentWholesalerFunc = (whs) => {
-    console.log(whs);
     localStorage.setItem('currentWhs', whs)
-    //fetching outlets and categories only if the response is fulfilled
     localStorage.getItem('outletsData') ? outletsHandler(undefined, whs) : fetchOutlets(whs);
-    currentOutletFunc(undefined)
+    currentOutletFunc(outletsDropdown.value)
     fetchCategories(whs);
 }
 
 const wholesalersHandler = (res = JSON.parse(localStorage.getItem('wholesalersData'))) => {
     //removing all child elements of wholesalers dropdown
-    console.log(res);
     localStorage.setItem('wholesalersData', JSON.stringify(res))
     Array.from(wholesalersDropdown.children).forEach(ele => ele.remove());
     // localStorage.setItem('requiredData', JSON.stringify([]))
@@ -118,13 +120,11 @@ const fetchWholesaler = () => {
 
 currentWholesaler ? wholesalersHandler() : fetchWholesaler()
 
-function currentOutletFunc(outlet = outletsDropdown.value) {
-    console.log(outlet);
+function currentOutletFunc(outlet) {
     localStorage.setItem('currentOutlet', outlet)
 }
 
 function outletsHandler(res = JSON.parse(localStorage.getItem('outletsData')), whsId) {
-    console.log(res);
     localStorage.setItem('outletsData', JSON.stringify(res))
     //removing all elements of outlets dropdown
     Array.from(outletsDropdown.children).forEach(ele => ele.remove());
@@ -142,13 +142,11 @@ function outletsHandler(res = JSON.parse(localStorage.getItem('outletsData')), w
         })
     })
     const outlet = localStorage.getItem('currentOutlet') !== null;
-    const currentOutlet = outlet ? localStorage.getItem('currentOutlet') : undefined
-    console.log(currentOutlet);
-    currentOutletFunc(currentOutlet)
+    const currentOutlet = outlet ? localStorage.getItem('currentOutlet') : outletsDropdown.value
+    typeof currentOutlet === 'number' ? currentOutletFunc(currentOutlet) : currentOutletFunc(outletsDropdown.value);
 }
 
 function fetchOutlets(whsId) {
-    console.log('a');
     //outlets API
     $.ajax({
         type: 'GET',
