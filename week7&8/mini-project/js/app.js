@@ -8,6 +8,12 @@ const productsContainer = document.querySelector('.card-container');
 const getLoginData = localStorage.getItem('userData');
 const parseLoginData = JSON.parse(getLoginData);
 
+if (parseLoginData === null) location.replace('../html/login.html')
+
+const currentWholesaler = localStorage.getItem('currentWhs')
+const currentOutlet = localStorage.getItem('currentOutlet')
+console.log(currentOutlet);
+
 //URL's
 const initaialDataUrl = 'https://netco-indo-test.nfrnds.net:20003/fmcg-dd/initialData';
 const userUrl = 'https://netco-indo-test.nfrnds.net:20003/fmcg-dd/user';
@@ -25,7 +31,8 @@ $.ajax({
     type: 'GET',
     url: initaialDataUrl,
     headers: {
-        'Netco-JWT': parseLoginData.token
+        'Netco-JWT': parseLoginData.token,
+        // "Access-Control-Allow-Origin": "*",
     },
     success: function (res) {
         console.log(res);
@@ -59,41 +66,66 @@ $.ajax({
     }
 })
 
-const wholesalersHandler = (res) => {
+const currentWholesalerFunc = (whs) => {
+    console.log(whs);
+    localStorage.setItem('currentWhs', whs)
+    //fetching outlets and categories only if the response is fulfilled
+    localStorage.getItem('outletsData') ? outletsHandler(undefined, whs) : fetchOutlets(whs);
+    currentOutletFunc(undefined)
+    fetchCategories(whs);
+}
+
+const wholesalersHandler = (res = JSON.parse(localStorage.getItem('wholesalersData'))) => {
     //removing all child elements of wholesalers dropdown
+    console.log(res);
+    localStorage.setItem('wholesalersData', JSON.stringify(res))
     Array.from(wholesalersDropdown.children).forEach(ele => ele.remove());
-    localStorage.setItem('requiredData',JSON.stringify([]))
+    // localStorage.setItem('requiredData', JSON.stringify([]))
     //handling response to append wholesalers
     res.organizations.forEach(organization => {
         const option = document.createElement('option');
         option.innerText = organization.orgName;
         option.value = organization.orgId;
+        if (option.value == localStorage.getItem('currentWhs')) {
+            // console.log('a')
+            option.selected = true;
+        };
         wholesalersDropdown.add(option);
     })
-
-    //fetching outlets and categories only if the response is fulfilled
-    fetchOutlets(wholesalersDropdown.value);
-    fetchCategories(wholesalersDropdown.value);
+    const currentWholesaler = localStorage.getItem('currentWhs') !== null
+    const whs = currentWholesaler ? localStorage.getItem('currentWhs') : wholesalersDropdown.value;
+    currentWholesalerFunc(whs)
 }
 
 //wholesalers API
-$.ajax({
-    type: 'GET',
-    url: wholesalersUrl,
-    headers: {
-        'Netco-JWT': parseLoginData.token
-    },
-    success: wholesalersHandler,
-    error: function (request, textStatus, errorThrown) {
-        if (request.status == 403) console.log('unAuthorized!');
-        else if (request.status == 404) console.log(request.responseJSON.error);
-        else if (request.status == 0) console.log('unavle to connect!');
-        else console.log(request);
-        console.log(textStatus)
-    }
-})
+const fetchWholesaler = () => {
+    $.ajax({
+        type: 'GET',
+        url: wholesalersUrl,
+        headers: {
+            'Netco-JWT': parseLoginData.token
+        },
+        success: (res) => wholesalersHandler(res),
+        error: function (request, textStatus, errorThrown) {
+            if (request.status == 403) console.log('unAuthorized!');
+            else if (request.status == 404) console.log(request.responseJSON.error);
+            else if (request.status == 0) console.log('unable to connect!');
+            else console.log(request);
+            console.log(textStatus)
+        }
+    })
+}
 
-const outletsHandler = (res, whsId) => {
+currentWholesaler ? wholesalersHandler() : fetchWholesaler()
+
+function currentOutletFunc(outlet = outletsDropdown.value) {
+    console.log(outlet);
+    localStorage.setItem('currentOutlet', outlet)
+}
+
+function outletsHandler(res = JSON.parse(localStorage.getItem('outletsData')), whsId) {
+    console.log(res);
+    localStorage.setItem('outletsData', JSON.stringify(res))
     //removing all elements of outlets dropdown
     Array.from(outletsDropdown.children).forEach(ele => ele.remove());
 
@@ -104,13 +136,19 @@ const outletsHandler = (res, whsId) => {
                 const option = document.createElement('option');
                 option.innerText = organization.orgName;
                 option.value = organization.orgId;
+                if (option.value == localStorage.getItem('currentOutlet')) option.selected = true;
                 outletsDropdown.add(option);
             }
         })
     })
+    const outlet = localStorage.getItem('currentOutlet') !== null;
+    const currentOutlet = outlet ? localStorage.getItem('currentOutlet') : undefined
+    console.log(currentOutlet);
+    currentOutletFunc(currentOutlet)
 }
 
-const fetchOutlets = (whsId) => {
+function fetchOutlets(whsId) {
+    console.log('a');
     //outlets API
     $.ajax({
         type: 'GET',
@@ -128,6 +166,10 @@ const fetchOutlets = (whsId) => {
         }
     })
 }
+// console.log(currentOutlet);
+// currentOutlet ?
+//     null :
+//     fetchOutlets(localStorage.getItem('currentWhs'))
 
 // console.log(handleQuantity);
 
@@ -293,7 +335,7 @@ const categoriesHandler = (res, whsId) => {
 }
 
 //fetch categories based on wholesaler id
-const fetchCategories = (whsId) => {
+function fetchCategories(whsId) {
     categories = [];
     $.ajax({
         type: 'get',
@@ -319,21 +361,23 @@ wholesalersDropdown.addEventListener('change', (e) => {
         obj.quantity = 0
         return obj
     })
-    localStorage.setItem('requiredData',JSON.stringify(productsModified))
+    localStorage.setItem('requiredData', JSON.stringify(productsModified))
     localStorage.setItem('cart', JSON.stringify([]))
-    fetchOutlets(e.target.value);
-    fetchCategories(e.target.value);
+    // fetchOutlets(e.target.value);
+    // fetchCategories(e.target.value);
+    currentWholesalerFunc(e.target.value)
 })
 
-outletsDropdown.addEventListener('change',(e)=>{
+outletsDropdown.addEventListener('change', (e) => {
     // console.log('b');
     const products = JSON.parse(localStorage.getItem('requiredData'))
     const productsModified = products.map(obj => {
         obj.quantity = 0
         return obj
     })
-    localStorage.setItem('requiredData',JSON.stringify(productsModified))
+    localStorage.setItem('requiredData', JSON.stringify(productsModified))
     localStorage.setItem('cart', JSON.stringify([]))
     productsHandler(wholesalersDropdown.value)
+    currentOutletFunc(e.target.value)
 })
 

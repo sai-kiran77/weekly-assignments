@@ -6,6 +6,8 @@ const formLoader = document.querySelector('#form-loader');
 const successIcon = document.querySelector('.iv-success')
 const errorIcon = document.querySelector('.inv-error')
 
+localStorage.clear()
+
 mobileInput.addEventListener('keyup', (e) => {
     loginStatus.innerText = "";
     if (e.target.value.length === 12) {
@@ -46,8 +48,8 @@ loginButton.addEventListener('click', (e) => {
     jQuery.ajax({
         'type': 'POST',
         'url': "https://netco-indo-test.nfrnds.net:20003/fmcg-dd/login",
-        'contentType': 'application/json',
         'dataType': 'json',
+        'contentType': 'application/json',
         'data': JSON.stringify({
             msisdn: mobileInput.value,
             loginType: "KAIZALA",
