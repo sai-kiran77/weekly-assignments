@@ -137,7 +137,6 @@ toggler.addEventListener('click', function () {
 })
 
 submitBtn.addEventListener('click', (e) => {
-    console.log('a');
     let validInput = null;
     let timeArray = [];
     let array = [];
@@ -149,18 +148,16 @@ submitBtn.addEventListener('click', (e) => {
     } else if (document.querySelector('.dateAndTime-picker')) {
         timepicker = true;
         validInput = /^(3[01]|[12][0-9]|0[1-9])\/(1[0-2]|0[1-9])\/[0-9]{4} (2[0-3]|[01]?[0-9]):([0-5]?[0-9])$/.test(input.value)
-        // console.log(validInput);
-        [date, time] = validInput ? input.value.split(' ') : [null, null]
-        // console.log(date, time);
+        let [date, time] = validInput ? input.value.split(' ') : [null, null]
         array = date ? date.split('/') : [];
         timeArray = time ? time.split(':') : [];
+        // console.log(validInput);
     }
     // console.log(validInput);
     // console.log(array);
     // console.log(array.length);
     // console.log(timeArray);
     if (validInput && array.length == 3) {
-        // console.log('b');
         error.style.display = 'none'
         if (array[0] > 31 || array[1] > 12 || array[2] > 2030 || array[2] < 1970 ||
             timeArray[0] > 23 || timeArray[0] < 0 || timeArray[1] > 59 || timeArray[1] < 0) {
@@ -175,7 +172,6 @@ submitBtn.addEventListener('click', (e) => {
             utcDateSelector.style.display = 'block'
         }
     } else {
-        console.log('a');
         utcDateSelector.innerText = ''
         error.innerText = timepicker ?
             'Please enter valid date!(dd/mm/yyyy hh:mm)' :
@@ -186,6 +182,8 @@ submitBtn.addEventListener('click', (e) => {
 
 dateInput.addEventListener('focus', (e) => {
     dateCard.style.display = 'grid'
+    error.style.display = 'none'
+    utcDateSelector.innerText = ''
 })
 
 clickable.addEventListener('click', () => {
@@ -223,11 +221,9 @@ rightArrow.addEventListener('click', (e) => {
 })
 
 yearDropdown.addEventListener('change', (e) => {
-    console.log('year changed');
     calDays(yearDropdown.value, monthDropdown.value)
 })
 
 monthDropdown.addEventListener('change', (e) => {
-    console.log('m chnaged');
     calDays(yearDropdown.value, monthDropdown.value)
 })
