@@ -16,42 +16,67 @@ const secondCol = document.querySelector('.second-col')
 const box = document.querySelector('.box')
 
 function dateHandler() {
+    Array.from(datesContainer.children).forEach(e => {
+        e.classList.remove('active')
+    })
+    this.classList.add('active')
     console.log('d');
     dateInput.value = `${this.innerText}/${monthDropdown.value}/${yearDropdown.value}`
     clickable.dispatchEvent(new Event('click'))
 }
 
-let count = 0;
+// let count = 0;
 function dateAndTimeHandler() {
-    count++
+    Array.from(datesContainer.children).forEach(e => {
+        e.classList.remove('active')
+    })
+    // Array.from(box.children).forEach(e => {
+    //     e.style.backgroundColor = ''
+    //     e.style.color = '#000'
+    // })
+    this.classList.add('active')
+    // count++
     console.log('dt');
     const dateAndTimePickerInput = document.querySelector('.dateAndTime-picker')
     dateAndTimePickerInput.value = `${this.innerText}/${monthDropdown.value}/${yearDropdown.value} 00:00`;
-    if (count === 1) {
-        console.log(count);
-        Array.from(box.children).forEach(e => {
-            e.addEventListener('click', function () {
-                // const time = this;
-                // dateAndTimePickerInput.value += this.innerText
-                // console.log(this.innerText);
-                // console.log(dateAndTimePickerInput.value);
-                const array = dateAndTimePickerInput.value.split(' ')
-                // console.log(array);
-                array[1] = this.innerText
-                // console.log(array);
-                dateAndTimePickerInput.value = array[0] + ' ' + array[1]
-                // dateAndTimePickerInput.value = dateAndTimePickerInput.value.replace(/^([0-1]?[0-9]|2[0-3]):[0-5][0-9]$/,this.innerText)
-                // console.log(dateAndTimePickerInput.value);
-                clickable.dispatchEvent(new Event('click'))
-            })
-        })
-    }
-}
+    Array.from(box.children).forEach(e => e.classList.remove('active'))
+    box.firstElementChild.classList.add('active')
+    // if (count === 1) {
+    // console.log(count);
 
-function calDays(year, mm, dd = 1) {
+    // }
+}
+Array.from(box.children).forEach(e => {
+    e.addEventListener('click', function () {
+        box.firstElementChild.classList.remove('active')
+        const dateAndTimePickerInput = document.querySelector('.dateAndTime-picker')
+        console.log(dateAndTimePickerInput.value === '')
+        if (!dateAndTimePickerInput.value) {
+            dateAndTimePickerInput.value = `${new Date().getDate()}/${new Date().getMonth()}/${new Date().getFullYear()} 00:00`
+        }
+
+        Array.from(box.children).forEach(e => {
+            e.classList.remove('active')
+        })
+        this.classList.add('active')
+
+        const array = dateAndTimePickerInput.value.split(' ')
+        array[1] = this.innerText;
+        dateAndTimePickerInput.value = array[0] + ' ' + array[1]
+        // dateAndTimePickerInput.value = dateAndTimePickerInput.value.replace(/^([0-1]?[0-9]|2[0-3]):[0-5][0-9]$/,this.innerText)
+        clickable.dispatchEvent(new Event('click'))
+    })
+})
+
+function calDays(year = new Date().getFullYear(), mm = (new Date().getMonth() + 1), dd = 1) {
+    console.log(year,mm,dd);
     Array.from(datesContainer.childNodes).forEach(e => {
         e.remove()
     });
+    Array.from(box.children).forEach(e => e.classList.remove('active'))
+    box.firstElementChild.classList.add('active')
+    yearDropdown.value = year;
+    monthDropdown.selectedIndex = mm - 1;
     let day = null;
     if (mm > 12) {
         throw "month cannot be greater than 12";
@@ -101,13 +126,28 @@ function calDays(year, mm, dd = 1) {
             day = 6;
             break;
     }
-
+    let currentDate = ''
     for (let i = 1; i <= daysInMm[mm - 1]; i++) {
         const button = document.createElement('button')
         button.innerText = i < 9 ? '0' + i : i;
-        document.querySelector('.date-picker') ?
-            button.addEventListener('click', dateHandler) :
+        if (button.innerText == new Date().getDate() &&
+            mm == (new Date().getMonth() + 1) &&
+            year == new Date().getFullYear()) {
+            button.classList.add('active');
+            currentDate = `${button.innerText}/${mm}/${year}`
+        }
+        else if (button.innerText == 1 && (mm != (new Date().getMonth() + 1) ||
+            year != new Date().getFullYear())) {
+            button.classList.add('active');
+            currentDate = `${button.innerText}/${mm}/${year}`
+        }
+        if (document.querySelector('.date-picker')) {
+            button.addEventListener('click', dateHandler)
+            input.value = currentDate;
+        } else {
             button.addEventListener('click', dateAndTimeHandler);
+            input.value = `${currentDate} 00:00`
+        }
         datesContainer.appendChild(button)
     }
     datesContainer.firstElementChild.style.gridColumnStart = day + 1;
@@ -120,14 +160,14 @@ for (let i = 1970; i <= 2030; i++) {
     yearDropdown.appendChild(option);
 }
 
-calDays(yearDropdown.value, monthDropdown.value)
+calDays()
 
 toggler.addEventListener('click', function () {
     const datePicker = toggler.classList.toggle('date-picker-btn');
     const dateAndTimePicker = toggler.classList.toggle('dateAndTime-picker-btn');
     const datePickerInput = input.classList.toggle('date-picker');
     const dateAndTimePickerInput = input.classList.toggle('dateAndTime-picker');
-    toggler.innerText = dateAndTimePicker ? 'date and time picker' : 'date picker'
+    toggler.innerText = dateAndTimePicker ? 'Date and Time picker' : 'Date picker'
     title.innerText = dateAndTimePicker ? 'Date picker' : 'Date and Time picker'
     input.value = ''
     utcDateSelector.innerText = ''
