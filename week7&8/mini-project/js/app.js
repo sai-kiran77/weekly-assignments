@@ -13,6 +13,7 @@ if (parseLoginData === null) location.replace('../html/login.html')
 const currentWholesaler = localStorage.getItem('currentWhs')
 const currentOutlet = localStorage.getItem('currentOutlet')
 let userId = localStorage.getItem('userId')
+userId = userId ? JSON.parse(userId).userId : null;
 
 //URL's
 const initaialDataUrl = 'https://netco-indo-test.nfrnds.net:20003/fmcg-dd/initialData';
@@ -57,7 +58,7 @@ const fetchUser = () => {
         success: function (res) {
             console.log(res);
             userId = res.userId;
-            localStorage.setItem('userId', res.userId)
+            localStorage.setItem('userId', JSON.stringify(res))
         },
         error: function (request, textStatus, errorThrown) {
             if (request.status == 403) console.log('unAuthorized!');

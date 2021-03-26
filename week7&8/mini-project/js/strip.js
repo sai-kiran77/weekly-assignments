@@ -1,4 +1,4 @@
-const cartBtn = document.querySelector('.cart');
+const cartBtn = document.querySelector('.cart-btn');
 const strip = document.querySelector('.strip')
 // const closeStrip = document.querySelector('.close')
 const cartItemsDisplay = document.querySelector('.cart-number')

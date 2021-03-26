@@ -38,7 +38,7 @@ paramsArray.forEach(string => {
 const updateCartItems = () => {
     if (localStorage.getItem('currentWhs') == paramsObj.whsId &&
         localStorage.getItem('currentOutlet') == paramsObj.outId &&
-        localStorage.getItem('userId') == paramsObj.userId) {
+        JSON.parse(localStorage.getItem('userId')).userId == paramsObj.userId) {
 
         let parsedCartItems = JSON.parse(localStorage.getItem('cart'))
         Array.from(cardContainer.childNodes).forEach(e => e.remove())
@@ -140,6 +140,15 @@ locationBtn.addEventListener('click', () => {
 })
 
 inputs.forEach(element => {
+    if (element["name"] == 'name') {
+        element.value = JSON.parse(localStorage.getItem('userId')).fullName
+        if (element.value.length < 5) {
+            nameValid = false
+            nameErrorDiv.innerText = 'name should be atleast 6 characters';
+        }else{
+            nameValid = true;
+        }
+    }
     element.addEventListener('keyup', function (e) {
         const tag = this
         switch (tag['name']) {
@@ -207,9 +216,10 @@ placeOrder.addEventListener('click', (e) => {
             user_id: paramsObj.userId
         }
         console.log(orderDetails);
-        placeOrder.innerText = 'order placed succesfully!'
-        placeOrder.classList.add('location-success')
+        // placeOrder.innerText = 'order placed succesfully!'
+        // placeOrder.classList.add('location-success')
         localStorage.setItem('orderDetails', JSON.stringify(orderDetails))
+        alert('order placed succefully!')
         const products = JSON.parse(localStorage.getItem('requiredData'))
         const productsModified = products.map(obj => {
             obj.quantity = 0
@@ -217,9 +227,10 @@ placeOrder.addEventListener('click', (e) => {
         })
         localStorage.setItem('requiredData', JSON.stringify(productsModified))
         localStorage.setItem('cart', JSON.stringify([]))
-        updateCartItems()
-        updatePrice()
-        placeOrder.disabled = true;
+        location.replace('../html/app.html')
+        // updateCartItems()
+        // updatePrice()
+        // placeOrder.disabled = true;
     } else {
         // console.log('cannot place the order');
         isFormValid.innerText = 'please provide the valid details!'

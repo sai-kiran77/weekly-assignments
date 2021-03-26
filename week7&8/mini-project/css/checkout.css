@@ -3,6 +3,10 @@
   background-image: none;
 }
 
+body{
+  background: #f1f3f6;
+}
+
 header nav .logo .logo-img {
   filter: none;
 }
@@ -20,6 +24,7 @@ input {
   padding: 8px 10px 4px;
   width: 100%;
   background: #fff;
+  border-radius: 5px;
 }
 
 button {
@@ -72,8 +77,12 @@ button {
 }
 
 .checkout-container .form {
-  width: 55%;
+  width: 50%;
   padding: 20px;
+  background-color: #fff;
+  margin-left: 1%;
+  box-shadow: 1px 1px 5px rgb(25 25 255 / 30%);
+
 }
 
 .checkout-container .form form {
@@ -104,6 +113,11 @@ button {
 
 .location-btn {
   width: 100%;
+  background: #5c54c9;
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 20%);
+  border: none;
+  color: #fff;
+  border-radius: 5px;
 }
 .location-error {
   position: absolute;
@@ -113,11 +127,21 @@ button {
 
 .order {
   width: 100%;
+  background: #fb641b;
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 20%);
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+  font-weight: bold;
+  outline: none;
 }
 
 .cart {
   width: 43%;
-  border: 1px solid black;
+  /* border: 1px solid black; */
+  box-shadow: 1px 1px 4px gray;
+  background-color: #fff;
+  margin-left: 4%;
   display: grid;
   grid-template-rows: 50px 350px 50px;
 }
@@ -125,17 +149,25 @@ button {
 .cart h1 {
   justify-self: start;
   align-self: start;
-  padding: 10px;
+  padding: 9px 10px;
+  color: #878787;
+  text-transform: uppercase;
+  box-shadow: 1px 1px 2px gray;
+  font-size: 28px;
+  width: 100%;
 }
 
 .cart .items {
   overflow-y: scroll;
+  box-shadow: 0px 0px 1px grey;
 }
 
 .price {
   justify-self: start;
   align-self: end;
-  padding: 10px;
+  padding: 14px 10px;
+  width: 100%;
+  box-shadow: 1px 1px 3px gray;
 }
 
 .card-container {
@@ -158,6 +190,7 @@ button {
 .card-container .card .img-wrapper {
   width: 100px;
   flex: 0 0 auto;
+  border-radius: 12px 0 0 12px;
 }
 
 .content {
@@ -165,7 +198,7 @@ button {
 }
 
 .card-container .card img {
-  max-width: 100%;
+  max-width: 85%;
   height: auto;
 }
 
@@ -210,11 +243,17 @@ button {
   }
 
   .checkout-container .form {
-    width: 100%;
+    width: 90%;
+    margin-left: 0;
+    margin: auto;
+
   }
 
   .cart {
-    width: 100%;
+    width: 90%;
+    margin-left: 0;
+    margin: auto;
+    margin-bottom: 3%;
   }
 
   .cart h1 {
