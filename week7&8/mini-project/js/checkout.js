@@ -227,7 +227,7 @@ placeOrder.addEventListener('click', (e) => {
         })
         localStorage.setItem('requiredData', JSON.stringify(productsModified))
         localStorage.setItem('cart', JSON.stringify([]))
-        // location.replace('../html/app.html')
+        location.replace('../html/app.html')
         // updateCartItems()
         // updatePrice()
         // placeOrder.disabled = true;
