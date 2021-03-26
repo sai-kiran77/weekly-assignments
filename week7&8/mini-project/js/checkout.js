@@ -208,7 +208,7 @@ placeOrder.addEventListener('click', (e) => {
         }
 
         const orderDetails = {
-            items: JSON.parse(localStorage.getItem('cart'))[paramsObj.whsId],
+            items: JSON.parse(localStorage.getItem('cart')),
             userDetails,
             total_price: totalPriceElement.innerText + '$',
             whsOrgId: paramsObj.whsId,
@@ -227,7 +227,7 @@ placeOrder.addEventListener('click', (e) => {
         })
         localStorage.setItem('requiredData', JSON.stringify(productsModified))
         localStorage.setItem('cart', JSON.stringify([]))
-        location.replace('../html/app.html')
+        // location.replace('../html/app.html')
         // updateCartItems()
         // updatePrice()
         // placeOrder.disabled = true;
