@@ -1,0 +1,24 @@
+<div class="categories" *ngIf="branchSelected">
+  <h1>
+    Equipment Catalog from
+    <span style="color: cornflowerblue">{{ currentBranch.name }}</span> branch
+  </h1>
+  <div class="categories-container">
+    <div
+      (click)="categoryClickHandler(category)"
+      class="card"
+      *ngFor="let category of currentBranch.categories"
+    >
+      <div class="img-wrapper">
+        <img [src]="category.image" alt="equipment image" />
+      </div>
+      <div class="category-name">
+        <p>{{ category.name }}</p>
+        <fa-icon class="right-arrow" [icon]="faArrowright"></fa-icon>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="warning" *ngIf="!branchSelected">
+  <h3>Please select location to see the Catalog!</h3>
+</div>

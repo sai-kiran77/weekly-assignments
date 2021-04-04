@@ -1,0 +1,17 @@
+<div class="categories" *ngIf="branchSelected">
+  <h1>Categories of <span style="color: cornflowerblue" >{{categoryName}}</span></h1>
+  <div class="categories-container">
+    <div class="card" *ngFor="let category of subcategories">
+      <div class="img-wrapper">
+        <img [src]="category.image" alt="equipment image" />
+      </div>
+      <div class="category-name">
+        <p>{{ category.name }}</p>
+        <fa-icon class="right-arrow" [icon]="faArrowright"></fa-icon>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="warning" *ngIf="!branchSelected">
+  <h3>Please select location to see the categories!</h3>
+</div>

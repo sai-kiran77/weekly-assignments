@@ -1,0 +1,2134 @@
+{
+  "status": "success",
+  "data": {
+    "locations": [
+      {
+        "dealers_id": "EDIL",
+        "opco": "EDIL",
+        "name": "ILLINOIS",
+
+        "branches": [
+          {
+            "branch_id": "BUR",
+            "name": "Burr Ridge",
+
+            "categories": [
+              {
+                "name": "Scissor Lifts",
+                "image": "https://5.imimg.com/data5/AM/MP/PK/SELLER-28980996/scissor-lift-250x250.jpg",
+
+                "subcategories": [
+                  { "name": "Slab", "image": "https://4.imimg.com/data4/JS/KO/ANDROID-6796685/product-250x250.jpeg" }
+                ]
+              }
+            ]
+          },
+
+          {
+            "branch_id": "ELG",
+            "name": "Itasca",
+
+            "categories": [
+              {
+                "name": "Booms",
+                "image": "https://3.imimg.com/data3/LI/YF/MY-1696478/boom-lift-250x250.jpg",
+
+                "subcategories": [
+                  {
+                    "name": "Articulated - Electric",
+                    "image": "https://5.imimg.com/data5/PW/CY/MY-2257135/straight-boom-lift-for-rent-250x250.jpg"
+                  },
+
+                  {
+                    "name": "Articulated - Engine",
+                    "image": "bhttps://5.imimg.com/data5/MA/AI/MY-2934197/self-access-platform-on-hire-250x250.jpg"
+                  }
+                ]
+              },
+
+              {
+                "name": "Forklifts",
+                "image": "https://5.imimg.com/data5/SI/RW/MY-648196/fork-lift-attachment-work-platform-rental-250x250.jpg",
+
+                "subcategories": [
+                  { "name": "Electric", "image": "https://5.imimg.com/data5/SI/RW/MY-648196/fork-lift-attachment-work-platform-rental-250x250.jpg" },
+
+                  { "name": "IC Cushion", "image": "https://5.imimg.com/data5/SI/RW/MY-648196/fork-lift-attachment-work-platform-rental-250x250.jpg" },
+
+                  {
+                    "name": "IC Pneumatic",
+                    "image": "https://5.imimg.com/data5/SI/RW/MY-648196/fork-lift-attachment-work-platform-rental-250x250.jpg"
+                  }
+                ]
+              },
+              {
+                "name": "Scissor Lifts",
+                "image": "https://5.imimg.com/data5/AM/MP/PK/SELLER-28980996/scissor-lift-250x250.jpg",
+
+                "subcategories": [
+                  { "name": "Slab", "image": "https://4.imimg.com/data4/JS/KO/ANDROID-6796685/product-250x250.jpeg" }
+                ]
+              },
+              {
+                "name": "Single Man Lifts",
+                "image": "https://5.imimg.com/data5/KR/TJ/MY-9318303/grooving-machine-for-rental-in-india-250x250.jpeg",
+                "subcategories": [
+                  {
+                    "name": "Driveable",
+                    "image": "https://5.imimg.com/data5/KR/TJ/MY-9318303/grooving-machine-for-rental-in-india-250x250.jpeg"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "branch_id": "ROC",
+            "name": "Rockford",
+            "categories": [
+              {
+                "name": "Booms",
+                "image": "https://3.imimg.com/data3/LI/YF/MY-1696478/boom-lift-250x250.jpg",
+                "subcategories": [
+                  {
+                    "name": "Articulated - Electric",
+                    "image": "https://5.imimg.com/data5/PW/CY/MY-2257135/straight-boom-lift-for-rent-250x250.jpg"
+                  },
+                  {
+                    "name": "Articulated - Engine",
+                    "image": "bhttps://5.imimg.com/data5/MA/AI/MY-2934197/self-access-platform-on-hire-250x250.jpg"
+                  }
+                ]
+              },
+              {
+                "name": "Forklifts",
+                "image": "https://5.imimg.com/data5/SI/RW/MY-648196/fork-lift-attachment-work-platform-rental-250x250.jpg",
+                "subcategories": [
+                  { "name": "Electric", "image": "https://5.imimg.com/data5/SI/RW/MY-648196/fork-lift-attachment-work-platform-rental-250x250.jpg" },
+                  { "name": "IC Cushion", "image": "https://5.imimg.com/data5/SI/RW/MY-648196/fork-lift-attachment-work-platform-rental-250x250.jpg" },
+                  {
+                    "name": "IC Pneumatic",
+                    "image": "https://5.imimg.com/data5/SI/RW/MY-648196/fork-lift-attachment-work-platform-rental-250x250.jpg"
+                  },
+                  {
+                    "name": "Rough Terrain",
+                    "image": "https://5.imimg.com/data5/SI/RW/MY-648196/fork-lift-attachment-work-platform-rental-250x250.jpg"
+                  }
+                ]
+              },
+              {
+                "name": "Scissor Lifts",
+                "image": "https://5.imimg.com/data5/AM/MP/PK/SELLER-28980996/scissor-lift-250x250.jpg",
+                "subcategories": [
+                  { "name": "Slab", "image": "https://4.imimg.com/data4/JS/KO/ANDROID-6796685/product-250x250.jpeg" }
+                ]
+              },
+              {
+                "name": "Single Man Lifts",
+                "image": "https://5.imimg.com/data5/KR/TJ/MY-9318303/grooving-machine-for-rental-in-india-250x250.jpeg",
+                "subcategories": [
+                  {
+                    "name": "Driveable",
+                    "image": "https://5.imimg.com/data5/KR/TJ/MY-9318303/grooving-machine-for-rental-in-india-250x250.jpeg"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "dealers_id": "EDIN",
+        "opco": "EDKY",
+        "name": "INDIANA",
+        "branches": [
+          {
+            "branch_id": "EVA",
+            "name": "Evansville",
+            "categories": [
+              {
+                "name": "Booms",
+                "image": "https://3.imimg.com/data3/LI/YF/MY-1696478/boom-lift-250x250.jpg",
+                "subcategories": [
+                  {
+                    "name": "Articulated - Electric",
+                    "image": "https://5.imimg.com/data5/PW/CY/MY-2257135/straight-boom-lift-for-rent-250x250.jpg"
+                  },
+                  {
+                    "name": "Articulated - Engine",
+                    "image": "bhttps://5.imimg.com/data5/MA/AI/MY-2934197/self-access-platform-on-hire-250x250.jpg"
+                  },
+                  { "name": "Straight", "image": "https://2.imimg.com/data2/VH/YA/MY-1389659/rough-terrain-scissor-lift-250x250.jpg" }
+                ]
+              },
+              {
+                "name": "Carry Deck Crane",
+                "image": "https://5.imimg.com/data5/BR/GD/MY-10307431/godrej-rental-services-250x250.jpg",
+                "subcategories": [{ "name": "NA" }]
+              },
+              {
+                "name": "Forklifts",
+                "image": "https://5.imimg.com/data5/SI/RW/MY-648196/fork-lift-attachment-work-platform-rental-250x250.jpg",
+                "subcategories": [
+                  { "name": "Electric", "image": "https://5.imimg.com/data5/SI/RW/MY-648196/fork-lift-attachment-work-platform-rental-250x250.jpg" },
+                  { "name": "IC Cushion", "image": "https://5.imimg.com/data5/SI/RW/MY-648196/fork-lift-attachment-work-platform-rental-250x250.jpg" },
+                  {
+                    "name": "IC Pneumatic",
+                    "image": "https://5.imimg.com/data5/SI/RW/MY-648196/fork-lift-attachment-work-platform-rental-250x250.jpg"
+                  }
+                ]
+              },
+              {
+                "name": "Scissor Lifts",
+                "image": "https://5.imimg.com/data5/AM/MP/PK/SELLER-28980996/scissor-lift-250x250.jpg",
+                "subcategories": [
+                  { "name": "Slab", "image": "https://4.imimg.com/data4/JS/KO/ANDROID-6796685/product-250x250.jpeg" },
+                  {
+                    "name": "Rough Terrain",
+                    "image": "https://5.imimg.com/data5/AF/YR/QE/SELLER-5817670/scissor-lift-rental-250x250.jpg"
+                  }
+                ]
+              },
+              {
+                "name": "Single Man Lifts",
+                "image": "https://5.imimg.com/data5/KR/TJ/MY-9318303/grooving-machine-for-rental-in-india-250x250.jpeg",
+                "subcategories": [
+                  {
+                    "name": "Driveable",
+                    "image": "https://5.imimg.com/data5/KR/TJ/MY-9318303/grooving-machine-for-rental-in-india-250x250.jpeg"
+                  },
+                  {
+                    "name": "Push Around",
+                    "image": "https://5.imimg.com/data5/AF/YR/QE/SELLER-5817670/scissor-lift-rental-250x250.jpg"
+                  }
+                ]
+              },
+              {
+                "name": "Telehandlers",
+                "image": "https://5.imimg.com/data5/AF/YR/QE/SELLER-5817670/scissor-lift-rental-250x250.jpg",
+                "subcategories": [{ "name": "NA" }]
+              },
+              {
+                "name": "Personnel Cart",
+                "image": "https://5.imimg.com/data5/AF/YR/QE/SELLER-5817670/scissor-lift-rental-250x250.jpg",
+                "subcategories": [
+                  { "name": "NA" },
+                  {
+                    "name": "Rough Terrain",
+                    "image": "https://5.imimg.com/data5/AF/YR/QE/SELLER-5817670/scissor-lift-rental-250x250.jpg"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "dealers_id": "EDKY",
+        "opco": "EDKY",
+        "name": "KENTUCKY",
+        "branches": [
+          {
+            "branch_id": "BOW",
+            "name": "Bowling Green",
+            "categories": [
+              {
+                "name": "Booms",
+                "image": "https://3.imimg.com/data3/LI/YF/MY-1696478/boom-lift-250x250.jpg",
+                "subcategories": [
+                  {
+                    "name": "Articulated - Electric",
+                    "image": "https://5.imimg.com/data5/PW/CY/MY-2257135/straight-boom-lift-for-rent-250x250.jpg"
+                  },
+                  {
+                    "name": "Articulated - Engine",
+                    "image": "bhttps://5.imimg.com/data5/MA/AI/MY-2934197/self-access-platform-on-hire-250x250.jpg"
+                  },
+                  { "name": "Straight", "image": "https://2.imimg.com/data2/VH/YA/MY-1389659/rough-terrain-scissor-lift-250x250.jpg" }
+                ]
+              },
+              {
+                "name": "Carry Deck Crane",
+                "image": "https://5.imimg.com/data5/BR/GD/MY-10307431/godrej-rental-services-250x250.jpg",
+                "subcategories": [{ "name": "NA" }]
+              },
+              {
+                "name": "Forklifts",
+                "image": "https://5.imimg.com/data5/SI/RW/MY-648196/fork-lift-attachment-work-platform-rental-250x250.jpg",
+                "subcategories": [
+                  { "name": "Electric", "image": "https://5.imimg.com/data5/SI/RW/MY-648196/fork-lift-attachment-work-platform-rental-250x250.jpg" },
+                  { "name": "IC Cushion", "image": "https://5.imimg.com/data5/SI/RW/MY-648196/fork-lift-attachment-work-platform-rental-250x250.jpg" },
+                  {
+                    "name": "IC Pneumatic",
+                    "image": "https://5.imimg.com/data5/SI/RW/MY-648196/fork-lift-attachment-work-platform-rental-250x250.jpg"
+                  },
+                  {
+                    "name": "Rough Terrain",
+                    "image": "https://5.imimg.com/data5/SI/RW/MY-648196/fork-lift-attachment-work-platform-rental-250x250.jpg"
+                  },
+                  { "name": "Tugger", "image": "https://5.imimg.com/data5/AF/YR/QE/SELLER-5817670/scissor-lift-rental-250x250.jpg" }
+                ]
+              },
+              {
+                "name": "Scissor Lifts",
+                "image": "https://5.imimg.com/data5/AM/MP/PK/SELLER-28980996/scissor-lift-250x250.jpg",
+                "subcategories": [
+                  { "name": "Slab", "image": "https://4.imimg.com/data4/JS/KO/ANDROID-6796685/product-250x250.jpeg" },
+                  {
+                    "name": "Rough Terrain",
+                    "image": "https://5.imimg.com/data5/AF/YR/QE/SELLER-5817670/scissor-lift-rental-250x250.jpg"
+                  }
+                ]
+              },
+              {
+                "name": "Single Man Lifts",
+                "image": "https://5.imimg.com/data5/KR/TJ/MY-9318303/grooving-machine-for-rental-in-india-250x250.jpeg",
+                "subcategories": [
+                  {
+                    "name": "Driveable",
+                    "image": "https://5.imimg.com/data5/KR/TJ/MY-9318303/grooving-machine-for-rental-in-india-250x250.jpeg"
+                  }
+                ]
+              },
+              {
+                "name": "Telehandlers",
+                "image": "https://5.imimg.com/data5/AF/YR/QE/SELLER-5817670/scissor-lift-rental-250x250.jpg",
+                "subcategories": [{ "name": "NA" }]
+              },
+              {
+                "name": "Personnel Cart",
+                "image": "https://5.imimg.com/data5/AF/YR/QE/SELLER-5817670/scissor-lift-rental-250x250.jpg",
+                "subcategories": [
+                  { "name": "NA" },
+                  {
+                    "name": "Rough Terrain",
+                    "image": "https://5.imimg.com/data5/AF/YR/QE/SELLER-5817670/scissor-lift-rental-250x250.jpg"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "branch_id": "HOP",
+            "name": "Hopkinsville",
+            "categories": [
+              {
+                "name": "Booms",
+                "image": "https://3.imimg.com/data3/LI/YF/MY-1696478/boom-lift-250x250.jpg",
+                "subcategories": [
+                  {
+                    "name": "Articulated - Electric",
+                    "image": "https://5.imimg.com/data5/PW/CY/MY-2257135/straight-boom-lift-for-rent-250x250.jpg"
+                  },
+                  {
+                    "name": "Articulated - Engine",
+                    "image": "bhttps://5.imimg.com/data5/MA/AI/MY-2934197/self-access-platform-on-hire-250x250.jpg"
+                  },
+                  { "name": "Straight", "image": "https://2.imimg.com/data2/VH/YA/MY-1389659/rough-terrain-scissor-lift-250x250.jpg" }
+                ]
+              },
+              {
+                "name": "Forklifts",
+                "image": "https://5.imimg.com/data5/SI/RW/MY-648196/fork-lift-attachment-work-platform-rental-250x250.jpg",
+                "subcategories": [
+                  { "name": "Electric", "image": "https://5.imimg.com/data5/SI/RW/MY-648196/fork-lift-attachment-work-platform-rental-250x250.jpg" },
+                  { "name": "IC Cushion", "image": "https://5.imimg.com/data5/SI/RW/MY-648196/fork-lift-attachment-work-platform-rental-250x250.jpg" },
+                  {
+                    "name": "IC Pneumatic",
+                    "image": "https://5.imimg.com/data5/SI/RW/MY-648196/fork-lift-attachment-work-platform-rental-250x250.jpg"
+                  }
+                ]
+              },
+              {
+                "name": "Scissor Lifts",
+                "image": "https://5.imimg.com/data5/AM/MP/PK/SELLER-28980996/scissor-lift-250x250.jpg",
+                "subcategories": [
+                  { "name": "Slab", "image": "https://4.imimg.com/data4/JS/KO/ANDROID-6796685/product-250x250.jpeg" }
+                ]
+              },
+              {
+                "name": "Single Man Lifts",
+                "image": "https://5.imimg.com/data5/KR/TJ/MY-9318303/grooving-machine-for-rental-in-india-250x250.jpeg",
+                "subcategories": [
+                  {
+                    "name": "Driveable",
+                    "image": "https://5.imimg.com/data5/KR/TJ/MY-9318303/grooving-machine-for-rental-in-india-250x250.jpeg"
+                  }
+                ]
+              },
+              {
+                "name": "Telehandlers",
+                "image": "https://5.imimg.com/data5/AF/YR/QE/SELLER-5817670/scissor-lift-rental-250x250.jpg",
+                "subcategories": [{ "name": "NA" }]
+              }
+            ]
+          },
+          {
+            "branch_id": "LOU",
+            "name": "Louisville",
+            "categories": [
+              {
+                "name": "Booms",
+                "image": "https://3.imimg.com/data3/LI/YF/MY-1696478/boom-lift-250x250.jpg",
+                "subcategories": [
+                  {
+                    "name": "Articulated - Electric",
+                    "image": "https://5.imimg.com/data5/PW/CY/MY-2257135/straight-boom-lift-for-rent-250x250.jpg"
+                  },
+                  {
+                    "name": "Articulated - Engine",
+                    "image": "bhttps://5.imimg.com/data5/MA/AI/MY-2934197/self-access-platform-on-hire-250x250.jpg"
+                  },
+                  { "name": "Straight", "image": "https://2.imimg.com/data2/VH/YA/MY-1389659/rough-terrain-scissor-lift-250x250.jpg" }
+                ]
+              },
+              {
+                "name": "Carry Deck Crane",
+                "image": "https://5.imimg.com/data5/BR/GD/MY-10307431/godrej-rental-services-250x250.jpg",
+                "subcategories": [{ "name": "NA" }]
+              },
+              {
+                "name": "Facility Maintenance & Cleaning",
+                "image": "https://5.imimg.com/data5/BR/GD/MY-10307431/godrej-rental-services-250x250.jpg",
+                "subcategories": [{ "name": "NA" }]
+              },
+              {
+                "name": "Forklifts",
+                "image": "https://5.imimg.com/data5/SI/RW/MY-648196/fork-lift-attachment-work-platform-rental-250x250.jpg",
+                "subcategories": [
+                  { "name": "Electric", "image": "https://5.imimg.com/data5/SI/RW/MY-648196/fork-lift-attachment-work-platform-rental-250x250.jpg" },
+                  { "name": "IC Cushion", "image": "https://5.imimg.com/data5/SI/RW/MY-648196/fork-lift-attachment-work-platform-rental-250x250.jpg" },
+                  {
+                    "name": "IC Pneumatic",
+                    "image": "https://5.imimg.com/data5/SI/RW/MY-648196/fork-lift-attachment-work-platform-rental-250x250.jpg"
+                  },
+                  { "name": "Tugger", "image": "https://5.imimg.com/data5/AF/YR/QE/SELLER-5817670/scissor-lift-rental-250x250.jpg" }
+                ]
+              },
+              {
+                "name": "Scissor Lifts",
+                "image": "https://5.imimg.com/data5/AM/MP/PK/SELLER-28980996/scissor-lift-250x250.jpg",
+                "subcategories": [
+                  { "name": "Slab", "image": "https://4.imimg.com/data4/JS/KO/ANDROID-6796685/product-250x250.jpeg" },
+                  {
+                    "name": "Rough Terrain",
+                    "image": "https://5.imimg.com/data5/AF/YR/QE/SELLER-5817670/scissor-lift-rental-250x250.jpg"
+                  }
+                ]
+              },
+              {
+                "name": "Single Man Lifts",
+                "image": "https://5.imimg.com/data5/KR/TJ/MY-9318303/grooving-machine-for-rental-in-india-250x250.jpeg",
+                "subcategories": [
+                  {
+                    "name": "Driveable",
+                    "image": "https://5.imimg.com/data5/KR/TJ/MY-9318303/grooving-machine-for-rental-in-india-250x250.jpeg"
+                  }
+                ]
+              },
+              {
+                "name": "Telehandlers",
+                "image": "https://5.imimg.com/data5/AF/YR/QE/SELLER-5817670/scissor-lift-rental-250x250.jpg",
+                "subcategories": [{ "name": "NA" }]
+              },
+              {
+                "name": "Personnel Cart",
+                "image": "https://5.imimg.com/data5/AF/YR/QE/SELLER-5817670/scissor-lift-rental-250x250.jpg",
+                "subcategories": [
+                  { "name": "NA" },
+                  {
+                    "name": "Rough Terrain",
+                    "image": "https://5.imimg.com/data5/AF/YR/QE/SELLER-5817670/scissor-lift-rental-250x250.jpg"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "branch_id": "PAD",
+            "name": "Paducah",
+            "categories": [
+              {
+                "name": "Booms",
+                "image": "https://3.imimg.com/data3/LI/YF/MY-1696478/boom-lift-250x250.jpg",
+                "subcategories": [
+                  {
+                    "name": "Articulated - Electric",
+                    "image": "https://5.imimg.com/data5/PW/CY/MY-2257135/straight-boom-lift-for-rent-250x250.jpg"
+                  },
+                  {
+                    "name": "Articulated - Engine",
+                    "image": "bhttps://5.imimg.com/data5/MA/AI/MY-2934197/self-access-platform-on-hire-250x250.jpg"
+                  },
+                  { "name": "Straight", "image": "https://2.imimg.com/data2/VH/YA/MY-1389659/rough-terrain-scissor-lift-250x250.jpg" }
+                ]
+              },
+              {
+                "name": "Carry Deck Crane",
+                "image": "https://5.imimg.com/data5/BR/GD/MY-10307431/godrej-rental-services-250x250.jpg",
+                "subcategories": [{ "name": "NA" }]
+              },
+              {
+                "name": "Forklifts",
+                "image": "https://5.imimg.com/data5/SI/RW/MY-648196/fork-lift-attachment-work-platform-rental-250x250.jpg",
+                "subcategories": [
+                  { "name": "Electric", "image": "https://5.imimg.com/data5/SI/RW/MY-648196/fork-lift-attachment-work-platform-rental-250x250.jpg" },
+                  { "name": "IC Cushion", "image": "https://5.imimg.com/data5/SI/RW/MY-648196/fork-lift-attachment-work-platform-rental-250x250.jpg" },
+                  {
+                    "name": "IC Pneumatic",
+                    "image": "https://5.imimg.com/data5/SI/RW/MY-648196/fork-lift-attachment-work-platform-rental-250x250.jpg"
+                  }
+                ]
+              },
+              {
+                "name": "Scissor Lifts",
+                "image": "https://5.imimg.com/data5/AM/MP/PK/SELLER-28980996/scissor-lift-250x250.jpg",
+                "subcategories": [
+                  { "name": "Slab", "image": "https://4.imimg.com/data4/JS/KO/ANDROID-6796685/product-250x250.jpeg" },
+                  {
+                    "name": "Rough Terrain",
+                    "image": "https://5.imimg.com/data5/AF/YR/QE/SELLER-5817670/scissor-lift-rental-250x250.jpg"
+                  }
+                ]
+              },
+              {
+                "name": "Single Man Lifts",
+                "image": "https://5.imimg.com/data5/KR/TJ/MY-9318303/grooving-machine-for-rental-in-india-250x250.jpeg",
+                "subcategories": [
+                  {
+                    "name": "Driveable",
+                    "image": "https://5.imimg.com/data5/KR/TJ/MY-9318303/grooving-machine-for-rental-in-india-250x250.jpeg"
+                  }
+                ]
+              },
+              {
+                "name": "Telehandlers",
+                "image": "https://5.imimg.com/data5/AF/YR/QE/SELLER-5817670/scissor-lift-rental-250x250.jpg",
+                "subcategories": [{ "name": "NA" }]
+              },
+              {
+                "name": "Personnel Cart",
+                "image": "https://5.imimg.com/data5/AF/YR/QE/SELLER-5817670/scissor-lift-rental-250x250.jpg",
+                "subcategories": [
+                  {
+                    "name": "Rough Terrain",
+                    "image": "https://5.imimg.com/data5/AF/YR/QE/SELLER-5817670/scissor-lift-rental-250x250.jpg"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "branch_id": "LEX",
+            "name": "Lexington",
+            "categories": [
+              {
+                "name": "Booms",
+                "image": "https://3.imimg.com/data3/LI/YF/MY-1696478/boom-lift-250x250.jpg",
+                "subcategories": [
+                  {
+                    "name": "Articulated - Electric",
+                    "image": "https://5.imimg.com/data5/PW/CY/MY-2257135/straight-boom-lift-for-rent-250x250.jpg"
+                  },
+                  {
+                    "name": "Articulated - Engine",
+                    "image": "bhttps://5.imimg.com/data5/MA/AI/MY-2934197/self-access-platform-on-hire-250x250.jpg"
+                  },
+                  { "name": "Straight", "image": "https://2.imimg.com/data2/VH/YA/MY-1389659/rough-terrain-scissor-lift-250x250.jpg" }
+                ]
+              },
+              {
+                "name": "Carry Deck Crane",
+                "image": "https://5.imimg.com/data5/BR/GD/MY-10307431/godrej-rental-services-250x250.jpg",
+                "subcategories": [{ "name": "NA" }]
+              },
+              {
+                "name": "Forklifts",
+                "image": "https://5.imimg.com/data5/SI/RW/MY-648196/fork-lift-attachment-work-platform-rental-250x250.jpg",
+                "subcategories": [
+                  { "name": "Electric", "image": "https://5.imimg.com/data5/SI/RW/MY-648196/fork-lift-attachment-work-platform-rental-250x250.jpg" },
+                  { "name": "IC Cushion", "image": "https://5.imimg.com/data5/SI/RW/MY-648196/fork-lift-attachment-work-platform-rental-250x250.jpg" },
+                  {
+                    "name": "IC Pneumatic",
+                    "image": "https://5.imimg.com/data5/SI/RW/MY-648196/fork-lift-attachment-work-platform-rental-250x250.jpg"
+                  },
+                  { "name": "Swing Mast", "image": "https://5.imimg.com/data5/AF/YR/QE/SELLER-5817670/scissor-lift-rental-250x250.jpg" },
+                  { "name": "Tugger", "image": "https://5.imimg.com/data5/AF/YR/QE/SELLER-5817670/scissor-lift-rental-250x250.jpg" }
+                ]
+              },
+              {
+                "name": "Scissor Lifts",
+                "image": "https://5.imimg.com/data5/AM/MP/PK/SELLER-28980996/scissor-lift-250x250.jpg",
+                "subcategories": [
+                  { "name": "Slab", "image": "https://4.imimg.com/data4/JS/KO/ANDROID-6796685/product-250x250.jpeg" },
+                  {
+                    "name": "Rough Terrain",
+                    "image": "https://5.imimg.com/data5/AF/YR/QE/SELLER-5817670/scissor-lift-rental-250x250.jpg"
+                  }
+                ]
+              },
+              {
+                "name": "Single Man Lifts",
+                "image": "https://5.imimg.com/data5/KR/TJ/MY-9318303/grooving-machine-for-rental-in-india-250x250.jpeg",
+                "subcategories": [
+                  {
+                    "name": "Driveable",
+                    "image": "https://5.imimg.com/data5/KR/TJ/MY-9318303/grooving-machine-for-rental-in-india-250x250.jpeg"
+                  },
+                  {
+                    "name": "Push Around",
+                    "image": "https://5.imimg.com/data5/AF/YR/QE/SELLER-5817670/scissor-lift-rental-250x250.jpg"
+                  }
+                ]
+              },
+              {
+                "name": "Telehandlers",
+                "image": "https://5.imimg.com/data5/AF/YR/QE/SELLER-5817670/scissor-lift-rental-250x250.jpg",
+                "subcategories": [{ "name": "NA" }]
+              },
+              {
+                "name": "Personnel Cart",
+                "image": "https://5.imimg.com/data5/AF/YR/QE/SELLER-5817670/scissor-lift-rental-250x250.jpg",
+                "subcategories": [
+                  { "name": "NA" },
+                  {
+                    "name": "Rough Terrain",
+                    "image": "https://5.imimg.com/data5/AF/YR/QE/SELLER-5817670/scissor-lift-rental-250x250.jpg"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "dealers_id": "EDNJ",
+        "opco": "EDPA",
+        "name": "NEW JERSEY",
+        "branches": [
+          {
+            "branch_id": "MTL",
+            "name": "Mt. Laurel",
+            "categories": [
+              {
+                "name": "Booms",
+                "image": "https://3.imimg.com/data3/LI/YF/MY-1696478/boom-lift-250x250.jpg",
+                "subcategories": [
+                  {
+                    "name": "Articulated - Electric",
+                    "image": "https://5.imimg.com/data5/PW/CY/MY-2257135/straight-boom-lift-for-rent-250x250.jpg"
+                  },
+                  {
+                    "name": "Articulated - Engine",
+                    "image": "bhttps://5.imimg.com/data5/MA/AI/MY-2934197/self-access-platform-on-hire-250x250.jpg"
+                  }
+                ]
+              },
+              {
+                "name": "Forklifts",
+                "image": "https://5.imimg.com/data5/SI/RW/MY-648196/fork-lift-attachment-work-platform-rental-250x250.jpg",
+                "subcategories": [
+                  { "name": "Electric", "image": "https://5.imimg.com/data5/SI/RW/MY-648196/fork-lift-attachment-work-platform-rental-250x250.jpg" },
+                  { "name": "IC Cushion", "image": "https://5.imimg.com/data5/SI/RW/MY-648196/fork-lift-attachment-work-platform-rental-250x250.jpg" },
+                  {
+                    "name": "IC Pneumatic",
+                    "image": "https://5.imimg.com/data5/SI/RW/MY-648196/fork-lift-attachment-work-platform-rental-250x250.jpg"
+                  }
+                ]
+              },
+              {
+                "name": "Scissor Lifts",
+                "image": "https://5.imimg.com/data5/AM/MP/PK/SELLER-28980996/scissor-lift-250x250.jpg",
+                "subcategories": [
+                  { "name": "Slab", "image": "https://4.imimg.com/data4/JS/KO/ANDROID-6796685/product-250x250.jpeg" }
+                ]
+              },
+              {
+                "name": "Personnel Cart",
+                "image": "https://5.imimg.com/data5/AF/YR/QE/SELLER-5817670/scissor-lift-rental-250x250.jpg",
+                "subcategories": [{ "name": "NA" }]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "dealers_id": "EDOH",
+        "name": "OHIO",
+        "opco": "OHIO",
+        "branches": [
+          {
+            "branch_id": "MON",
+            "name": "Monroe",
+            "categories": [
+              {
+                "name": "Booms",
+                "image": "https://3.imimg.com/data3/LI/YF/MY-1696478/boom-lift-250x250.jpg",
+                "subcategories": [
+                  {
+                    "name": "Articulated - Electric",
+                    "image": "https://5.imimg.com/data5/PW/CY/MY-2257135/straight-boom-lift-for-rent-250x250.jpg"
+                  },
+                  {
+                    "name": "Articulated - Engine",
+                    "image": "bhttps://5.imimg.com/data5/MA/AI/MY-2934197/self-access-platform-on-hire-250x250.jpg"
+                  },
+                  { "name": "Straight", "image": "https://2.imimg.com/data2/VH/YA/MY-1389659/rough-terrain-scissor-lift-250x250.jpg" }
+                ]
+              },
+              {
+                "name": "Carry Deck Crane",
+                "image": "https://5.imimg.com/data5/BR/GD/MY-10307431/godrej-rental-services-250x250.jpg",
+                "subcategories": [{ "name": "NA" }]
+              },
+              {
+                "name": "Forklifts",
+                "image": "https://5.imimg.com/data5/SI/RW/MY-648196/fork-lift-attachment-work-platform-rental-250x250.jpg",
+                "subcategories": [
+                  { "name": "Electric", "image": "https://5.imimg.com/data5/SI/RW/MY-648196/fork-lift-attachment-work-platform-rental-250x250.jpg" },
+                  { "name": "IC Cushion", "image": "https://5.imimg.com/data5/SI/RW/MY-648196/fork-lift-attachment-work-platform-rental-250x250.jpg" },
+                  {
+                    "name": "IC Pneumatic",
+                    "image": "https://5.imimg.com/data5/SI/RW/MY-648196/fork-lift-attachment-work-platform-rental-250x250.jpg"
+                  },
+                  { "name": "Swing Mast", "image": "https://5.imimg.com/data5/AF/YR/QE/SELLER-5817670/scissor-lift-rental-250x250.jpg" },
+                  { "name": "Tugger", "image": "https://5.imimg.com/data5/AF/YR/QE/SELLER-5817670/scissor-lift-rental-250x250.jpg" }
+                ]
+              },
+              {
+                "name": "Scissor Lifts",
+                "image": "https://5.imimg.com/data5/AM/MP/PK/SELLER-28980996/scissor-lift-250x250.jpg",
+                "subcategories": [
+                  { "name": "Slab", "image": "https://4.imimg.com/data4/JS/KO/ANDROID-6796685/product-250x250.jpeg" },
+                  {
+                    "name": "Rough Terrain",
+                    "image": "https://5.imimg.com/data5/AF/YR/QE/SELLER-5817670/scissor-lift-rental-250x250.jpg"
+                  }
+                ]
+              },
+              {
+                "name": "Single Man Lifts",
+                "image": "https://5.imimg.com/data5/KR/TJ/MY-9318303/grooving-machine-for-rental-in-india-250x250.jpeg",
+                "subcategories": [
+                  {
+                    "name": "Driveable",
+                    "image": "https://5.imimg.com/data5/KR/TJ/MY-9318303/grooving-machine-for-rental-in-india-250x250.jpeg"
+                  },
+                  {
+                    "name": "Push Around",
+                    "image": "https://5.imimg.com/data5/AF/YR/QE/SELLER-5817670/scissor-lift-rental-250x250.jpg"
+                  }
+                ]
+              },
+              {
+                "name": "Telehandlers",
+                "image": "https://5.imimg.com/data5/AF/YR/QE/SELLER-5817670/scissor-lift-rental-250x250.jpg",
+                "subcategories": [{ "name": "NA" }]
+              },
+              {
+                "name": "Personnel Cart",
+                "image": "https://5.imimg.com/data5/AF/YR/QE/SELLER-5817670/scissor-lift-rental-250x250.jpg",
+                "subcategories": [
+                  { "name": "NA" },
+                  {
+                    "name": "Rough Terrain",
+                    "image": "https://5.imimg.com/data5/AF/YR/QE/SELLER-5817670/scissor-lift-rental-250x250.jpg"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "branch_id": "CIN",
+            "name": "Cincinnati",
+            "categories": [
+              {
+                "name": "Booms",
+                "image": "https://3.imimg.com/data3/LI/YF/MY-1696478/boom-lift-250x250.jpg",
+                "subcategories": [
+                  {
+                    "name": "Articulated - Electric",
+                    "image": "https://5.imimg.com/data5/PW/CY/MY-2257135/straight-boom-lift-for-rent-250x250.jpg"
+                  },
+                  {
+                    "name": "Articulated - Engine",
+                    "image": "bhttps://5.imimg.com/data5/MA/AI/MY-2934197/self-access-platform-on-hire-250x250.jpg"
+                  },
+                  { "name": "Straight", "image": "https://2.imimg.com/data2/VH/YA/MY-1389659/rough-terrain-scissor-lift-250x250.jpg" }
+                ]
+              },
+              {
+                "name": "Carry Deck Crane",
+                "image": "https://5.imimg.com/data5/BR/GD/MY-10307431/godrej-rental-services-250x250.jpg",
+                "subcategories": [{ "name": "NA" }]
+              },
+              {
+                "name": "Forklifts",
+                "image": "https://5.imimg.com/data5/SI/RW/MY-648196/fork-lift-attachment-work-platform-rental-250x250.jpg",
+                "subcategories": [
+                  { "name": "Electric", "image": "https://5.imimg.com/data5/SI/RW/MY-648196/fork-lift-attachment-work-platform-rental-250x250.jpg" },
+                  { "name": "IC Cushion", "image": "https://5.imimg.com/data5/SI/RW/MY-648196/fork-lift-attachment-work-platform-rental-250x250.jpg" },
+                  {
+                    "name": "IC Pneumatic",
+                    "image": "https://5.imimg.com/data5/SI/RW/MY-648196/fork-lift-attachment-work-platform-rental-250x250.jpg"
+                  },
+                  { "name": "Swing Mast", "image": "https://5.imimg.com/data5/AF/YR/QE/SELLER-5817670/scissor-lift-rental-250x250.jpg" },
+                  { "name": "Tugger", "image": "https://5.imimg.com/data5/AF/YR/QE/SELLER-5817670/scissor-lift-rental-250x250.jpg" }
+                ]
+              },
+              {
+                "name": "Scissor Lifts",
+                "image": "https://5.imimg.com/data5/AM/MP/PK/SELLER-28980996/scissor-lift-250x250.jpg",
+                "subcategories": [
+                  { "name": "Slab", "image": "https://4.imimg.com/data4/JS/KO/ANDROID-6796685/product-250x250.jpeg" },
+                  {
+                    "name": "Rough Terrain",
+                    "image": "https://5.imimg.com/data5/AF/YR/QE/SELLER-5817670/scissor-lift-rental-250x250.jpg"
+                  }
+                ]
+              },
+              {
+                "name": "Single Man Lifts",
+                "image": "https://5.imimg.com/data5/KR/TJ/MY-9318303/grooving-machine-for-rental-in-india-250x250.jpeg",
+                "subcategories": [
+                  {
+                    "name": "Driveable",
+                    "image": "https://5.imimg.com/data5/KR/TJ/MY-9318303/grooving-machine-for-rental-in-india-250x250.jpeg"
+                  },
+                  {
+                    "name": "Push Around",
+                    "image": "https://5.imimg.com/data5/AF/YR/QE/SELLER-5817670/scissor-lift-rental-250x250.jpg"
+                  }
+                ]
+              },
+              {
+                "name": "Telehandlers",
+                "image": "https://5.imimg.com/data5/AF/YR/QE/SELLER-5817670/scissor-lift-rental-250x250.jpg",
+                "subcategories": [{ "name": "NA" }]
+              },
+              {
+                "name": "Personnel Cart",
+                "image": "https://5.imimg.com/data5/AF/YR/QE/SELLER-5817670/scissor-lift-rental-250x250.jpg",
+                "subcategories": [
+                  { "name": "NA" },
+                  {
+                    "name": "Rough Terrain",
+                    "image": "https://5.imimg.com/data5/AF/YR/QE/SELLER-5817670/scissor-lift-rental-250x250.jpg"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "branch_id": "DAY",
+            "name": "Dayton",
+            "categories": [
+              {
+                "name": "Booms",
+                "image": "https://3.imimg.com/data3/LI/YF/MY-1696478/boom-lift-250x250.jpg",
+                "subcategories": [
+                  {
+                    "name": "Articulated - Electric",
+                    "image": "https://5.imimg.com/data5/PW/CY/MY-2257135/straight-boom-lift-for-rent-250x250.jpg"
+                  },
+                  {
+                    "name": "Articulated - Engine",
+                    "image": "bhttps://5.imimg.com/data5/MA/AI/MY-2934197/self-access-platform-on-hire-250x250.jpg"
+                  },
+                  { "name": "Straight", "image": "https://2.imimg.com/data2/VH/YA/MY-1389659/rough-terrain-scissor-lift-250x250.jpg" }
+                ]
+              },
+              {
+                "name": "Carry Deck Crane",
+                "image": "https://5.imimg.com/data5/BR/GD/MY-10307431/godrej-rental-services-250x250.jpg",
+                "subcategories": [{ "name": "NA" }]
+              },
+              {
+                "name": "Forklifts",
+                "image": "https://5.imimg.com/data5/SI/RW/MY-648196/fork-lift-attachment-work-platform-rental-250x250.jpg",
+                "subcategories": [
+                  { "name": "Electric", "image": "https://5.imimg.com/data5/SI/RW/MY-648196/fork-lift-attachment-work-platform-rental-250x250.jpg" },
+                  { "name": "IC Cushion", "image": "https://5.imimg.com/data5/SI/RW/MY-648196/fork-lift-attachment-work-platform-rental-250x250.jpg" },
+                  {
+                    "name": "IC Pneumatic",
+                    "image": "https://5.imimg.com/data5/SI/RW/MY-648196/fork-lift-attachment-work-platform-rental-250x250.jpg"
+                  },
+                  { "name": "Swing Mast", "image": "https://5.imimg.com/data5/AF/YR/QE/SELLER-5817670/scissor-lift-rental-250x250.jpg" },
+                  { "name": "Tugger", "image": "https://5.imimg.com/data5/AF/YR/QE/SELLER-5817670/scissor-lift-rental-250x250.jpg" }
+                ]
+              },
+              {
+                "name": "Scissor Lifts",
+                "image": "https://5.imimg.com/data5/AM/MP/PK/SELLER-28980996/scissor-lift-250x250.jpg",
+                "subcategories": [
+                  { "name": "Slab", "image": "https://4.imimg.com/data4/JS/KO/ANDROID-6796685/product-250x250.jpeg" },
+                  {
+                    "name": "Rough Terrain",
+                    "image": "https://5.imimg.com/data5/AF/YR/QE/SELLER-5817670/scissor-lift-rental-250x250.jpg"
+                  }
+                ]
+              },
+              {
+                "name": "Single Man Lifts",
+                "image": "https://5.imimg.com/data5/KR/TJ/MY-9318303/grooving-machine-for-rental-in-india-250x250.jpeg",
+                "subcategories": [
+                  {
+                    "name": "Driveable",
+                    "image": "https://5.imimg.com/data5/KR/TJ/MY-9318303/grooving-machine-for-rental-in-india-250x250.jpeg"
+                  },
+                  {
+                    "name": "Push Around",
+                    "image": "https://5.imimg.com/data5/AF/YR/QE/SELLER-5817670/scissor-lift-rental-250x250.jpg"
+                  }
+                ]
+              },
+              {
+                "name": "Telehandlers",
+                "image": "https://5.imimg.com/data5/AF/YR/QE/SELLER-5817670/scissor-lift-rental-250x250.jpg",
+                "subcategories": [{ "name": "NA" }]
+              },
+              {
+                "name": "Personnel Cart",
+                "image": "https://5.imimg.com/data5/AF/YR/QE/SELLER-5817670/scissor-lift-rental-250x250.jpg",
+                "subcategories": [
+                  { "name": "NA" },
+                  {
+                    "name": "Rough Terrain",
+                    "image": "https://5.imimg.com/data5/AF/YR/QE/SELLER-5817670/scissor-lift-rental-250x250.jpg"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "branch_id": "LEB",
+            "name": "Lebanon",
+            "categories": [
+              {
+                "name": "Booms",
+                "image": "https://3.imimg.com/data3/LI/YF/MY-1696478/boom-lift-250x250.jpg",
+                "subcategories": [
+                  {
+                    "name": "Articulated - Electric",
+                    "image": "https://5.imimg.com/data5/PW/CY/MY-2257135/straight-boom-lift-for-rent-250x250.jpg"
+                  },
+                  {
+                    "name": "Articulated - Engine",
+                    "image": "bhttps://5.imimg.com/data5/MA/AI/MY-2934197/self-access-platform-on-hire-250x250.jpg"
+                  },
+                  { "name": "Straight", "image": "https://2.imimg.com/data2/VH/YA/MY-1389659/rough-terrain-scissor-lift-250x250.jpg" }
+                ]
+              },
+              {
+                "name": "Carry Deck Crane",
+                "image": "https://5.imimg.com/data5/BR/GD/MY-10307431/godrej-rental-services-250x250.jpg",
+                "subcategories": [{ "name": "NA" }]
+              },
+              {
+                "name": "Forklifts",
+                "image": "https://5.imimg.com/data5/SI/RW/MY-648196/fork-lift-attachment-work-platform-rental-250x250.jpg",
+                "subcategories": [
+                  { "name": "Electric", "image": "https://5.imimg.com/data5/SI/RW/MY-648196/fork-lift-attachment-work-platform-rental-250x250.jpg" },
+                  { "name": "IC Cushion", "image": "https://5.imimg.com/data5/SI/RW/MY-648196/fork-lift-attachment-work-platform-rental-250x250.jpg" },
+                  {
+                    "name": "IC Pneumatic",
+                    "image": "https://5.imimg.com/data5/SI/RW/MY-648196/fork-lift-attachment-work-platform-rental-250x250.jpg"
+                  },
+                  { "name": "Swing Mast", "image": "https://5.imimg.com/data5/AF/YR/QE/SELLER-5817670/scissor-lift-rental-250x250.jpg" },
+                  { "name": "Tugger", "image": "https://5.imimg.com/data5/AF/YR/QE/SELLER-5817670/scissor-lift-rental-250x250.jpg" }
+                ]
+              },
+              {
+                "name": "Scissor Lifts",
+                "image": "https://5.imimg.com/data5/AM/MP/PK/SELLER-28980996/scissor-lift-250x250.jpg",
+                "subcategories": [
+                  { "name": "Slab", "image": "https://4.imimg.com/data4/JS/KO/ANDROID-6796685/product-250x250.jpeg" },
+                  {
+                    "name": "Rough Terrain",
+                    "image": "https://5.imimg.com/data5/AF/YR/QE/SELLER-5817670/scissor-lift-rental-250x250.jpg"
+                  }
+                ]
+              },
+              {
+                "name": "Single Man Lifts",
+                "image": "https://5.imimg.com/data5/KR/TJ/MY-9318303/grooving-machine-for-rental-in-india-250x250.jpeg",
+                "subcategories": [
+                  {
+                    "name": "Driveable",
+                    "image": "https://5.imimg.com/data5/KR/TJ/MY-9318303/grooving-machine-for-rental-in-india-250x250.jpeg"
+                  },
+                  {
+                    "name": "Push Around",
+                    "image": "https://5.imimg.com/data5/AF/YR/QE/SELLER-5817670/scissor-lift-rental-250x250.jpg"
+                  }
+                ]
+              },
+              {
+                "name": "Telehandlers",
+                "image": "https://5.imimg.com/data5/AF/YR/QE/SELLER-5817670/scissor-lift-rental-250x250.jpg",
+                "subcategories": [{ "name": "NA" }]
+              },
+              {
+                "name": "Personnel Cart",
+                "image": "https://5.imimg.com/data5/AF/YR/QE/SELLER-5817670/scissor-lift-rental-250x250.jpg",
+                "subcategories": [
+                  { "name": "NA" },
+                  {
+                    "name": "Rough Terrain",
+                    "image": "https://5.imimg.com/data5/AF/YR/QE/SELLER-5817670/scissor-lift-rental-250x250.jpg"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "dealers_id": "EDPA",
+        "opco": "EDPA",
+        "name": "PENNSYLVANIA",
+        "branches": [
+          {
+            "branch_id": "ALN",
+            "name": "Allentown",
+            "categories": [
+              {
+                "name": "Booms",
+                "image": "https://3.imimg.com/data3/LI/YF/MY-1696478/boom-lift-250x250.jpg",
+                "subcategories": [
+                  {
+                    "name": "Articulated - Electric",
+                    "image": "https://5.imimg.com/data5/PW/CY/MY-2257135/straight-boom-lift-for-rent-250x250.jpg"
+                  },
+                  {
+                    "name": "Articulated - Engine",
+                    "image": "bhttps://5.imimg.com/data5/MA/AI/MY-2934197/self-access-platform-on-hire-250x250.jpg"
+                  }
+                ]
+              },
+              {
+                "name": "Carry Deck Crane",
+                "image": "https://5.imimg.com/data5/BR/GD/MY-10307431/godrej-rental-services-250x250.jpg",
+                "subcategories": [{ "name": "NA" }]
+              },
+              {
+                "name": "Forklifts",
+                "image": "https://5.imimg.com/data5/SI/RW/MY-648196/fork-lift-attachment-work-platform-rental-250x250.jpg",
+                "subcategories": [
+                  { "name": "Electric", "image": "https://5.imimg.com/data5/SI/RW/MY-648196/fork-lift-attachment-work-platform-rental-250x250.jpg" },
+                  { "name": "IC Cushion", "image": "https://5.imimg.com/data5/SI/RW/MY-648196/fork-lift-attachment-work-platform-rental-250x250.jpg" },
+                  {
+                    "name": "IC Pneumatic",
+                    "image": "https://5.imimg.com/data5/SI/RW/MY-648196/fork-lift-attachment-work-platform-rental-250x250.jpg"
+                  }
+                ]
+              },
+              {
+                "name": "Scissor Lifts",
+                "image": "https://5.imimg.com/data5/AM/MP/PK/SELLER-28980996/scissor-lift-250x250.jpg",
+                "subcategories": [
+                  { "name": "Slab", "image": "https://4.imimg.com/data4/JS/KO/ANDROID-6796685/product-250x250.jpeg" }
+                ]
+              },
+              {
+                "name": "Single Man Lifts",
+                "image": "https://5.imimg.com/data5/KR/TJ/MY-9318303/grooving-machine-for-rental-in-india-250x250.jpeg",
+                "subcategories": [
+                  {
+                    "name": "Driveable",
+                    "image": "https://5.imimg.com/data5/KR/TJ/MY-9318303/grooving-machine-for-rental-in-india-250x250.jpeg"
+                  }
+                ]
+              },
+              {
+                "name": "Earth Moving",
+                "image": "https://5.imimg.com/data5/KR/TJ/MY-9318303/grooving-machine-for-rental-in-india-250x250.jpeg",
+                "subcategories": [
+                  {
+                    "name": "Skidsteer",
+                    "image": "https://5.imimg.com/data5/KR/TJ/MY-9318303/grooving-machine-for-rental-in-india-250x250.jpeg"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "branch_id": "LAN",
+            "name": "Lancaster",
+            "categories": [
+              {
+                "name": "Booms",
+                "image": "https://3.imimg.com/data3/LI/YF/MY-1696478/boom-lift-250x250.jpg",
+                "subcategories": [
+                  {
+                    "name": "Articulated - Electric",
+                    "image": "https://5.imimg.com/data5/PW/CY/MY-2257135/straight-boom-lift-for-rent-250x250.jpg"
+                  },
+                  {
+                    "name": "Articulated - Engine",
+                    "image": "bhttps://5.imimg.com/data5/MA/AI/MY-2934197/self-access-platform-on-hire-250x250.jpg"
+                  },
+                  { "name": "Straight", "image": "https://2.imimg.com/data2/VH/YA/MY-1389659/rough-terrain-scissor-lift-250x250.jpg" }
+                ]
+              },
+              {
+                "name": "Forklifts",
+                "image": "https://5.imimg.com/data5/SI/RW/MY-648196/fork-lift-attachment-work-platform-rental-250x250.jpg",
+                "subcategories": [
+                  { "name": "Electric", "image": "https://5.imimg.com/data5/SI/RW/MY-648196/fork-lift-attachment-work-platform-rental-250x250.jpg" },
+                  { "name": "IC Cushion", "image": "https://5.imimg.com/data5/SI/RW/MY-648196/fork-lift-attachment-work-platform-rental-250x250.jpg" },
+                  {
+                    "name": "IC Pneumatic",
+                    "image": "https://5.imimg.com/data5/SI/RW/MY-648196/fork-lift-attachment-work-platform-rental-250x250.jpg"
+                  }
+                ]
+              },
+              {
+                "name": "Scissor Lifts",
+                "image": "https://5.imimg.com/data5/AM/MP/PK/SELLER-28980996/scissor-lift-250x250.jpg",
+                "subcategories": [
+                  { "name": "Slab", "image": "https://4.imimg.com/data4/JS/KO/ANDROID-6796685/product-250x250.jpeg" }
+                ]
+              },
+              {
+                "name": "Telehandlers",
+                "image": "https://5.imimg.com/data5/AF/YR/QE/SELLER-5817670/scissor-lift-rental-250x250.jpg",
+                "subcategories": [{ "name": "NA" }]
+              }
+            ]
+          },
+          {
+            "branch_id": "MEC",
+            "name": "Mechanicsburg",
+            "categories": [
+              {
+                "name": "Booms",
+                "image": "https://3.imimg.com/data3/LI/YF/MY-1696478/boom-lift-250x250.jpg",
+                "subcategories": [
+                  {
+                    "name": "Articulated - Electric",
+                    "image": "https://5.imimg.com/data5/PW/CY/MY-2257135/straight-boom-lift-for-rent-250x250.jpg"
+                  },
+                  {
+                    "name": "Articulated - Engine",
+                    "image": "bhttps://5.imimg.com/data5/MA/AI/MY-2934197/self-access-platform-on-hire-250x250.jpg"
+                  },
+                  { "name": "Straight", "image": "https://2.imimg.com/data2/VH/YA/MY-1389659/rough-terrain-scissor-lift-250x250.jpg" }
+                ]
+              },
+              {
+                "name": "Forklifts",
+                "image": "https://5.imimg.com/data5/SI/RW/MY-648196/fork-lift-attachment-work-platform-rental-250x250.jpg",
+                "subcategories": [
+                  { "name": "Electric", "image": "https://5.imimg.com/data5/SI/RW/MY-648196/fork-lift-attachment-work-platform-rental-250x250.jpg" },
+                  { "name": "IC Cushion", "image": "https://5.imimg.com/data5/SI/RW/MY-648196/fork-lift-attachment-work-platform-rental-250x250.jpg" },
+                  {
+                    "name": "IC Pneumatic",
+                    "image": "https://5.imimg.com/data5/SI/RW/MY-648196/fork-lift-attachment-work-platform-rental-250x250.jpg"
+                  },
+                  { "name": "Tugger", "image": "https://5.imimg.com/data5/AF/YR/QE/SELLER-5817670/scissor-lift-rental-250x250.jpg" }
+                ]
+              },
+              {
+                "name": "Scissor Lifts",
+                "image": "https://5.imimg.com/data5/AM/MP/PK/SELLER-28980996/scissor-lift-250x250.jpg",
+                "subcategories": [
+                  { "name": "Slab", "image": "https://4.imimg.com/data4/JS/KO/ANDROID-6796685/product-250x250.jpeg" }
+                ]
+              },
+              {
+                "name": "Single Man Lifts",
+                "image": "https://5.imimg.com/data5/KR/TJ/MY-9318303/grooving-machine-for-rental-in-india-250x250.jpeg",
+                "subcategories": [
+                  {
+                    "name": "Driveable",
+                    "image": "https://5.imimg.com/data5/KR/TJ/MY-9318303/grooving-machine-for-rental-in-india-250x250.jpeg"
+                  }
+                ]
+              },
+              {
+                "name": "Telehandlers",
+                "image": "https://5.imimg.com/data5/AF/YR/QE/SELLER-5817670/scissor-lift-rental-250x250.jpg",
+                "subcategories": [{ "name": "NA" }]
+              }
+            ]
+          },
+          {
+            "branch_id": "WIL",
+            "name": "Williamsport",
+            "categories": [
+              {
+                "name": "Booms",
+                "image": "https://3.imimg.com/data3/LI/YF/MY-1696478/boom-lift-250x250.jpg",
+                "subcategories": [
+                  {
+                    "name": "Articulated - Electric",
+                    "image": "https://5.imimg.com/data5/PW/CY/MY-2257135/straight-boom-lift-for-rent-250x250.jpg"
+                  },
+                  {
+                    "name": "Articulated - Engine",
+                    "image": "bhttps://5.imimg.com/data5/MA/AI/MY-2934197/self-access-platform-on-hire-250x250.jpg"
+                  },
+                  { "name": "Straight", "image": "https://2.imimg.com/data2/VH/YA/MY-1389659/rough-terrain-scissor-lift-250x250.jpg" }
+                ]
+              },
+              {
+                "name": "Forklifts",
+                "image": "https://5.imimg.com/data5/SI/RW/MY-648196/fork-lift-attachment-work-platform-rental-250x250.jpg",
+                "subcategories": [
+                  { "name": "Electric", "image": "https://5.imimg.com/data5/SI/RW/MY-648196/fork-lift-attachment-work-platform-rental-250x250.jpg" },
+                  { "name": "IC Cushion", "image": "https://5.imimg.com/data5/SI/RW/MY-648196/fork-lift-attachment-work-platform-rental-250x250.jpg" },
+                  {
+                    "name": "IC Pneumatic",
+                    "image": "https://5.imimg.com/data5/SI/RW/MY-648196/fork-lift-attachment-work-platform-rental-250x250.jpg"
+                  }
+                ]
+              },
+              {
+                "name": "Scissor Lifts",
+                "image": "https://5.imimg.com/data5/AM/MP/PK/SELLER-28980996/scissor-lift-250x250.jpg",
+                "subcategories": [
+                  { "name": "Slab", "image": "https://4.imimg.com/data4/JS/KO/ANDROID-6796685/product-250x250.jpeg" }
+                ]
+              },
+              {
+                "name": "Telehandlers",
+                "image": "https://5.imimg.com/data5/AF/YR/QE/SELLER-5817670/scissor-lift-rental-250x250.jpg",
+                "subcategories": [{ "name": "NA" }]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "dealers_id": "EDTX",
+        "opco": "EDTX",
+        "name": "TEXAS",
+        "branches": [
+          {
+            "branch_id": "AUS",
+            "name": "Austin",
+            "categories": [
+              {
+                "name": "Booms",
+                "image": "https://3.imimg.com/data3/LI/YF/MY-1696478/boom-lift-250x250.jpg",
+                "subcategories": [
+                  {
+                    "name": "Articulated - Electric",
+                    "image": "https://5.imimg.com/data5/PW/CY/MY-2257135/straight-boom-lift-for-rent-250x250.jpg"
+                  },
+                  {
+                    "name": "Articulated - Engine",
+                    "image": "bhttps://5.imimg.com/data5/MA/AI/MY-2934197/self-access-platform-on-hire-250x250.jpg"
+                  },
+                  { "name": "Atrium Lift" },
+                  { "name": "Straight", "image": "https://2.imimg.com/data2/VH/YA/MY-1389659/rough-terrain-scissor-lift-250x250.jpg" },
+                  { "name": "Towable", "image": "booms_towable.png" }
+                ]
+              },
+              {
+                "name": "Earth Moving",
+                "image": "https://5.imimg.com/data5/KR/TJ/MY-9318303/grooving-machine-for-rental-in-india-250x250.jpeg",
+                "subcategories": [
+                  {
+                    "name": "Backhoe - 2WD",
+                    "image": "earth_moving_backhoe.png"
+                  },
+                  {
+                    "name": "Compact Track Loader",
+                    "image": "earth_moving_compact_truck_loader.png"
+                  },
+                  {
+                    "name": "Mini-Excavator",
+                    "image": "earth_moving_mini_excavator.png"
+                  },
+                  {
+                    "name": "Skidsteer",
+                    "image": "https://5.imimg.com/data5/KR/TJ/MY-9318303/grooving-machine-for-rental-in-india-250x250.jpeg"
+                  }
+                ]
+              },
+              {
+                "name": "Facility Maintenance & Cleaning",
+                "image": "https://5.imimg.com/data5/BR/GD/MY-10307431/godrej-rental-services-250x250.jpg",
+                "subcategories": [{ "name": "NA" }]
+              },
+              {
+                "name": "Forklifts",
+                "image": "https://5.imimg.com/data5/SI/RW/MY-648196/fork-lift-attachment-work-platform-rental-250x250.jpg",
+                "subcategories": [
+                  { "name": "Electric", "image": "https://5.imimg.com/data5/SI/RW/MY-648196/fork-lift-attachment-work-platform-rental-250x250.jpg" },
+                  { "name": "IC Cushion", "image": "https://5.imimg.com/data5/SI/RW/MY-648196/fork-lift-attachment-work-platform-rental-250x250.jpg" },
+                  {
+                    "name": "IC Pneumatic",
+                    "image": "https://5.imimg.com/data5/SI/RW/MY-648196/fork-lift-attachment-work-platform-rental-250x250.jpg"
+                  },
+                  { "name": "Piggy Back", "image": "forklift_piggyback.png" }
+                ]
+              },
+              {
+                "name": "Material Lift",
+                "image": "https://5.imimg.com/data5/AF/YR/QE/SELLER-5817670/scissor-lift-rental-250x250.jpg",
+                "subcategories": [{ "name": "NA" }]
+              },
+              {
+                "name": "Personnel Cart",
+                "image": "https://5.imimg.com/data5/AF/YR/QE/SELLER-5817670/scissor-lift-rental-250x250.jpg",
+                "subcategories": [
+                  {
+                    "name": "Rough Terrain",
+                    "image": "https://5.imimg.com/data5/AF/YR/QE/SELLER-5817670/scissor-lift-rental-250x250.jpg"
+                  }
+                ]
+              },
+              {
+                "name": "Single Man Lifts",
+                "image": "https://5.imimg.com/data5/KR/TJ/MY-9318303/grooving-machine-for-rental-in-india-250x250.jpeg",
+                "subcategories": [
+                  {
+                    "name": "Driveable",
+                    "image": "https://5.imimg.com/data5/KR/TJ/MY-9318303/grooving-machine-for-rental-in-india-250x250.jpeg"
+                  },
+                  {
+                    "name": "Push Around",
+                    "image": "https://5.imimg.com/data5/AF/YR/QE/SELLER-5817670/scissor-lift-rental-250x250.jpg"
+                  }
+                ]
+              },
+              {
+                "name": "Scissor Lifts",
+                "image": "https://5.imimg.com/data5/AM/MP/PK/SELLER-28980996/scissor-lift-250x250.jpg",
+                "subcategories": [
+                  {
+                    "name": "Rough Terrain",
+                    "image": "https://5.imimg.com/data5/AF/YR/QE/SELLER-5817670/scissor-lift-rental-250x250.jpg"
+                  },
+                  { "name": "Slab", "image": "https://4.imimg.com/data4/JS/KO/ANDROID-6796685/product-250x250.jpeg" }
+                ]
+              },
+              {
+                "name": "Telehandlers",
+                "image": "https://5.imimg.com/data5/AF/YR/QE/SELLER-5817670/scissor-lift-rental-250x250.jpg",
+                "subcategories": [{ "name": "NA" }]
+              }
+            ]
+          },
+          {
+            "branch_id": "BEA",
+            "name": "Beaumont",
+            "categories": [
+              {
+                "name": "Booms",
+                "image": "https://3.imimg.com/data3/LI/YF/MY-1696478/boom-lift-250x250.jpg",
+                "subcategories": [
+                  { "name": "Straight", "image": "https://2.imimg.com/data2/VH/YA/MY-1389659/rough-terrain-scissor-lift-250x250.jpg" }
+                ]
+              },
+              {
+                "name": "Forklifts",
+                "image": "https://5.imimg.com/data5/SI/RW/MY-648196/fork-lift-attachment-work-platform-rental-250x250.jpg",
+                "subcategories": [
+                  { "name": "Electric", "image": "https://5.imimg.com/data5/SI/RW/MY-648196/fork-lift-attachment-work-platform-rental-250x250.jpg" },
+                  { "name": "IC Cushion", "image": "https://5.imimg.com/data5/SI/RW/MY-648196/fork-lift-attachment-work-platform-rental-250x250.jpg" },
+                  {
+                    "name": "IC Pneumatic",
+                    "image": "https://5.imimg.com/data5/SI/RW/MY-648196/fork-lift-attachment-work-platform-rental-250x250.jpg"
+                  }
+                ]
+              },
+              {
+                "name": "Scissor Lifts",
+                "image": "https://5.imimg.com/data5/AM/MP/PK/SELLER-28980996/scissor-lift-250x250.jpg",
+                "subcategories": [
+                  { "name": "Slab", "image": "https://4.imimg.com/data4/JS/KO/ANDROID-6796685/product-250x250.jpeg" }
+                ]
+              },
+              {
+                "name": "Telehandlers",
+                "image": "https://5.imimg.com/data5/AF/YR/QE/SELLER-5817670/scissor-lift-rental-250x250.jpg",
+                "subcategories": [{ "name": "NA" }]
+              }
+            ]
+          },
+          {
+            "branch_id": "BRA",
+            "name": "Brazosport",
+            "categories": [
+              {
+                "name": "Booms",
+                "image": "https://3.imimg.com/data3/LI/YF/MY-1696478/boom-lift-250x250.jpg",
+                "subcategories": [
+                  {
+                    "name": "Articulated - Electric",
+                    "image": "https://5.imimg.com/data5/PW/CY/MY-2257135/straight-boom-lift-for-rent-250x250.jpg"
+                  },
+                  {
+                    "name": "Articulated - Engine",
+                    "image": "bhttps://5.imimg.com/data5/MA/AI/MY-2934197/self-access-platform-on-hire-250x250.jpg"
+                  },
+                  { "name": "Straight", "image": "https://2.imimg.com/data2/VH/YA/MY-1389659/rough-terrain-scissor-lift-250x250.jpg" }
+                ]
+              },
+              {
+                "name": "Forklifts",
+                "image": "https://5.imimg.com/data5/SI/RW/MY-648196/fork-lift-attachment-work-platform-rental-250x250.jpg",
+                "subcategories": [
+                  { "name": "Electric", "image": "https://5.imimg.com/data5/SI/RW/MY-648196/fork-lift-attachment-work-platform-rental-250x250.jpg" },
+                  { "name": "IC Cushion", "image": "https://5.imimg.com/data5/SI/RW/MY-648196/fork-lift-attachment-work-platform-rental-250x250.jpg" },
+                  {
+                    "name": "IC Pneumatic",
+                    "image": "https://5.imimg.com/data5/SI/RW/MY-648196/fork-lift-attachment-work-platform-rental-250x250.jpg"
+                  }
+                ]
+              },
+              {
+                "name": "Scissor Lifts",
+                "image": "https://5.imimg.com/data5/AM/MP/PK/SELLER-28980996/scissor-lift-250x250.jpg",
+                "subcategories": [
+                  { "name": "Slab", "image": "https://4.imimg.com/data4/JS/KO/ANDROID-6796685/product-250x250.jpeg" },
+                  {
+                    "name": "Rough Terrain",
+                    "image": "https://5.imimg.com/data5/AF/YR/QE/SELLER-5817670/scissor-lift-rental-250x250.jpg"
+                  }
+                ]
+              },
+              {
+                "name": "Telehandlers",
+                "image": "https://5.imimg.com/data5/AF/YR/QE/SELLER-5817670/scissor-lift-rental-250x250.jpg",
+                "subcategories": [{ "name": "NA" }]
+              },
+              {
+                "name": "Single Man Lifts",
+                "image": "https://5.imimg.com/data5/KR/TJ/MY-9318303/grooving-machine-for-rental-in-india-250x250.jpeg",
+                "subcategories": [
+                  {
+                    "name": "Driveable",
+                    "image": "https://5.imimg.com/data5/KR/TJ/MY-9318303/grooving-machine-for-rental-in-india-250x250.jpeg"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "branch_id": "CCH",
+            "name": "Corpus Christi",
+            "categories": [
+              {
+                "name": "Booms",
+                "image": "https://3.imimg.com/data3/LI/YF/MY-1696478/boom-lift-250x250.jpg",
+                "subcategories": [
+                  {
+                    "name": "Articulated - Electric",
+                    "image": "https://5.imimg.com/data5/PW/CY/MY-2257135/straight-boom-lift-for-rent-250x250.jpg"
+                  },
+                  {
+                    "name": "Articulated - Engine",
+                    "image": "bhttps://5.imimg.com/data5/MA/AI/MY-2934197/self-access-platform-on-hire-250x250.jpg"
+                  },
+                  { "name": "Straight", "image": "https://2.imimg.com/data2/VH/YA/MY-1389659/rough-terrain-scissor-lift-250x250.jpg" }
+                ]
+              },
+              {
+                "name": "Forklifts",
+                "image": "https://5.imimg.com/data5/SI/RW/MY-648196/fork-lift-attachment-work-platform-rental-250x250.jpg",
+                "subcategories": [
+                  { "name": "Electric", "image": "https://5.imimg.com/data5/SI/RW/MY-648196/fork-lift-attachment-work-platform-rental-250x250.jpg" },
+                  { "name": "IC Cushion", "image": "https://5.imimg.com/data5/SI/RW/MY-648196/fork-lift-attachment-work-platform-rental-250x250.jpg" },
+                  {
+                    "name": "IC Pneumatic",
+                    "image": "https://5.imimg.com/data5/SI/RW/MY-648196/fork-lift-attachment-work-platform-rental-250x250.jpg"
+                  }
+                ]
+              },
+              {
+                "name": "Scissor Lifts",
+                "image": "https://5.imimg.com/data5/AM/MP/PK/SELLER-28980996/scissor-lift-250x250.jpg",
+                "subcategories": [
+                  { "name": "Slab", "image": "https://4.imimg.com/data4/JS/KO/ANDROID-6796685/product-250x250.jpeg" },
+                  {
+                    "name": "Rough Terrain",
+                    "image": "https://5.imimg.com/data5/AF/YR/QE/SELLER-5817670/scissor-lift-rental-250x250.jpg"
+                  }
+                ]
+              },
+              {
+                "name": "Earth Moving",
+                "image": "https://5.imimg.com/data5/KR/TJ/MY-9318303/grooving-machine-for-rental-in-india-250x250.jpeg",
+                "subcategories": [
+                  {
+                    "name": "Mini-Excavator",
+                    "image": "earth_moving_mini_excavator.png"
+                  },
+                  {
+                    "name": "Skidsteer",
+                    "image": "https://5.imimg.com/data5/KR/TJ/MY-9318303/grooving-machine-for-rental-in-india-250x250.jpeg"
+                  }
+                ]
+              },
+              {
+                "name": "Telehandlers",
+                "image": "https://5.imimg.com/data5/AF/YR/QE/SELLER-5817670/scissor-lift-rental-250x250.jpg",
+                "subcategories": [{ "name": "NA" }]
+              },
+              {
+                "name": "Single Man Lifts",
+                "image": "https://5.imimg.com/data5/KR/TJ/MY-9318303/grooving-machine-for-rental-in-india-250x250.jpeg",
+                "subcategories": [
+                  {
+                    "name": "Driveable",
+                    "image": "https://5.imimg.com/data5/KR/TJ/MY-9318303/grooving-machine-for-rental-in-india-250x250.jpeg"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "branch_id": "DAL",
+            "name": "Dallas",
+            "categories": [
+              {
+                "name": "Booms",
+                "image": "https://3.imimg.com/data3/LI/YF/MY-1696478/boom-lift-250x250.jpg",
+                "subcategories": [
+                  {
+                    "name": "Articulated - Electric",
+                    "image": "https://5.imimg.com/data5/PW/CY/MY-2257135/straight-boom-lift-for-rent-250x250.jpg"
+                  },
+                  {
+                    "name": "Articulated - Engine",
+                    "image": "bhttps://5.imimg.com/data5/MA/AI/MY-2934197/self-access-platform-on-hire-250x250.jpg"
+                  },
+                  { "name": "Straight", "image": "https://2.imimg.com/data2/VH/YA/MY-1389659/rough-terrain-scissor-lift-250x250.jpg" }
+                ]
+              },
+              {
+                "name": "Forklifts",
+                "image": "https://5.imimg.com/data5/SI/RW/MY-648196/fork-lift-attachment-work-platform-rental-250x250.jpg",
+                "subcategories": [
+                  { "name": "Electric", "image": "https://5.imimg.com/data5/SI/RW/MY-648196/fork-lift-attachment-work-platform-rental-250x250.jpg" },
+                  { "name": "IC Cushion", "image": "https://5.imimg.com/data5/SI/RW/MY-648196/fork-lift-attachment-work-platform-rental-250x250.jpg" },
+                  {
+                    "name": "IC Pneumatic",
+                    "image": "https://5.imimg.com/data5/SI/RW/MY-648196/fork-lift-attachment-work-platform-rental-250x250.jpg"
+                  }
+                ]
+              },
+              {
+                "name": "Scissor Lifts",
+                "image": "https://5.imimg.com/data5/AM/MP/PK/SELLER-28980996/scissor-lift-250x250.jpg",
+                "subcategories": [
+                  { "name": "Slab", "image": "https://4.imimg.com/data4/JS/KO/ANDROID-6796685/product-250x250.jpeg" },
+                  {
+                    "name": "Rough Terrain",
+                    "image": "https://5.imimg.com/data5/AF/YR/QE/SELLER-5817670/scissor-lift-rental-250x250.jpg"
+                  }
+                ]
+              },
+              {
+                "name": "Personnel Cart",
+                "image": "https://5.imimg.com/data5/AF/YR/QE/SELLER-5817670/scissor-lift-rental-250x250.jpg",
+                "subcategories": [{ "name": "NA" }]
+              },
+              {
+                "name": "Telehandlers",
+                "image": "https://5.imimg.com/data5/AF/YR/QE/SELLER-5817670/scissor-lift-rental-250x250.jpg",
+                "subcategories": [{ "name": "NA" }]
+              },
+              {
+                "name": "Single Man Lifts",
+                "image": "https://5.imimg.com/data5/KR/TJ/MY-9318303/grooving-machine-for-rental-in-india-250x250.jpeg",
+                "subcategories": [
+                  {
+                    "name": "Driveable",
+                    "image": "https://5.imimg.com/data5/KR/TJ/MY-9318303/grooving-machine-for-rental-in-india-250x250.jpeg"
+                  },
+                  {
+                    "name": "Push Around",
+                    "image": "https://5.imimg.com/data5/AF/YR/QE/SELLER-5817670/scissor-lift-rental-250x250.jpg"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "branch_id": "FOR",
+            "name": "Ft. Worth",
+            "categories": [
+              {
+                "name": "Booms",
+                "image": "https://3.imimg.com/data3/LI/YF/MY-1696478/boom-lift-250x250.jpg",
+                "subcategories": [
+                  {
+                    "name": "Articulated - Electric",
+                    "image": "https://5.imimg.com/data5/PW/CY/MY-2257135/straight-boom-lift-for-rent-250x250.jpg"
+                  },
+                  {
+                    "name": "Articulated - Engine",
+                    "image": "bhttps://5.imimg.com/data5/MA/AI/MY-2934197/self-access-platform-on-hire-250x250.jpg"
+                  },
+                  { "name": "Straight", "image": "https://2.imimg.com/data2/VH/YA/MY-1389659/rough-terrain-scissor-lift-250x250.jpg" },
+                  { "name": "Atrium Lift" }
+                ]
+              },
+              {
+                "name": "Forklifts",
+                "image": "https://5.imimg.com/data5/SI/RW/MY-648196/fork-lift-attachment-work-platform-rental-250x250.jpg",
+                "subcategories": [
+                  { "name": "Electric", "image": "https://5.imimg.com/data5/SI/RW/MY-648196/fork-lift-attachment-work-platform-rental-250x250.jpg" },
+                  { "name": "IC Cushion", "image": "https://5.imimg.com/data5/SI/RW/MY-648196/fork-lift-attachment-work-platform-rental-250x250.jpg" },
+                  {
+                    "name": "IC Pneumatic",
+                    "image": "https://5.imimg.com/data5/SI/RW/MY-648196/fork-lift-attachment-work-platform-rental-250x250.jpg"
+                  },
+                  { "name": "Piggy Back", "image": "forklift_piggyback.png" },
+                  {
+                    "name": "Rough Terrain",
+                    "image": "https://5.imimg.com/data5/SI/RW/MY-648196/fork-lift-attachment-work-platform-rental-250x250.jpg"
+                  },
+                  { "name": "Swing Mast", "image": "https://5.imimg.com/data5/AF/YR/QE/SELLER-5817670/scissor-lift-rental-250x250.jpg" }
+                ]
+              },
+              {
+                "name": "Scissor Lifts",
+                "image": "https://5.imimg.com/data5/AM/MP/PK/SELLER-28980996/scissor-lift-250x250.jpg",
+                "subcategories": [
+                  { "name": "Slab", "image": "https://4.imimg.com/data4/JS/KO/ANDROID-6796685/product-250x250.jpeg" },
+                  {
+                    "name": "Rough Terrain",
+                    "image": "https://5.imimg.com/data5/AF/YR/QE/SELLER-5817670/scissor-lift-rental-250x250.jpg"
+                  }
+                ]
+              },
+              {
+                "name": "Personnel Cart",
+                "image": "https://5.imimg.com/data5/AF/YR/QE/SELLER-5817670/scissor-lift-rental-250x250.jpg",
+                "subcategories": [{ "name": "NA" }]
+              },
+              {
+                "name": "Telehandlers",
+                "image": "https://5.imimg.com/data5/AF/YR/QE/SELLER-5817670/scissor-lift-rental-250x250.jpg",
+                "subcategories": [{ "name": "NA" }]
+              },
+              {
+                "name": "Single Man Lifts",
+                "image": "https://5.imimg.com/data5/KR/TJ/MY-9318303/grooving-machine-for-rental-in-india-250x250.jpeg",
+                "subcategories": [
+                  {
+                    "name": "Driveable",
+                    "image": "https://5.imimg.com/data5/KR/TJ/MY-9318303/grooving-machine-for-rental-in-india-250x250.jpeg"
+                  },
+                  {
+                    "name": "Push Around",
+                    "image": "https://5.imimg.com/data5/AF/YR/QE/SELLER-5817670/scissor-lift-rental-250x250.jpg"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "branch_id": "HOU",
+            "name": "Houston",
+            "categories": [
+              {
+                "name": "Booms",
+                "image": "https://3.imimg.com/data3/LI/YF/MY-1696478/boom-lift-250x250.jpg",
+                "subcategories": [
+                  {
+                    "name": "Articulated - Electric",
+                    "image": "https://5.imimg.com/data5/PW/CY/MY-2257135/straight-boom-lift-for-rent-250x250.jpg"
+                  },
+                  {
+                    "name": "Articulated - Engine",
+                    "image": "bhttps://5.imimg.com/data5/MA/AI/MY-2934197/self-access-platform-on-hire-250x250.jpg"
+                  },
+                  { "name": "Straight", "image": "https://2.imimg.com/data2/VH/YA/MY-1389659/rough-terrain-scissor-lift-250x250.jpg" }
+                ]
+              },
+              {
+                "name": "Forklifts",
+                "image": "https://5.imimg.com/data5/SI/RW/MY-648196/fork-lift-attachment-work-platform-rental-250x250.jpg",
+                "subcategories": [
+                  { "name": "Electric", "image": "https://5.imimg.com/data5/SI/RW/MY-648196/fork-lift-attachment-work-platform-rental-250x250.jpg" },
+                  { "name": "IC Cushion", "image": "https://5.imimg.com/data5/SI/RW/MY-648196/fork-lift-attachment-work-platform-rental-250x250.jpg" },
+                  {
+                    "name": "IC Pneumatic",
+                    "image": "https://5.imimg.com/data5/SI/RW/MY-648196/fork-lift-attachment-work-platform-rental-250x250.jpg"
+                  }
+                ]
+              },
+              {
+                "name": "Scissor Lifts",
+                "image": "https://5.imimg.com/data5/AM/MP/PK/SELLER-28980996/scissor-lift-250x250.jpg",
+                "subcategories": [
+                  { "name": "Slab", "image": "https://4.imimg.com/data4/JS/KO/ANDROID-6796685/product-250x250.jpeg" },
+                  {
+                    "name": "Rough Terrain",
+                    "image": "https://5.imimg.com/data5/AF/YR/QE/SELLER-5817670/scissor-lift-rental-250x250.jpg"
+                  }
+                ]
+              },
+              {
+                "name": "Telehandlers",
+                "image": "https://5.imimg.com/data5/AF/YR/QE/SELLER-5817670/scissor-lift-rental-250x250.jpg",
+                "subcategories": [{ "name": "NA" }]
+              },
+              {
+                "name": "Single Man Lifts",
+                "image": "https://5.imimg.com/data5/KR/TJ/MY-9318303/grooving-machine-for-rental-in-india-250x250.jpeg",
+                "subcategories": [
+                  {
+                    "name": "Driveable",
+                    "image": "https://5.imimg.com/data5/KR/TJ/MY-9318303/grooving-machine-for-rental-in-india-250x250.jpeg"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "branch_id": "LON",
+            "name": "Longview",
+            "categories": [
+              {
+                "name": "Booms",
+                "image": "https://3.imimg.com/data3/LI/YF/MY-1696478/boom-lift-250x250.jpg",
+                "subcategories": [
+                  {
+                    "name": "Articulated - Electric",
+                    "image": "https://5.imimg.com/data5/PW/CY/MY-2257135/straight-boom-lift-for-rent-250x250.jpg"
+                  },
+                  {
+                    "name": "Articulated - Engine",
+                    "image": "bhttps://5.imimg.com/data5/MA/AI/MY-2934197/self-access-platform-on-hire-250x250.jpg"
+                  },
+                  { "name": "Straight", "image": "https://2.imimg.com/data2/VH/YA/MY-1389659/rough-terrain-scissor-lift-250x250.jpg" }
+                ]
+              },
+              {
+                "name": "Forklifts",
+                "image": "https://5.imimg.com/data5/SI/RW/MY-648196/fork-lift-attachment-work-platform-rental-250x250.jpg",
+                "subcategories": [
+                  { "name": "Electric", "image": "https://5.imimg.com/data5/SI/RW/MY-648196/fork-lift-attachment-work-platform-rental-250x250.jpg" },
+                  { "name": "IC Cushion", "image": "https://5.imimg.com/data5/SI/RW/MY-648196/fork-lift-attachment-work-platform-rental-250x250.jpg" },
+                  {
+                    "name": "IC Pneumatic",
+                    "image": "https://5.imimg.com/data5/SI/RW/MY-648196/fork-lift-attachment-work-platform-rental-250x250.jpg"
+                  },
+                  {
+                    "name": "Rough Terrain",
+                    "image": "https://5.imimg.com/data5/SI/RW/MY-648196/fork-lift-attachment-work-platform-rental-250x250.jpg"
+                  }
+                ]
+              },
+              {
+                "name": "Scissor Lifts",
+                "image": "https://5.imimg.com/data5/AM/MP/PK/SELLER-28980996/scissor-lift-250x250.jpg",
+                "subcategories": [
+                  { "name": "Slab", "image": "https://4.imimg.com/data4/JS/KO/ANDROID-6796685/product-250x250.jpeg" }
+                ]
+              },
+              {
+                "name": "Telehandlers",
+                "image": "https://5.imimg.com/data5/AF/YR/QE/SELLER-5817670/scissor-lift-rental-250x250.jpg",
+                "subcategories": [{ "name": "NA" }]
+              }
+            ]
+          },
+          {
+            "branch_id": "MCA",
+            "name": "McAllen",
+            "categories": [
+              {
+                "name": "Booms",
+                "image": "https://3.imimg.com/data3/LI/YF/MY-1696478/boom-lift-250x250.jpg",
+                "subcategories": [
+                  {
+                    "name": "Articulated - Electric",
+                    "image": "https://5.imimg.com/data5/PW/CY/MY-2257135/straight-boom-lift-for-rent-250x250.jpg"
+                  },
+                  {
+                    "name": "Articulated - Engine",
+                    "image": "bhttps://5.imimg.com/data5/MA/AI/MY-2934197/self-access-platform-on-hire-250x250.jpg"
+                  },
+                  { "name": "Straight", "image": "https://2.imimg.com/data2/VH/YA/MY-1389659/rough-terrain-scissor-lift-250x250.jpg" },
+                  { "name": "Towable", "image": "booms_towable.png" }
+                ]
+              },
+              {
+                "name": "Earth Moving",
+                "image": "https://5.imimg.com/data5/KR/TJ/MY-9318303/grooving-machine-for-rental-in-india-250x250.jpeg",
+                "subcategories": [
+                  {
+                    "name": "Compact Track Loader",
+                    "image": "earth_moving_compact_truck_loader.png"
+                  },
+                  {
+                    "name": "Skidsteer",
+                    "image": "https://5.imimg.com/data5/KR/TJ/MY-9318303/grooving-machine-for-rental-in-india-250x250.jpeg"
+                  }
+                ]
+              },
+              {
+                "name": "Forklifts",
+                "image": "https://5.imimg.com/data5/SI/RW/MY-648196/fork-lift-attachment-work-platform-rental-250x250.jpg",
+                "subcategories": [
+                  { "name": "Electric", "image": "https://5.imimg.com/data5/SI/RW/MY-648196/fork-lift-attachment-work-platform-rental-250x250.jpg" },
+                  { "name": "IC Cushion", "image": "https://5.imimg.com/data5/SI/RW/MY-648196/fork-lift-attachment-work-platform-rental-250x250.jpg" },
+                  {
+                    "name": "IC Pneumatic",
+                    "image": "https://5.imimg.com/data5/SI/RW/MY-648196/fork-lift-attachment-work-platform-rental-250x250.jpg"
+                  },
+                  { "name": "Swing Mast", "image": "https://5.imimg.com/data5/AF/YR/QE/SELLER-5817670/scissor-lift-rental-250x250.jpg" }
+                ]
+              },
+              {
+                "name": "Scissor Lifts",
+                "image": "https://5.imimg.com/data5/AM/MP/PK/SELLER-28980996/scissor-lift-250x250.jpg",
+                "subcategories": [
+                  { "name": "Slab", "image": "https://4.imimg.com/data4/JS/KO/ANDROID-6796685/product-250x250.jpeg" },
+                  {
+                    "name": "Rough Terrain",
+                    "image": "https://5.imimg.com/data5/AF/YR/QE/SELLER-5817670/scissor-lift-rental-250x250.jpg"
+                  }
+                ]
+              },
+              {
+                "name": "Single Man Lifts",
+                "image": "https://5.imimg.com/data5/KR/TJ/MY-9318303/grooving-machine-for-rental-in-india-250x250.jpeg",
+                "subcategories": [
+                  {
+                    "name": "Driveable",
+                    "image": "https://5.imimg.com/data5/KR/TJ/MY-9318303/grooving-machine-for-rental-in-india-250x250.jpeg"
+                  },
+                  {
+                    "name": "Push Around",
+                    "image": "https://5.imimg.com/data5/AF/YR/QE/SELLER-5817670/scissor-lift-rental-250x250.jpg"
+                  }
+                ]
+              },
+              {
+                "name": "Telehandlers",
+                "image": "https://5.imimg.com/data5/AF/YR/QE/SELLER-5817670/scissor-lift-rental-250x250.jpg",
+                "subcategories": [{ "name": "NA" }]
+              }
+            ]
+          },
+          {
+            "branch_id": "SAN",
+            "name": "San Antonio",
+            "categories": [
+              {
+                "name": "Booms",
+                "image": "https://3.imimg.com/data3/LI/YF/MY-1696478/boom-lift-250x250.jpg",
+                "subcategories": [
+                  {
+                    "name": "Articulated - Electric",
+                    "image": "https://5.imimg.com/data5/PW/CY/MY-2257135/straight-boom-lift-for-rent-250x250.jpg"
+                  },
+                  {
+                    "name": "Articulated - Engine",
+                    "image": "bhttps://5.imimg.com/data5/MA/AI/MY-2934197/self-access-platform-on-hire-250x250.jpg"
+                  },
+                  { "name": "Straight", "image": "https://2.imimg.com/data2/VH/YA/MY-1389659/rough-terrain-scissor-lift-250x250.jpg" }
+                ]
+              },
+              {
+                "name": "Earth Moving",
+                "image": "https://5.imimg.com/data5/KR/TJ/MY-9318303/grooving-machine-for-rental-in-india-250x250.jpeg",
+                "subcategories": [
+                  {
+                    "name": "Backhoe - 2WD",
+                    "image": "earth_moving_backhoe.png"
+                  },
+                  {
+                    "name": "Mini-Excavator",
+                    "image": "earth_moving_mini_excavator.png"
+                  },
+                  {
+                    "name": "Skidsteer",
+                    "image": "https://5.imimg.com/data5/KR/TJ/MY-9318303/grooving-machine-for-rental-in-india-250x250.jpeg"
+                  }
+                ]
+              },
+              {
+                "name": "Forklifts",
+                "image": "https://5.imimg.com/data5/SI/RW/MY-648196/fork-lift-attachment-work-platform-rental-250x250.jpg",
+                "subcategories": [
+                  { "name": "Electric", "image": "https://5.imimg.com/data5/SI/RW/MY-648196/fork-lift-attachment-work-platform-rental-250x250.jpg" },
+                  { "name": "IC Cushion", "image": "https://5.imimg.com/data5/SI/RW/MY-648196/fork-lift-attachment-work-platform-rental-250x250.jpg" },
+                  {
+                    "name": "IC Pneumatic",
+                    "image": "https://5.imimg.com/data5/SI/RW/MY-648196/fork-lift-attachment-work-platform-rental-250x250.jpg"
+                  },
+                  { "name": "Piggy Back", "image": "forklift_piggyback.png" },
+                  { "name": "Tugger", "image": "https://5.imimg.com/data5/AF/YR/QE/SELLER-5817670/scissor-lift-rental-250x250.jpg" }
+                ]
+              },
+              {
+                "name": "Scissor Lifts",
+                "image": "https://5.imimg.com/data5/AM/MP/PK/SELLER-28980996/scissor-lift-250x250.jpg",
+                "subcategories": [
+                  { "name": "Slab", "image": "https://4.imimg.com/data4/JS/KO/ANDROID-6796685/product-250x250.jpeg" },
+                  {
+                    "name": "Rough Terrain",
+                    "image": "https://5.imimg.com/data5/AF/YR/QE/SELLER-5817670/scissor-lift-rental-250x250.jpg"
+                  }
+                ]
+              },
+              {
+                "name": "Single Man Lifts",
+                "image": "https://5.imimg.com/data5/KR/TJ/MY-9318303/grooving-machine-for-rental-in-india-250x250.jpeg",
+                "subcategories": [
+                  {
+                    "name": "Driveable",
+                    "image": "https://5.imimg.com/data5/KR/TJ/MY-9318303/grooving-machine-for-rental-in-india-250x250.jpeg"
+                  },
+                  {
+                    "name": "Push Around",
+                    "image": "https://5.imimg.com/data5/AF/YR/QE/SELLER-5817670/scissor-lift-rental-250x250.jpg"
+                  }
+                ]
+              },
+              {
+                "name": "Telehandlers",
+                "image": "https://5.imimg.com/data5/AF/YR/QE/SELLER-5817670/scissor-lift-rental-250x250.jpg",
+                "subcategories": [{ "name": "NA" }]
+              },
+              {
+                "name": "Material Lift",
+                "image": "https://5.imimg.com/data5/AF/YR/QE/SELLER-5817670/scissor-lift-rental-250x250.jpg",
+                "subcategories": [{ "name": "NA" }]
+              },
+              {
+                "name": "Personnel Cart",
+                "image": "https://5.imimg.com/data5/AF/YR/QE/SELLER-5817670/scissor-lift-rental-250x250.jpg",
+                "subcategories": [{ "name": "NA" }]
+              }
+            ]
+          },
+          {
+            "branch_id": "SHE",
+            "name": "Sherman",
+            "categories": [
+              {
+                "name": "Booms",
+                "image": "https://3.imimg.com/data3/LI/YF/MY-1696478/boom-lift-250x250.jpg",
+                "subcategories": [
+                  {
+                    "name": "Articulated - Electric",
+                    "image": "https://5.imimg.com/data5/PW/CY/MY-2257135/straight-boom-lift-for-rent-250x250.jpg"
+                  },
+                  {
+                    "name": "Articulated - Engine",
+                    "image": "bhttps://5.imimg.com/data5/MA/AI/MY-2934197/self-access-platform-on-hire-250x250.jpg"
+                  },
+                  { "name": "Straight", "image": "https://2.imimg.com/data2/VH/YA/MY-1389659/rough-terrain-scissor-lift-250x250.jpg" }
+                ]
+              },
+              {
+                "name": "Forklifts",
+                "image": "https://5.imimg.com/data5/SI/RW/MY-648196/fork-lift-attachment-work-platform-rental-250x250.jpg",
+                "subcategories": [
+                  { "name": "Electric", "image": "https://5.imimg.com/data5/SI/RW/MY-648196/fork-lift-attachment-work-platform-rental-250x250.jpg" },
+                  { "name": "IC Cushion", "image": "https://5.imimg.com/data5/SI/RW/MY-648196/fork-lift-attachment-work-platform-rental-250x250.jpg" },
+                  {
+                    "name": "IC Pneumatic",
+                    "image": "https://5.imimg.com/data5/SI/RW/MY-648196/fork-lift-attachment-work-platform-rental-250x250.jpg"
+                  },
+                  { "name": "Piggy Back", "image": "forklift_piggyback.png" }
+                ]
+              },
+              {
+                "name": "Scissor Lifts",
+                "image": "https://5.imimg.com/data5/AM/MP/PK/SELLER-28980996/scissor-lift-250x250.jpg",
+                "subcategories": [
+                  { "name": "Slab", "image": "https://4.imimg.com/data4/JS/KO/ANDROID-6796685/product-250x250.jpeg" },
+                  {
+                    "name": "Rough Terrain",
+                    "image": "https://5.imimg.com/data5/AF/YR/QE/SELLER-5817670/scissor-lift-rental-250x250.jpg"
+                  }
+                ]
+              },
+              {
+                "name": "Single Man Lifts",
+                "image": "https://5.imimg.com/data5/KR/TJ/MY-9318303/grooving-machine-for-rental-in-india-250x250.jpeg",
+                "subcategories": [
+                  {
+                    "name": "Driveable",
+                    "image": "https://5.imimg.com/data5/KR/TJ/MY-9318303/grooving-machine-for-rental-in-india-250x250.jpeg"
+                  }
+                ]
+              },
+              {
+                "name": "Telehandlers",
+                "image": "https://5.imimg.com/data5/AF/YR/QE/SELLER-5817670/scissor-lift-rental-250x250.jpg",
+                "subcategories": [{ "name": "NA" }]
+              }
+            ]
+          },
+          {
+            "branch_id": "WAC",
+            "name": "Waco",
+            "categories": [
+              {
+                "name": "Booms",
+                "image": "https://3.imimg.com/data3/LI/YF/MY-1696478/boom-lift-250x250.jpg",
+                "subcategories": [
+                  {
+                    "name": "Articulated - Electric",
+                    "image": "https://5.imimg.com/data5/PW/CY/MY-2257135/straight-boom-lift-for-rent-250x250.jpg"
+                  },
+                  {
+                    "name": "Articulated - Engine",
+                    "image": "bhttps://5.imimg.com/data5/MA/AI/MY-2934197/self-access-platform-on-hire-250x250.jpg"
+                  },
+                  { "name": "Straight", "image": "https://2.imimg.com/data2/VH/YA/MY-1389659/rough-terrain-scissor-lift-250x250.jpg" },
+                  { "name": "Atrium Lift" },
+                  { "name": "Towable", "image": "booms_towable.png" }
+                ]
+              },
+              {
+                "name": "Forklifts",
+                "image": "https://5.imimg.com/data5/SI/RW/MY-648196/fork-lift-attachment-work-platform-rental-250x250.jpg",
+                "subcategories": [
+                  { "name": "Electric", "image": "https://5.imimg.com/data5/SI/RW/MY-648196/fork-lift-attachment-work-platform-rental-250x250.jpg" },
+                  { "name": "IC Cushion", "image": "https://5.imimg.com/data5/SI/RW/MY-648196/fork-lift-attachment-work-platform-rental-250x250.jpg" },
+                  {
+                    "name": "IC Pneumatic",
+                    "image": "https://5.imimg.com/data5/SI/RW/MY-648196/fork-lift-attachment-work-platform-rental-250x250.jpg"
+                  },
+                  {
+                    "name": "Rough Terrain",
+                    "image": "https://5.imimg.com/data5/SI/RW/MY-648196/fork-lift-attachment-work-platform-rental-250x250.jpg"
+                  }
+                ]
+              },
+              {
+                "name": "Scissor Lifts",
+                "image": "https://5.imimg.com/data5/AM/MP/PK/SELLER-28980996/scissor-lift-250x250.jpg",
+                "subcategories": [
+                  { "name": "Slab", "image": "https://4.imimg.com/data4/JS/KO/ANDROID-6796685/product-250x250.jpeg" },
+                  {
+                    "name": "Rough Terrain",
+                    "image": "https://5.imimg.com/data5/AF/YR/QE/SELLER-5817670/scissor-lift-rental-250x250.jpg"
+                  }
+                ]
+              },
+              {
+                "name": "Single Man Lifts",
+                "image": "https://5.imimg.com/data5/KR/TJ/MY-9318303/grooving-machine-for-rental-in-india-250x250.jpeg",
+                "subcategories": [
+                  {
+                    "name": "Driveable",
+                    "image": "https://5.imimg.com/data5/KR/TJ/MY-9318303/grooving-machine-for-rental-in-india-250x250.jpeg"
+                  },
+                  {
+                    "name": "Push Around",
+                    "image": "https://5.imimg.com/data5/AF/YR/QE/SELLER-5817670/scissor-lift-rental-250x250.jpg"
+                  }
+                ]
+              },
+              {
+                "name": "Telehandlers",
+                "image": "https://5.imimg.com/data5/AF/YR/QE/SELLER-5817670/scissor-lift-rental-250x250.jpg",
+                "subcategories": [{ "name": "NA" }]
+              },
+              {
+                "name": "Material Lift",
+                "image": "https://5.imimg.com/data5/AF/YR/QE/SELLER-5817670/scissor-lift-rental-250x250.jpg",
+                "subcategories": [{ "name": "NA" }]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "dealers_id": "EDWV",
+        "opco": "OHIO",
+        "name": "WEST VIRGINIA",
+        "branches": [
+          {
+            "branch_id": "NIT",
+            "name": "Nitro",
+            "categories": [
+              {
+                "name": "Booms",
+                "image": "https://3.imimg.com/data3/LI/YF/MY-1696478/boom-lift-250x250.jpg",
+                "subcategories": [
+                  {
+                    "name": "Articulated - Electric",
+                    "image": "https://5.imimg.com/data5/PW/CY/MY-2257135/straight-boom-lift-for-rent-250x250.jpg"
+                  },
+                  {
+                    "name": "Articulated - Engine",
+                    "image": "bhttps://5.imimg.com/data5/MA/AI/MY-2934197/self-access-platform-on-hire-250x250.jpg"
+                  },
+                  { "name": "Straight", "image": "https://2.imimg.com/data2/VH/YA/MY-1389659/rough-terrain-scissor-lift-250x250.jpg" }
+                ]
+              },
+              {
+                "name": "Carry Deck Crane",
+                "image": "https://5.imimg.com/data5/BR/GD/MY-10307431/godrej-rental-services-250x250.jpg",
+                "subcategories": [{ "name": "NA" }]
+              },
+              {
+                "name": "Forklifts",
+                "image": "https://5.imimg.com/data5/SI/RW/MY-648196/fork-lift-attachment-work-platform-rental-250x250.jpg",
+                "subcategories": [
+                  { "name": "Electric", "image": "https://5.imimg.com/data5/SI/RW/MY-648196/fork-lift-attachment-work-platform-rental-250x250.jpg" },
+                  { "name": "IC Cushion", "image": "https://5.imimg.com/data5/SI/RW/MY-648196/fork-lift-attachment-work-platform-rental-250x250.jpg" },
+                  {
+                    "name": "IC Pneumatic",
+                    "image": "https://5.imimg.com/data5/SI/RW/MY-648196/fork-lift-attachment-work-platform-rental-250x250.jpg"
+                  },
+                  { "name": "Swing Mast", "image": "https://5.imimg.com/data5/AF/YR/QE/SELLER-5817670/scissor-lift-rental-250x250.jpg" },
+                  { "name": "Tugger", "image": "https://5.imimg.com/data5/AF/YR/QE/SELLER-5817670/scissor-lift-rental-250x250.jpg" }
+                ]
+              },
+              {
+                "name": "Scissor Lifts",
+                "image": "https://5.imimg.com/data5/AM/MP/PK/SELLER-28980996/scissor-lift-250x250.jpg",
+                "subcategories": [
+                  { "name": "Slab", "image": "https://4.imimg.com/data4/JS/KO/ANDROID-6796685/product-250x250.jpeg" },
+                  {
+                    "name": "Rough Terrain",
+                    "image": "https://5.imimg.com/data5/AF/YR/QE/SELLER-5817670/scissor-lift-rental-250x250.jpg"
+                  }
+                ]
+              },
+              {
+                "name": "Single Man Lifts",
+                "image": "https://5.imimg.com/data5/KR/TJ/MY-9318303/grooving-machine-for-rental-in-india-250x250.jpeg",
+                "subcategories": [
+                  {
+                    "name": "Driveable",
+                    "image": "https://5.imimg.com/data5/KR/TJ/MY-9318303/grooving-machine-for-rental-in-india-250x250.jpeg"
+                  },
+                  {
+                    "name": "Push Around",
+                    "image": "https://5.imimg.com/data5/AF/YR/QE/SELLER-5817670/scissor-lift-rental-250x250.jpg"
+                  }
+                ]
+              },
+              {
+                "name": "Telehandlers",
+                "image": "https://5.imimg.com/data5/AF/YR/QE/SELLER-5817670/scissor-lift-rental-250x250.jpg",
+                "subcategories": [{ "name": "NA" }]
+              },
+              {
+                "name": "Personnel Cart",
+                "image": "https://5.imimg.com/data5/AF/YR/QE/SELLER-5817670/scissor-lift-rental-250x250.jpg",
+                "subcategories": [
+                  { "name": "NA" },
+                  {
+                    "name": "Rough Terrain",
+                    "image": "https://5.imimg.com/data5/AF/YR/QE/SELLER-5817670/scissor-lift-rental-250x250.jpg"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "error": {}
+}

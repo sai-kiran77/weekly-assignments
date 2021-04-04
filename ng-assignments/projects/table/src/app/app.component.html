@@ -1,0 +1,37 @@
+<div class="container">
+  <div class="table">
+    <div class="header">
+      <div class="row">
+        <div class="head">Name</div>
+        <div class="head">Email</div>
+        <div class="head">Price</div>
+        <div class="head">Status</div>
+        <div class="head">Action</div>
+      </div>
+    </div>
+    <div class="body">
+      <div class="row" *ngFor="let data of dataArray">
+        <div class="data">{{ data.name }}</div>
+        <div class="data">{{ data.email }}</div>
+        <div class="data">{{ data.price | currency:'INR':true }}</div>
+        <div class="data" [style.color]="statusFunc(data.status - 1).color">
+          {{ statusKeys[data.status - 1] }}
+        </div>
+        <div class="data action">
+          <fa-icon
+            title="edit"
+            class="edit"
+            *ngIf="statusFunc(data.status - 1).showEdit"
+            [icon]="faEdit"
+          ></fa-icon>
+          <fa-icon
+            title="delete"
+            class="delete"
+            *ngIf="statusFunc(data.status - 1).showDelete"
+            [icon]="faTrash"
+          ></fa-icon>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
