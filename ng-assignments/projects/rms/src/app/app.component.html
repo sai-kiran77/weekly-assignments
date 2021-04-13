@@ -1,6 +1,6 @@
 <div class="container">
   <nav>
-    <a href="/" class="rms">RMS</a>
+    <a routerLink="/" class="rms">RMS</a>
     <a class="select-location"
       >Select Location
       <span class="downarrow-icon">
@@ -8,7 +8,7 @@
       </span>
       <div class="dropdown">
         <div class="location" *ngFor="let location of locations">
-          <a (click)="locationHandler(location)" >{{ location.name }}</a>
+          <a (click)="locationHandler(location)">{{ location.name }}</a>
           <fa-icon class="rightarrow-icon" [icon]="faArrowright"></fa-icon>
           <div class="branch-container">
             <p class="branch-header">branches of {{ location.name }}</p>
@@ -24,5 +24,6 @@
       </div>
     </a>
   </nav>
+  <app-breadcrumbs></app-breadcrumbs>
   <router-outlet></router-outlet>
 </div>

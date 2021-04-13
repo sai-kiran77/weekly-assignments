@@ -10,6 +10,8 @@ export class CatalogService {
   branchSelected:boolean = false;
   currentBranch!: Branch;
   subcategories!:subcategory[];
+  activeCategoriesPath = '';
+  activeSubCategoriesPath = '';
   constructor(private http: HttpClient) { }
 
   getCatalog(): Observable<Catalog> {
@@ -31,4 +33,21 @@ export class CatalogService {
   getSubCategories():subcategory[]{
     return this.subcategories
   }
+
+  setActiveCategoryPath(path:string){
+    this.activeCategoriesPath = path;
+  }
+
+  setActiveSubCategoryPath(path:string){
+    this.activeSubCategoriesPath = path;
+  }
+
+  getActiveCategoriesPath(){
+    return this.activeCategoriesPath;
+  }
+
+  getActiveSubCategoryPath(){
+    return this.activeSubCategoriesPath;
+  }
+
 }

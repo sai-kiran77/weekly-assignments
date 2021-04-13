@@ -9,14 +9,16 @@ import { HttpClientModule } from '@angular/common/http'
 import {CatalogService} from './catalog.service';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { CategoriesComponent } from './categories/categories.component';
-import { SubcategoriesComponent } from './subcategories/subcategories.component'
+import { SubcategoriesComponent } from './subcategories/subcategories.component';
+import { BreadcrumbsComponent } from './breadcrumbs/breadcrumbs.component'
 
 @NgModule({
   declarations: [
     AppComponent,
     LandingPageComponent,
     CategoriesComponent,
-    SubcategoriesComponent
+    SubcategoriesComponent,
+    BreadcrumbsComponent
   ],
   imports: [
     BrowserModule,

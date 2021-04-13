@@ -42,6 +42,7 @@ export class AppComponent {
         }
       }
     })
+    this.catalogService.setActiveCategoryPath(`categories/${locationId}/${branchId}`)
     this.catalogService.setCurrentBranch(this.currentBranch)
     this.router.navigate(['/categories', locationId, branchId])
   }

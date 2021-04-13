@@ -1,0 +1,14 @@
+<div class="wrapper">
+  <a routerLink="/" [routerLinkActiveOptions]="{exact: true}" routerLinkActive="active">Home&nbsp;</a>
+  <a
+    routerLink="{{ getCurrentCategoriesRoute() }}"
+    *ngIf="getCurrentCategoriesRoute()"
+    routerLinkActive="active"
+    >/&nbsp;categories&nbsp;</a
+  >
+  <a
+    routerLink="{{ getCurrentSubCategoriesPath() }}"
+    *ngIf="getCurrentSubCategoriesPath()"
+    routerLinkActive="active"
+  >/&nbsp;sub-categories</a>
+</div>

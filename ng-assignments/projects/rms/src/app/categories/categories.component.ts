@@ -20,6 +20,7 @@ export class CategoriesComponent implements OnInit {
 
   categoryClickHandler(category: Category) {
     this.catalogService.setSubCategories(category.subcategories);
+    this.catalogService.setActiveSubCategoryPath(`subcateogries/${category.name}`)
     this.router.navigate(['/subcateogries',category.name])
   }
 
